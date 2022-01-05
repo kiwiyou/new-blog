@@ -1,0 +1,38 @@
+baseURL = "https://blog.kiwiyou.dev/"
+languageCode = "ko-kr"
+title = "키위밭"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[minify]
+minifyOutput = false
+
+[params]
+title = "키위밭"
+description = "kiwiyou의 Rust 개발 블로그"
+keywords = ["Rust", "PS", "Algorithm", "kiwiyou"]
+author = "kiwiyou"
+socialIcons = [
+    { name = "twitter", url = "https://twitter.com/giwiyou" },
+    { name = "github", url = "https://github.com/kiwiyou" },
+]
+dateFormat = "2006년 1월 2일"
+
+[params.profileMode]
+enabled = true
+title = "키위밭 - kiwiyou의 블로그"
+imageUrl = "psa.jpg"
+imageTitle = "kiwi"
+
+[params.assets]
+disableHLJS = true
+
+[menu]
+main = [
+    { name = "PS", url = "ps" },
+    { name = "검색", url = "search" },
+]
