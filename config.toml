@@ -2,6 +2,7 @@ baseURL = "https://blog.kiwiyou.dev/"
 languageCode = "ko-kr"
 title = "키위밭"
 theme = "PaperMod"
+googleAnalytics = 'G-HR57EWWSWP'
 
 enableRobotsTXT = true
 
