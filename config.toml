@@ -25,7 +25,8 @@ dateFormat = "2006년 1월 2일"
 
 [params.profileMode]
 enabled = true
-title = "키위밭 - kiwiyou의 블로그"
+title = "kiwiyou"
+subtitle = "Rust를 좋아하는 프로그래머입니다."
 imageUrl = "psa.jpg"
 imageTitle = "kiwi"
 
