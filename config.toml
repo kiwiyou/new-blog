@@ -37,3 +37,6 @@ main = [
     { name = "PS", url = "ps" },
     { name = "검색", url = "search" },
 ]
+
+[markup.goldmark.renderer]
+unsafe = true
