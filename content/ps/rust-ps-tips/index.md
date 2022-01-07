@@ -3,6 +3,7 @@ title: "Rust PS 팁"
 date: 2022-01-06T21:52:43+09:00
 draft: false
 math: true
+ShowToc: true
 ---
 
 # 입출력
