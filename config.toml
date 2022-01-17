@@ -36,6 +36,7 @@ disableHLJS = true
 [menu]
 main = [
     { name = "PS", url = "ps" },
+    { name = "음악", url = "music" },
     { name = "검색", url = "search" },
 ]
 
