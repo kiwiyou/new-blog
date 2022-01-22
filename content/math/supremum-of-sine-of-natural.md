@@ -3,6 +3,7 @@ title: "자연수의 사인값의 상한"
 date: 2022-01-07T16:02:58+09:00
 draft: false
 math: true
+comments: true
 ---
 
 다음과 같은 집합을 생각해 봅니다.

@@ -2,6 +2,7 @@
 title: "PSYQUI feat. Sennzai - Swelling 가사 / 한국어 번역"
 date: 2022-01-19T10:53:50+09:00
 draft: false
+comments: true
 ---
 
 > 「色づく彩めくこの瞬間から、瞳を放さないで――。」

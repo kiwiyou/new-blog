@@ -2,6 +2,7 @@
 title: "霄 - 一疋狼(고독한 늑대) 가사 / 한국어 번역"
 date: 2022-01-07T21:21:31+09:00
 draft: false
+comments: true
 ---
 
 > ５作目です

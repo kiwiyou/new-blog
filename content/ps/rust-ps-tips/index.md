@@ -4,6 +4,7 @@ date: 2022-01-06T21:52:43+09:00
 draft: false
 math: true
 ShowToc: true
+comments: true
 ---
 
 # 입출력
