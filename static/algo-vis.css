@@ -1,0 +1,55 @@
+.vis-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.vis-controls-box {
+  flex: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  align-self: center;
+}
+
+a.vis-control {
+  padding: 0.25rem;
+  border: 3px solid var(--content);
+  text-decoration: none;
+  color: var(--content);
+  transition: 0.3s;
+  box-shadow: none;
+  line-height: 0;
+}
+
+.vis-control:hover {
+  background-color: var(--content);
+  color: var(--theme);
+}
+
+.vis-step-box {
+  display: flex;
+  flex-direction: column;
+}
+
+pre.vis-step-line {
+  padding: 0.25rem;
+  margin: 0;
+  color: var(--content);
+  opacity: 75%;
+  background: none !important;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+pre.vis-step-active {
+  background-color: var(--secondary) !important;
+  color: var(--theme);
+  font-weight: bold;
+  opacity: 100%;
+}
+
+.vis-step-fixed {
+  color: var(--theme);
+  opacity: 100%;
+  font-weight: bold;
+}

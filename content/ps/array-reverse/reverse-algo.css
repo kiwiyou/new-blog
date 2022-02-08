@@ -1,0 +1,43 @@
+.reverse-array {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding: 1rem;
+  font-family: monospace;
+  height: calc(2.5rem * 8 + 1rem * 2);
+}
+
+.reverse-array-item {
+  border: 3px solid var(--content);
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.reverse-array-item:not(:first-child) {
+  border-top: none;
+}
+
+.reverse-array-label {
+  border-bottom: 3px solid transparent;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.reverse-i {
+  background-color: var(--content);
+  color: var(--theme);
+  font-weight: bold;
+}
+
+.reverse-j {
+  background-color: var(--content);
+  color: var(--theme);
+  font-weight: bold;
+}
