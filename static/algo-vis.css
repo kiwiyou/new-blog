@@ -11,7 +11,7 @@
   align-self: center;
 }
 
-a.vis-control {
+button.vis-control {
   padding: 0.25rem;
   border: 3px solid var(--content);
   text-decoration: none;
@@ -21,7 +21,7 @@ a.vis-control {
   line-height: 0;
 }
 
-.vis-control:hover {
+button.vis-control:hover {
   background-color: var(--content);
   color: var(--theme);
 }

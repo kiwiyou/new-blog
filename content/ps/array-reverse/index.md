@@ -5,11 +5,11 @@ draft: false
 vis: true
 ---
 
-알고리즘 시각화 템플릿을 테스트할 목적으로 쓰는 글입니다.
+알고리즘 시각화 템플릿을 테스트할 목적으로 쓴 글입니다. 
 
 <div id="interactive"></div>
 <link rel="stylesheet" type="text/css" href="./reverse-algo.css">
-<script type="module" async defer>
+<script type="module">
 import attach from '/algo-vis.mjs';
 import { steps, algorithm } from './reverse-algo.mjs';
 attach(interactive, steps, algorithm);

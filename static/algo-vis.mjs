@@ -6,9 +6,9 @@ import { ChevronDown, ChevronUp, ChevronsDown, ChevronsUp, RefreshCcw } from "ht
 const html = htm.bind(h);
 
 function Control(props) {
-  return html`<a href="#" class="vis-control" onClick=${props.onClick}>
+  return html`<button class="vis-control" onClick=${props.onClick}>
     ${props.children}
-  </a>`;
+  </button>`;
 }
 
 function ControlBox(props) {
