@@ -27,8 +27,12 @@ button.vis-control:hover {
 }
 
 .vis-step-box {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.vis-gutter {
+  user-select: none;
 }
 
 pre.vis-step-line {
@@ -49,7 +53,7 @@ pre.vis-step-active {
 }
 
 .vis-step-fixed {
-  color: var(--theme);
+  color: var(--content);
   opacity: 100%;
   font-weight: bold;
 }

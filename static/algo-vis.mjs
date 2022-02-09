@@ -1,8 +1,17 @@
 import { render, h } from "https://unpkg.com/preact@latest?module";
-import { useState, useCallback } from "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module";
+import {
+  useState,
+  useCallback,
+} from "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module";
 import htm from "https://unpkg.com/htm@latest?module";
 import { Map, Stack } from "https://unpkg.com/immutable@latest?module";
-import { ChevronDown, ChevronUp, ChevronsDown, ChevronsUp, RefreshCcw } from "https://unpkg.com/preact-feather@latest?module";
+import {
+  ChevronDown,
+  ChevronUp,
+  ChevronsDown,
+  ChevronsUp,
+  RefreshCcw,
+} from "https://unpkg.com/preact-feather@latest?module";
 const html = htm.bind(h);
 
 function Control(props) {
@@ -29,24 +38,27 @@ function StepBox(props) {
   let SHOW_COUNT = 7;
 
   const { steps, cursor, fixed } = props;
-  const fixedLines = fixed.map(
+  const fixedLines = fixed
+    .toSeq()
+    .reverse()
+    .map(
     (i) =>
-      html`<pre class="vis-step-line vis-step-fixed">
-        ${i + 1}. ${steps[i][0]}
-      </pre>`
-  );
+      html`<pre class="vis-gutter vis-step-line vis-step-fixed" key=${i}>${i + 1}. </pre>
+        <pre class="vis-step-line vis-step-fixed" key=${i}>${steps[i][0]}</pre>
+      `
+  ).toArray();
   let up = cursor;
   let down = cursor;
   let count = 1;
   let added = true;
   while (added) {
     added = false;
-    if (up > 0 && count < SHOW_COUNT - fixed.length) {
+    if (up > 0 && count < SHOW_COUNT - fixedLines.length) {
       up -= 1;
       count += 1;
       added = true;
     }
-    if (down < steps.length - 1 && count < SHOW_COUNT - fixed.length) {
+    if (down < steps.length - 1 && count < SHOW_COUNT - fixedLines.length) {
       down += 1;
       count += 1;
       added = true;
@@ -55,7 +67,10 @@ function StepBox(props) {
   const lines = steps.slice(up, down + 1).map(([step, _], i) => {
     const className =
       i + up === cursor ? "vis-step-line vis-step-active" : "vis-step-line";
-    return html`<pre class=${className}>${i + up + 1}. ${step}</pre>`;
+    return html`
+      <pre class=${"vis-gutter " + className} key=${i + up}>${i + up + 1}. </pre>
+      <pre class=${className} key=${i + up}>${step}</pre>
+    `;
   });
   return html`<div class="vis-step-box">${fixedLines}${lines}</div>`;
 }
@@ -108,7 +123,7 @@ function Container(props) {
     <${StepBox}
       steps=${steps}
       cursor=${history[historyIndex].get("step")}
-      fixed=${history[historyIndex].get("fixed-steps").toArray()}
+      fixed=${history[historyIndex].get("fixed-steps")}
     />
     <${algorithm} context=${history[historyIndex]} />
     <${ControlBox}
