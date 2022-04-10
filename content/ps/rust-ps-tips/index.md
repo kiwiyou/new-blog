@@ -112,6 +112,28 @@ print!("{}", output);
 `writeln!`을 이용한 출력은 모두 `output` 변수에 문자열 형태로 저장되고,
 프로그램 종료 직전에 모든 출력 내용이 한 번에 콘솔로 복사됩니다.
 
+마지막으로 [백준 15552번 빠른 A+B](https://www.acmicpc.net/problem/15552)의 코드를 통해
+위 내용이 어떻게 적용되는지 감을 잡으실 수 있기를 바랍니다.
+
+```rust
+use std::fmt::Write;
+use std::io::{stdin, Read};
+
+fn main() {
+    let mut input = String::new();
+    stdin().read_to_string(&mut input).unwrap();
+    let mut input = input.split_ascii_whitespace().map(str::parse).flatten();
+    let mut output = String::new();
+    let t: usize = input.next().unwrap();
+    for _ in 0..t {
+        let a = input.next().unwrap();
+        let b = input.next().unwrap();
+        writeln!(output, "{}", a + b).unwrap();
+    }
+    print!("{}", output);
+}
+```
+
 # 알아두면 좋은 표준 라이브러리 기능
 
 ## 반복자(Iterator)
