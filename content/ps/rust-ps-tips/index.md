@@ -7,175 +7,110 @@ ShowToc: true
 comments: true
 ---
 
+> 2022-04-10 수정: 속도 비교 내용을 제거하고 입출력 방법에 대한 서술을 늘렸습니다.
+
 # 입출력
 
-Rust는 콘솔 입출력이 결코 편하다고 말할 수는 없는 환경입니다. 또한 잘못 짰을 경우 성능에 많은 저하가 있을 수 있기 때문에, 문제 풀이에 방해되지 않도록 빠른 입출력 방법을 찾을 필요가 있었습니다. 여기에서는 백준 15552번 빠른 A+B의 코드를 통해 여러 입출력 방식의 속도를 알아보겠습니다.
+Rust는 콘솔 입출력이 결코 편하다고 말할 수는 없는 환경입니다.
+또한 잘못 짰을 경우 성능에 많은 저하가 있을 수 있기 때문에,
+문제 풀이에 방해되지 않도록 빠른 입출력 방법을 찾을 필요가 있었습니다.
 
-## `stdin().read_line()`
+## Rust 입출력의 속도 저하
 
-백준 언어 예시에서 보여주는, 매번 stdin 핸들을 **잠그고** 한 줄을 읽어 오는 방식입니다. `Stdin`은 내부적으로 `Mutex`를 사용하고 `Mutex::lock`은 [비싼 연산](https://github.com/MaikKlein/bench_mutex)입니다. 매번 String을 새로 만들거나 비워줘야 하는 불편함은 둘째치고 빠른 성능을 내기 어렵습니다.
+다음은 백준 Rust 예시에서 보여주는 코드입니다.
+이 코드 그대로 문제 풀이를 진행한다면 많은 문제에서 시간 초과를 받을 수 있습니다.
 
-{{< collapse summary="코드" >}}
 ```rust
-use std::fmt::Write;
-use std::io::stdin;
+use std::io;
+
 fn main() {
     let mut s = String::new();
-    stdin().read_line(&mut s).unwrap();
-    let t: u32 = s.trim_end().parse().unwrap();
-    let mut output = String::new();
-    for _ in 0..t {
-        s.clear();
-        stdin().read_line(&mut s).unwrap();
-        let sum: u32 = s
-            .trim_end()
-            .split(' ')
-            .map(str::parse::<u32>)
-            .flatten()
-            .sum();
-        writeln!(output, "{}", sum).unwrap();
-    }
-    print!("{}", output);
+
+    io::stdin().read_line(&mut s).unwrap();
+
+    let values:Vec<i32> = s
+        .as_mut_str()
+        .split_whitespace()
+        .map(|s| s.parse().unwrap())
+        .collect();
+
+    println!("{}", values[0] + values[1]);
 }
 ```
-{{< /collapse >}} 
+
+이유는 `io::stdin()`의 내부 구현과 `println!`의 내부 구현 때문입니다.
+`io::stdin()`과 `println!`은 표준 입출력 핸들을 `Mutex`를 통해 잠그고 사용하는데, 
+`Mutex`를 잠그는 연산은 [오랜 시간이 걸리기](https://github.com/MaikKlein/bench_mutex) 때문에
+시간 초과를 받을 수 있습니다. 저는 아래와 같은 방식을 추천합니다.
+
+## 한 번에 입력받고 한 번에 출력하기
+
+입력을 한 곳에 모아서 받고, 출력 또한 내용을 한 곳에 모은 뒤 한꺼번에 한다면 속도를 향상시킬 수 있습니다.
+
+입력을 한 곳에 모으는 방법은 다음과 같습니다.
 
 ```rust
-Benchmark 1: ./read_line < sum.in
-  Time (mean ± σ):     130.2 ms ±  15.6 ms    [User: 126.2 ms, System: 4.0 ms]
-  Range (min … max):   111.3 ms … 171.7 ms    25 runs
+let mut input = String::new();
+io::stdin().read_to_string(&mut input).unwrap();
 ```
 
-<embed alt="read_line을 사용했을 때의 flamegraph" src="read_line.svg" width="100%" type="image/svg+xml">
+모든 입력이 `input` 변수 안에 들어가므로, `&str`의 메소드를 사용해 입력을 원하는 형식으로 변환할 수 있습니다.
 
-lock을 미리 해 주면 성능이 올라가지만, read_until이 꽤 시간을 잡아먹는 것을 볼 수 있습니다.
+`str::split_ascii_whitespace`는 문자열을 스페이스, 엔터 등 ASCII 공백을 기준으로 나누는 반복자를 반환하고,
+`str::parse` 메소드는 문자열을 `FromStr`을 구현하는 타입으로 변환하는 역할을 합니다.
 
-{{< collapse summary="코드" >}}
+이 둘을 적절히 조합해서, 다음과 같이 쓸 수 있습니다.
+
 ```rust
+let mut tokens = input.split_ascii_whitespace();
+let token = tokens.next().unwrap();
+let number: i32 = token.parse().unwrap();
+```
+
+위 코드는 공백으로 분리된 수 하나를 `i32` 형식으로 변환하는 코드입니다.
+매번 `token` 변수를 생성하는 것은 귀찮기에, 이렇게 쓸 수도 있습니다.
+
+```rust
+let number: i32 = tokens.next().unwrap().parse().unwrap();
+```
+
+만약 입력받을 수의 타입이 모두 같다면, 반복자를 활용해서 다음과 같이 쓸 수 있습니다.
+
+```rust
+let mut numbers = input.split_ascii_whitespace().map(str::parse).flatten();
+let a: usize = numbers.next().unwrap();
+let b = numbers.next().unwrap();
+let c = numbers.next().unwrap();
+```
+
+`a` 변수의 타입을 지정함으로써 모든 공백으로 분리된 수를 `usize` 타입으로 변환하도록 만들었습니다.
+이로 인해 `numbers`는 `usize`를 반환하는 반복자가 되고,
+`next`를 통해 `usize` 타입의 값을 계속 받아올 수 있습니다.
+
+반복자를 이용하면 `Vec` 또한 만들 수 있습니다.
+
+```rust
+let n = numbers.next().unwrap();
+let my_vec: Vec<usize> = numbers.by_ref().take(n).collect();
+```
+
+한편 출력은 입력보다 간단합니다.
+`println!` 대신 `writeln!`을 쓰되, 프로그램 종료 직전에 `print!`를 해 주면 됩니다.
+
+```rust
+// writeln!을 쓰기 위해 필요합니다.
 use std::fmt::Write;
-use std::io::{stdin, BufRead};
-fn main() {
-    let mut s = String::new();
-    let stdin = stdin();
-    let mut lock = stdin.lock();
-    lock.read_line(&mut s).unwrap();
-    let t: u32 = s.trim_end().parse().unwrap();
-    let mut output = String::new();
-    for _ in 0..t {
-        s.clear();
-        lock.read_line(&mut s).unwrap();
-        let sum: u32 = s
-            .trim_end()
-            .split(' ')
-            .map(str::parse::<u32>)
-            .flatten()
-            .sum();
-        writeln!(output, "{}", sum).unwrap();
-    }
-    print!("{}", output);
-}
-```
-{{< /collapse >}}
 
-```rust
-Benchmark 2: ./read_line_lock < sum.in
-  Time (mean ± σ):     122.2 ms ±  15.9 ms    [User: 117.8 ms, System: 4.6 ms]
-  Range (min … max):   100.1 ms … 146.4 ms    20 runs
+let mut output = String::new();
+
+writeln!(output, "{} + {} = {}", 1, 2, 1 + 2).unwrap();
+
+// 프로그램 마지막에 한 번만 실행해주세요.
+print!("{}", output);
 ```
 
-<embed alt="Stdin::lock과 read_line을 사용했을 때의 flamegraph" src="read_line_lock.svg" width="100%" type="image/svg+xml">
-
-## `lines()`
-
-String을 초기화할 귀찮음 없이 쓸 수 있는 방법으로 `lines()`가 있습니다. 이 메서드는 `StdinLock`을 요구하므로 (`Stdin::lines`는 experimental) lock을 여러 번 하지 않는다는 장점도 있습니다. 그럼 과연 빨라질까요?
-
-{{< collapse summary="코드" >}}
-```rust
-use std::fmt::Write;
-use std::io::{stdin, BufRead};
-fn main() {
-    let stdin = stdin();
-    let mut lines = stdin.lock().lines().flatten();
-    let t: u32 = lines.next().unwrap().parse().unwrap();
-    let mut output = String::new();
-    for _ in 0..t {
-        let line = lines.next().unwrap();
-        let sum: u32 = line.split(' ').map(str::parse::<u32>).flatten().sum();
-        writeln!(output, "{}", sum).unwrap();
-    }
-    print!("{}", output);
-}
-```
-{{< /collapse >}}
-
-```rust
-Benchmark 3: ./lines < sum.in
-  Time (mean ± σ):     172.1 ms ±  18.2 ms    [User: 167.6 ms, System: 4.5 ms]
-  Range (min … max):   144.2 ms … 202.5 ms    15 runs
-```
-
-오히려 더 느려졌습니다! 이는 매 줄마다 새로운 String을 할당하기 때문입니다. flamegraph에서 힙 할당과 관련한 부분이 길게 나타나는 것을 볼 수 있습니다.
-
-<embed alt="lines를 사용했을 때의 flamegraph" src="lines.svg" width="100%" type="image/svg+xml">
-
-## `read_to_string()`
-
-위 세 가지 방법 모두 (출력을 제외하면) 같은 부분에서 성능 저하가 있습니다. 바로 `read_until`입니다. 이 부분을 제거하기 위해서 모든 입력 내용을 한 번에 받아오는 방법을 떠올릴 수 있습니다. 코드도 간결합니다.
-
-{{< collapse summary="코드" >}}
-```rust
-use std::fmt::Write;
-use std::io::{stdin, Read};
-fn main() {
-    let mut buffer = String::new();
-    stdin().read_to_string(&mut buffer).unwrap();
-    let mut input = buffer.split_ascii_whitespace();
-    let t: u32 = input.next().unwrap().parse().unwrap();
-    let mut output = String::new();
-    let mut nums = input.map(str::parse::<u32>).flatten();
-    for _ in 0..t {
-        let sum: u32 = nums.by_ref().take(2).sum();
-        writeln!(output, "{}", sum).unwrap();
-    }
-    print!("{}", output);
-}
-```
-{{< /collapse >}}
-
-```rust
-Benchmark 4: ./read_all < sum.in
-  Time (mean ± σ):      82.9 ms ±  10.3 ms    [User: 74.6 ms, System: 8.3 ms]
-  Range (min … max):    60.5 ms … 100.0 ms    38 runs
-```
-
-<embed alt="read_to_string을 사용했을 때의 flamegraph" src="read_all.svg" width="100%" type="image/svg+xml">
-
-입력과 같이 출력 또한 한 번에 몰아서 하는 것이 좋습니다. 위쪽 벤치마크 코드에서 `writeln` 부분이 `output`에 모든 출력을 몰아두고, 마지막에만 `println`을 하는 모습을 보실 수 있죠. `writeln`은 `println`과 사용법이 같고, 맨 처음 인자로 버퍼가 들어간다는 점만 다릅니다. 참고로 `read_to_string()` 코드를 `println`만 사용하여 짜면 이렇게 됩니다.
-
-{{< collapse summary="코드" >}}
-```rust
-use std::io::{stdin, Read};
-fn main() {
-    let mut buffer = String::new();
-    stdin().read_to_string(&mut buffer).unwrap();
-    let mut input = buffer.split_ascii_whitespace();
-    let t: u32 = input.next().unwrap().parse().unwrap();
-    let mut nums = input.map(str::parse::<u32>).flatten();
-    for _ in 0..t {
-        let sum: u32 = nums.by_ref().take(2).sum();
-        println!("{}", sum);
-    }
-}
-```
-{{< /collapse >}}
-
-```rust
-Benchmark 1: ./println < sum.in
-  Time (mean ± σ):     343.7 ms ±  30.5 ms    [User: 184.2 ms, System: 159.3 ms]
-  Range (min … max):   299.5 ms … 386.7 ms    10 runs
-```
-
-<embed alt="println을 사용했을 때의 flamegraph" src="println.svg" width="100%" type="image/svg+xml">
+`writeln!`을 이용한 출력은 모두 `output` 변수에 문자열 형태로 저장되고,
+프로그램 종료 직전에 모든 출력 내용이 한 번에 콘솔로 복사됩니다.
 
 # 알아두면 좋은 표준 라이브러리 기능
 
