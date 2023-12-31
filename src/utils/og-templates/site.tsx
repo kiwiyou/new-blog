@@ -63,7 +63,7 @@ export default () => {
               textAlign: 'center',
             }}
           >
-            <p style={{ fontSize: 72, fontWeight: 'bold' }}>{SITE.title}</p>
+            <p style={{ fontSize: 72, fontWeight: 'bold', wordBreak: 'keep-all' }}>{SITE.title}</p>
             <p style={{ fontSize: 28 }}>{SITE.desc}</p>
           </div>
 
