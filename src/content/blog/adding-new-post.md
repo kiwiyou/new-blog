@@ -8,6 +8,7 @@ draft: false
 tags:
   - 일상
 description: 블로그를 새단장했습니다.
+comment: true
 ---
 
 알고리즘 시각화 글을 작성하면서 Astro에 눈독을 들였는데, 이참에 블로그를 새단장해버렸습니다.
