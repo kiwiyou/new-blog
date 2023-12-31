@@ -11,11 +11,7 @@ const breadcrumbList = currentUrlPath.split('/').slice(1);
 breadcrumbList[0] === 'posts' &&
   breadcrumbList.splice(0, 2, `글 목록 (${breadcrumbList[1] || 1}쪽)`);
 
-breadcrumbList[0] === 'tags' && breadcrumbList.splice(0, 1, `태그`);
-
 breadcrumbList[0] === 'about' && breadcrumbList.splice(0, 1, `소개`);
-
-breadcrumbList[0] === 'search' && breadcrumbList.splice(0, 1, `검색`);
 
 // if breadcrumb is Home > Tags > [tag] > [page] <etc>
 // replace [tag] > [page] with [tag] (page number)
@@ -28,6 +24,11 @@ breadcrumbList[0] === 'tags' &&
       Number(breadcrumbList[2]) === 1 ? '' : '(' + breadcrumbList[2] + '쪽)'
     }`,
   );
+
+function translate(breadcrumb: string) {
+  if (breadcrumb == 'tags') return '태그';
+  return breadcrumb;
+}
 ---
 
 <nav class="breadcrumb" aria-label="breadcrumb">
@@ -45,12 +46,12 @@ breadcrumbList[0] === 'tags' &&
               aria-current="page"
             >
               {/* make the last part lowercase in Home > Tags > some-tag */}
-              {decodeURIComponent(breadcrumb)}
+              {decodeURIComponent(translate(breadcrumb))}
             </span>
           </li>
         ) : (
           <li>
-            <a href={`/${breadcrumb}`}>{breadcrumb}</a>
+            <a href={`/${breadcrumb}`}>{translate(breadcrumb)}</a>
             <span aria-hidden="true">&gt;</span>
           </li>
         ),
