@@ -22,6 +22,8 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+.jampack
+
 # end .gitignore
 
 /pnpm-lock.yaml

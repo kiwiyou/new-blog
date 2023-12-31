@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: 'kiwiyou',
   desc: `A journey of problem solver.`,
   title: 'kiwifarm',
-  ogImage: 'opengraph.png',
+  // ogImage: 'opengraph.png',
   lightAndDarkMode: true,
   postPerPage: 5,
 };
