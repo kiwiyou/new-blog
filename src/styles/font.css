@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR Variable';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/otf/NotoSansCJKkr-VF.otf') format('opentype-variations');
+}
+
+@font-face {
+  font-family: 'Monaspace Neon Variable';
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+  font-variation-settings: "wdth" 100;
+  src: url('/fonts/woff2/MonaspaceNeonVarVF.woff2') format('woff2-variations');
+}

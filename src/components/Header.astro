@@ -201,7 +201,7 @@ const { activeNav } = Astro.props;
       menuBtn.setAttribute('aria-expanded', menuExpanded ? 'false' : 'true');
       menuBtn.setAttribute(
         'aria-label',
-        menuExpanded ? 'Open Menu' : 'Close Menu',
+        menuExpanded ? '메뉴 열기' : '메뉴 닫기',
       );
       menuItems?.classList.toggle('display-none');
     });

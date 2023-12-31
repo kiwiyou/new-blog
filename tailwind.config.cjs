@@ -54,10 +54,15 @@ module.exports = {
         transparent: 'transparent',
       },
       fontFamily: {
+        mono: [
+          'Monaspace Neon Variable',
+          'Pretendard Variable',
+          'Noto Sans CJK KR Variable',
+          'monospaced',
+        ],
         sans: [
           'Pretendard Variable',
           'Pretendard',
-          'Noto Sans KR',
           '-apple-system',
           'BlinkMacSystemFont',
           'system-ui',
@@ -65,6 +70,7 @@ module.exports = {
           'Helvetica Neue',
           'Segoe UI',
           'Apple SD Gothic Neo',
+          'Noto Sans CJK KR Variable',
           'Noto Sans KR',
           'Malgun Gothic',
           'Apple Color Emoji',
