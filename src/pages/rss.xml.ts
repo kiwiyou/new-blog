@@ -10,6 +10,7 @@ export async function GET() {
     title: SITE.title,
     description: SITE.desc,
     site: SITE.website,
+    customData: `<language>ko</language><generator>astro</generator><ttl>100</ttl>`,
     items: sortedPosts.map(({ data, slug }) => ({
       link: `posts/${slug}`,
       title: data.title,
