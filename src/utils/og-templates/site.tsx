@@ -67,7 +67,6 @@ export default () => {
               style={{
                 fontSize: 72,
                 fontWeight: 'bold',
-                wordBreak: 'keep-all',
               }}
             >
               {SITE.title}

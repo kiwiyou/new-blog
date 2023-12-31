@@ -57,7 +57,7 @@ module.exports = {
         mono: [
           'Monaspace Neon Variable',
           'Pretendard Variable',
-          'Noto Sans CJK KR Variable',
+          'Noto Sans KR Variable',
           'monospaced',
         ],
         sans: [
@@ -70,7 +70,7 @@ module.exports = {
           'Helvetica Neue',
           'Segoe UI',
           'Apple SD Gothic Neo',
-          'Noto Sans CJK KR Variable',
+          'Noto Sans KR Variable',
           'Noto Sans KR',
           'Malgun Gothic',
           'Apple Color Emoji',

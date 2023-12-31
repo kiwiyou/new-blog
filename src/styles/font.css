@@ -7,11 +7,11 @@
 }
 
 @font-face {
-  font-family: 'Noto Sans CJK KR Variable';
+  font-family: 'Noto Sans KR Variable';
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/otf/NotoSansCJKkr-VF.otf') format('opentype-variations');
+  src: url('/fonts/otf/NotoSansKR-VF.otf') format('opentype-variations');
 }
 
 @font-face {
