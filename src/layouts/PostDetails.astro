@@ -86,22 +86,27 @@ const layoutProps = {
         <span>맨 위로 가기</span>
       </button>
     </div>
-    <script
-      src="https://giscus.kiwiyou.dev/client.js"
-      data-repo="kiwiyou/new-blog"
-      data-repo-id="R_kgDOGoQLHw"
-      data-category="댓글"
-      data-category-id="DIC_kwDOGoQLH84CcGYV"
-      data-mapping="og:title"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="bottom"
-      data-theme="dark"
-      data-lang="ko"
-      data-loading="lazy"
-      crossorigin="anonymous"
-      async></script>
+    {
+      comment && (
+        <script
+          src="https://giscus.kiwiyou.dev/client.js"
+          data-repo="kiwiyou/new-blog"
+          data-repo-id="R_kgDOGoQLHw"
+          data-category="댓글"
+          data-category-id="DIC_kwDOGoQLH84CcGYV"
+          data-mapping="og:title"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="dark"
+          data-lang="ko"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async
+        />
+      )
+    }
   </main>
   <Footer />
 </Layout>
