@@ -59,6 +59,7 @@ export default (post: CollectionEntry<'blog'>) => {
               maxHeight: '84%',
               overflow: 'hidden',
               wordBreak: 'keep-all',
+              textWrap: 'balance',
             }}
           >
             {post.data.title}

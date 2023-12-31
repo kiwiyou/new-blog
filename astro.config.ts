@@ -27,8 +27,11 @@ export default defineConfig({
       ],
     ],
     shikiConfig: {
-      theme: 'one-dark-pro',
-      wrap: true,
+      experimentalThemes: {
+        light: 'vitesse-light',
+        dark: 'vitesse-dark',
+      },
+      wrap: false,
     },
   },
   vite: {

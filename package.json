@@ -28,7 +28,6 @@
     "@divriots/jampack": "^0.23.1",
     "@tailwindcss/typography": "^0.5.10",
     "@types/react": "^18.2.46",
-    "commitizen": "^4.3.0",
     "github-slugger": "^2.0.0",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.3",
