@@ -7,6 +7,7 @@ export async function GET() {
     return new Response(r.body, {
       headers: {
         'Content-Type': 'text/xml; charset=utf-8',
+        'Content-Language': 'en',
       },
     });
   });
