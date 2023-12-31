@@ -28,7 +28,7 @@ const socialCount = SOCIALS.filter((social) => social.active).length;
         href="/rss.xml"
         class="rss-link"
         aria-label="rss feed"
-        title="RSS Feed"
+        title="RSS 피드"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
           ><path
@@ -96,7 +96,7 @@ const socialCount = SOCIALS.filter((social) => social.active).length;
         }
       </ul>
       <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts">
+        <LinkButton href="/posts" aria-label="전체 보기">
           전체 보기
           <svg xmlns="http://www.w3.org/2000/svg"
             ><path
