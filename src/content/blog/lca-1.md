@@ -9,7 +9,7 @@ tags:
   - 문제 해결
   - 최적화
 description: 부모를 따르는 시뮬레이션에 기반한 최소 공통 조상 알고리즘을 살펴봅니다.
-comment: false
+comment: true
 math: true
 ---
 루트가 있는 트리에서, 두 정점의 최소 공통 조상<sup>Lowest Common Ancestor</sup>은 두 정점의 공통 조상 중 가장 깊은 조상을 말합니다.
