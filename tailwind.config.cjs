@@ -83,6 +83,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
+            color: false,
             pre: {
               color: false,
             },
