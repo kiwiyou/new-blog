@@ -126,6 +126,10 @@
   pre > code {
     white-space: pre;
   }
+
+  math {
+    user-select: none;
+  }
 }
 
 @layer components {
