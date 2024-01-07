@@ -1,0 +1,132 @@
+---
+author: kiwiyou
+pubDatetime: 2024-01-07T04:09:23.756Z
+title: BOJ 31028 순열의 개수
+slug: boj-31028
+featured: false
+draft: false
+tags:
+  - 문제 해결
+  - BOJ
+description: 나는코더다 2023 송년대회 B번 문제 풀이와 대회 회고입니다.
+comment: true
+math: true
+---
+
+import {
+  Function,
+  Scope,
+  Keyword,
+  Line,
+  Comment,
+} from '../../components/algorithm';
+
+[문제 링크](https://www.acmicpc.net/problem/31028)
+
+나는코더다 2023 송년대회에 kongum 님, mingyu331 님과 참가하여 kongum 님과 5시간 동안 고민한 문제입니다.
+여기서 소개할 풀이는 kongum 님이 대회 후에 떠올린 풀이입니다. 대회 이후 풀이의 발견에 dohoon 님이 도움을 주셨습니다.
+
+두 순열의 접두사를 이어붙여 순열을 만들어야 합니다.
+접두사를 이어붙이는 방법은 $(N+1)^2$가지가 있으므로, 여러 접두사 중 순열로 가능한 경우를 빠르게 추리는 방법을 찾아야 합니다.
+
+가장 먼저 할 수 있는 관찰은 문제에서 $A$와 $B$를 바꾸어 풀어도 답이 같다는 것입니다.
+바로 도움이 되진 않지만 짚고 넘어갑시다.
+
+다음 관찰로, 어떤 수열이 순열이려면 다음 조건을 만족해야 합니다.
+
+- 중복 원소가 없다.
+- 최대 원소에 $1$을 더한 값이 수열의 길이와 일치한다.
+
+이를 바탕으로 $A$의 각 접두사를 보면서, $B$의 접두사 중 순열을 이룰 수 있는 것을 추리는 전략을 세워 보겠습니다.
+
+$A$와 $B$를 바꾸어 풀어도 답이 같으므로, $A$의 접두사에 최댓값이 있다고 강제해도 문제를 해결할 수 있습니다.
+$A$와 $B$를 바꾸어 같은 방법을 한 번 더 적용하면 됩니다.
+
+현재 $A$의 접두사와 겹치는 원소가 없으면서 길이가 현재 $A$의 접두사 내 최댓값에 $1$을 더한 값인 $B$의 접두사가 있는지 판정하면 됩니다.
+현재 $A$의 접두사 내 최댓값은 고정되어 있으므로, 순열을 이루기 위해 확인할 $B$의 접두사가 하나로 고정됩니다.
+
+문제는 확인할 $B$의 접두사와 현재 $A$의 접두사에 겹치는 원소가 있는지 빠르게 판정하기 어렵다는 것입니다.
+하지만 $A$의 접두사를 짧은 것부터 본다면, 현재 $A$의 접두사와 원소가 겹치지 않기 위한 $B$의 접두사 길이의 범위를 관리할 수 있습니다.
+$A$의 접두사가 길어질수록 가능한 $B$의 접두사 길이가 짧아지기 때문입니다.
+두 포인터를 이용하여 amortized $\mathcal{O}(1)$에 가능한 가장 긴 $B$의 접두사 길이를 구할 수 있습니다.
+
+$A$의 접두사에 최댓값이 있다고 강제했으므로 $B$의 접두사에 최댓값이 없다는 것을 보장해야 합니다.
+$A$의 접두사의 최댓값은 증가하고, 이에 따라 가능한 $B$의 접두사 길이 범위는 감소합니다.
+두 포인터를 이용하여 amortized $\mathcal{O}(1)$에 가능한 가장 긴 $B$의 접두사 길이를 구할 수 있습니다.
+
+따라서 순열을 이룰 수 있는 $B$의 접두사 길이가 두 포인터를 사용해 구한 두 길이 이하라면 답이 $1$을 더해주면 됩니다.
+
+전체 시간복잡도는 $\mathcal{O}(N)$입니다.
+
+<details>
+  <summary>코드</summary>
+  <Function>
+    <Keyword>function</Keyword> solve(N, A, B)
+    <Scope>
+      <Line>
+        <Keyword>return</Keyword> count_perm(N, A, B) + count_perm(N, B, A) + 1
+      </Line>
+    </Scope>
+  </Function>
+
+  <Function>
+    <Keyword>function</Keyword> count_perm(N, A, B)
+    <Scope>
+      <Line>
+        max_A := 0 <Comment>현재 A의 최대 원소</Comment>
+      </Line>
+      <Line>
+        viewed = &empty; <Comment>B의 접두사에 있는 원소의 집합</Comment>
+      </Line>
+      <Line>
+        until_viewed := N{' '}
+        <Comment>A와 원소가 겹치지 않도록 하는 가장 긴 B의 접두사 길이</Comment>
+      </Line>
+      <Line>
+        until_max := 0{' '}
+        <Comment>
+          A의 접두사에 최댓값이 있도록 하는 가장 긴 B의 접두사 길이
+        </Comment>
+      </Line>
+      <Line>
+        max_B := 0{' '}
+        <Comment>A의 접두사에 최댓값이 있도록 하는 가장 긴 B의 최대 원소</Comment>
+      </Line>
+      <Line>count := 0</Line>
+      <Line>
+        <Keyword>for</Keyword> L <Keyword>from</Keyword> 1 <Keyword>upto</Keyword>{' '}
+        N
+        <Scope>
+          <Line>max_A := max(max_A, A[L])</Line>
+          <Line>
+            <Keyword>while</Keyword> A[L] <Keyword>not in</Keyword> viewed
+            <Scope>
+              <Line>
+                <Keyword>add</Keyword> B[until_viewed] <Keyword>to</Keyword>{' '}
+                viewed
+              </Line>
+              <Line>until_viewed := until_viewed - 1</Line>
+            </Scope>
+          </Line>
+          <Line>
+            <Keyword>while</Keyword> max_B &lt; max_A <Keyword>and</Keyword>{' '}
+            B[until_max] &lt; max_A
+            <Scope>
+              <Line>max_B := max(max_B, B[until_max])</Line>
+              <Line>until_max := until_max + 1</Line>
+            </Scope>
+          </Line>
+          <Line>
+            <Keyword>if</Keyword> max_A - L &lt; min(until_viewed, until_max)
+            <Scope>
+              <Line>count := count + 1</Line>
+            </Scope>
+          </Line>
+        </Scope>
+      </Line>
+      <Line>
+        <Keyword>return</Keyword> count
+      </Line>
+    </Scope>
+  </Function>
+</details>

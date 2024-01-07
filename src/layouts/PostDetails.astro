@@ -6,6 +6,8 @@ import Tag from '@components/Tag.astro';
 import Datetime from '@components/Datetime';
 import type { CollectionEntry } from 'astro:content';
 import { slugifyStr } from '@utils/slugify';
+import Math from '@components/Math.astro';
+import '@styles/shiki.css';
 
 export interface Props {
   post: CollectionEntry<'blog'>;
@@ -23,6 +25,7 @@ const {
   modDatetime,
   tags,
   comment,
+  math,
 } = post.data;
 
 const { Content } = await post.render();
@@ -45,6 +48,7 @@ const layoutProps = {
 ---
 
 <Layout {...layoutProps}>
+  {math && <Math />}
   <Header />
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
@@ -66,7 +70,11 @@ const layoutProps = {
       size="lg"
       className="my-2"
     />
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl text-justify">
+    <article
+      id="article"
+      role="article"
+      class="prose mx-auto mt-8 max-w-3xl text-justify"
+    >
       <Content />
     </article>
 

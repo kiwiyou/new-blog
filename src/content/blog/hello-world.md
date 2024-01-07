@@ -3,7 +3,7 @@ author: kiwiyou
 pubDatetime: 2023-12-30T23:37:47.694Z
 title: 블로그 세팅 완료!
 slug: hello-world
-featured: true
+featured: false
 draft: false
 tags:
   - 일상
