@@ -19,6 +19,6 @@
   font-weight: 200 800;
   font-style: normal;
   font-display: swap;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: 'wdth' 100;
   src: url('/fonts/woff2/MonaspaceNeonVarVF.woff2') format('woff2-variations');
 }

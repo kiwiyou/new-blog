@@ -1,0 +1,19 @@
+.comment {
+  @apply font-sans italic opacity-50;
+}
+
+.function {
+  @apply my-8 overflow-x-scroll whitespace-nowrap text-left font-mono text-sm;
+}
+
+.function p {
+  @apply m-0 inline;
+}
+
+.keyword {
+  @apply font-bold;
+}
+
+.scope {
+  @apply m-0 list-none;
+}
