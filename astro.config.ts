@@ -8,6 +8,7 @@ import rehypeKatex from 'rehype-katex';
 import sitemap from '@astrojs/sitemap';
 import { SITE } from './src/config';
 import mdx from '@astrojs/mdx';
+import codeblocks from '@thewebforge/astro-code-blocks';
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,6 +19,10 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    codeblocks({
+      copyButtonTitle: '복사',
+      copyButtonTooltip: '코드가 클립보드에 복사되었습니다!',
+    }),
     mdx(),
   ],
   markdown: {
