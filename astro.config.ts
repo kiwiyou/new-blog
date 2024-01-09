@@ -8,6 +8,8 @@ import sitemap from '@astrojs/sitemap';
 import { SITE } from './src/config';
 import mdx from '@astrojs/mdx';
 import codeblocks from '@thewebforge/astro-code-blocks';
+import gruvboxLight from './src/gruvbox-light-soft.json';
+import gruvboxDark from './src/gruvbox-dark-hard.json';
 
 // https://astro.build/config
 export default defineConfig({
@@ -37,8 +39,8 @@ export default defineConfig({
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
       experimentalThemes: {
-        light: 'vitesse-light',
-        dark: 'vitesse-dark',
+        light: gruvboxLight as any,
+        dark: gruvboxDark as any,
       },
       wrap: false,
     },
