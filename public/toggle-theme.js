@@ -44,6 +44,8 @@ function reflectPreference() {
       .querySelector("meta[name='theme-color']")
       ?.setAttribute('content', bgColor);
   }
+
+  changeGiscusTheme();
 }
 
 // set early so no page flashes / CSS is made aware
@@ -74,3 +76,18 @@ window
     themeValue = isDark ? 'dark' : 'light';
     setPreference();
   });
+
+function changeGiscusTheme() {
+  const iframe = document.querySelector('iframe.giscus-frame');
+  if (!iframe) return;
+  iframe.contentWindow.postMessage(
+    {
+      giscus: {
+        setConfig: {
+          theme: themeValue,
+        },
+      },
+    },
+    'https://giscus.kiwiyou.dev',
+  );
+}
