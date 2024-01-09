@@ -1,6 +1,7 @@
 ---
 author: kiwiyou
 pubDatetime: 2024-01-09T03:10:10.313Z
+modDatetime: 2024-01-09T16:32:41.905Z
 title: 최소 공통 조상(LCA) 구현 톺아보기 - 2
 slug: lca-2
 featured: true
@@ -12,6 +13,8 @@ description: 깊이 우선 탐색 순서를 이용한 오프라인 최소 공통
 comment: true
 math: true
 ---
+
+import { Function, Scope, Line, Keyword } from '../../components/algorithm';
 
 [이전 글 보기](/posts/lca-1)
 
@@ -59,6 +62,40 @@ math: true
 이 방식은 여러 정점의 최소 공통 조상을 구할 때도 쉽게 응용할 수 있다는 장점이 있습니다.
 일반적으로 트리 압축<sup>Tree Compression</sup>을 사용하여 푸는 것으로 알려진 문제를 이 알고리즘으로 풀 수 있는 경우가 있습니다.
 
+<Function>
+  <Keyword>function</Keyword> offline_lca(u)
+  <Scope>
+    <Line>
+      <Keyword>for each</Keyword> v <Keyword>in</Keyword> u.children
+      <Scope>
+        <Line>offline_lca(v)</Line>
+        <Line>
+          <Keyword>if</Keyword> u.set.size &lt; u.set.size
+          <Scope>
+            <Line>
+              <Keyword>swap</Keyword> u.set <Keyword>and</Keyword> v.set
+            </Line>
+          </Scope>
+        </Line>
+        <Line>
+          <Keyword>for each</Keyword> query_index <Keyword>in</Keyword> v.set
+          <Scope>
+            <Line>
+              <Keyword>if</Keyword> query_index <Keyword>in</Keyword> u.set
+              <Scope>
+                <Line>lca(query_index) := u</Line>
+              </Scope>
+            </Line>
+            <Line>
+              <Keyword>add</Keyword> query_index <Keyword>to</Keyword> u.set
+            </Line>
+          </Scope>
+        </Line>
+      </Scope>
+    </Line>
+  </Scope>
+</Function>
+
 ## 분리 집합
 
 여기서 한 가지 관찰을 더 해 보겠습니다.
@@ -85,6 +122,33 @@ B의 방문 종료 시에 A가 어느 조상과 합쳐져 있는지 알 수 있�
 
 이 알고리즘은 $\mathcal{O}(V + Q \alpha(V))$ 시간이 걸리며, Robert E. Tarjan에 의해 처음 고안되었습니다.
 분리 집합은 이론적으로도 실증적으로도 매우 빠른 알고리즘이기 때문에 분리 집합을 사용한 최소 공통 조상 알고리즘은 매우 빠르다는 특징이 있습니다.
+
+<Function>
+  <Keyword>function</Keyword> offline_lca(u)
+  <Scope>
+    <Keyword>for each</Keyword> v <Keyword>in</Keyword> u.children
+    <Scope>
+      <Line>offline_lca(v)</Line>
+      <Line>merged := merge_set(u, v)</Line>
+      <Line>merged.vertex := u</Line>
+    </Scope>
+    <Line>
+      u.finished := <Keyword>true</Keyword>
+    </Line>
+    <Line>
+      <Keyword>for each</Keyword> (query_index, other_vertex){' '}
+      <Keyword>in</Keyword> u.queries
+      <Scope>
+        <Line>
+          <Keyword>if</Keyword> other_vertex.finished
+          <Scope>
+            <Line>lca(query_index) := find_set(other_vertex).vertex</Line>
+          </Scope>
+        </Line>
+      </Scope>
+    </Line>
+  </Scope>
+</Function>
 
 여기까지 깊이 우선 탐색을 이용해 여러 최소 공통 조상을 한꺼번에 구하는 오프라인 알고리즘들을 알아보았습니다.
 다음 글에서는 깊이 우선 탐색과 높이 정보를 모두 사용하는 온라인 알고리즘을 알아보겠습니다.
