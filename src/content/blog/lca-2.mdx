@@ -1,7 +1,7 @@
 ---
 author: kiwiyou
 pubDatetime: 2024-01-09T03:10:10.313Z
-modDatetime: 2024-01-09T16:32:41.905Z
+modDatetime: 2024-01-10T07:20:28.182Z
 title: 최소 공통 조상(LCA) 구현 톺아보기 - 2
 slug: lca-2
 featured: true
@@ -16,7 +16,11 @@ math: true
 
 import { Function, Scope, Line, Keyword } from '../../components/algorithm';
 
-[이전 글 보기](/posts/lca-1)
+## 최소 공통 조상 구현 톺아보기 목록
+
+1. [부모를 따르는 시뮬레이션](/posts/lca-1)
+2. 깊이 우선 탐색의 순서
+3. [구간 최솟값 질의](/posts/lca-3)
 
 이번 글에서는 깊이 우선 탐색<sup>Depth First Search</sup>의 방문 순서를 이용해서 최소 공통 조상을 구하는 알고리즘을 알아보려고 합니다.
 이 알고리즘들은 문제 해결 분야에서 잘 알려지지 않았지만 효율적이고, 문제에 따라 구현이 간단한 경우도 있으므로 알아두시면 좋을 것 같습니다.
@@ -155,3 +159,5 @@ B의 방문 종료 시에 A가 어느 조상과 합쳐져 있는지 알 수 있�
 
 잘못된 내용이나 추가가 필요한 내용, 궁금하신 내용 등은 덧글로 달아주시면 감사하겠습니다.
 읽어주셔서 감사합니다!
+
+[다음 글 보기](/posts/lca-3)

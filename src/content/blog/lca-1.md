@@ -1,7 +1,7 @@
 ---
 author: kiwiyou
 pubDatetime: 2024-01-07T07:59:03.301Z
-modDatetime: 2024-01-09T05:54:42.350Z
+modDatetime: 2024-01-10T07:20:11.428Z
 title: 최소 공통 조상(LCA) 구현 톺아보기 - 1
 slug: lca-1
 featured: true
@@ -14,7 +14,10 @@ comment: true
 math: true
 ---
 
-[다음 글 보기](/posts/lca-2)
+## 최소 공통 조상 구현 톺아보기 목록
+1. 부모를 따르는 시뮬레이션
+2. [깊이 우선 탐색의 순서](/posts/lca-2)
+3. [구간 최솟값 질의](/posts/lca-3)
 
 루트가 있는 트리에서, 두 정점의 최소 공통 조상<sup>Lowest Common Ancestor</sup>은 두 정점의 공통 조상 중 가장 깊은 조상을 말합니다.
 트리에서 두 정점 사이의 경로는 유일하며 항상 최소 공통 조상을 지나기 때문에 문제 해결 과정에서 최소 공통 조상을 구하는 일이 잦습니다.
