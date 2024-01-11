@@ -69,11 +69,11 @@ import { Function, Scope, Line, Keyword } from '../../components/algorithm';
 ## 세그먼트 트리
 
 세그먼트 트리<sup>Segment Tree</sup>는 추가 공간 $\mathcal{O}(N)$을 사용하여 구간 최솟값을 $\mathcal{O}(\log N)$에 구하는 자료구조입니다.
-배열을 길이 $2^0$의 조각들로 분할하여 각 조각의 최솟값을 저장해 두고, $2^1$의 조각들로 분할하여 저장해 두고, …, $2^{\lfloor \log N \rfloor}$의 조각들로 분할하여 저장해 둡시다.
+배열을 길이 $2^0$의 조각들로 분할하여 각 조각의 최솟값을 저장해 두고, $2^1$의 조각들로 분할하여 저장해 두고, …, $2^{\lceil \log_2 N \rceil}$의 조각들로 분할하여 저장해 둡시다.
 모든 구간 $[l, r)$은 다음과 같이 최대 $2 \log_2 N$ 개의 구간으로 분할할 수 있습니다.
 
 $$
-a_0 \lt a_1 \lt \cdots \lt a_m \gt a_{m+1} \gt \cdots \gt a_k
+a_1 \lt a_2 \lt \cdots \lt a_m \gt a_{m+1} \gt \cdots \gt a_k
 $$
 
 $$
@@ -91,7 +91,7 @@ $$
 [l, r) = [l, l + 2^a) \cup [r - 2^a, r)
 $$
 
-모든 $i$와 $1$ 이상 $log_2 N$ 이하의 모든 $a$에 대해 구간 $[i, i + a)$에서의 최솟값을 저장해 둔다면 최소 공통 조상을 $\mathcal{O}(1)$ 시간에 구할 수 있습니다.
+모든 $i$와 $1$ 이상 $\lceil log_2 N\rceil$ 이하의 모든 $a$에 대해 구간 $[i, i + a)$에서의 최솟값을 저장해 둔다면 최소 공통 조상을 $\mathcal{O}(1)$ 시간에 구할 수 있습니다.
 단, 전처리 시간와 공간 모두 $\mathcal{O}(V \log V)$이고, 전처리 중 캐시 비적중에 의한 시간 손실이 다소 발생하는 편입니다.
 
 이러한 전처리 방식을 희소 배열<sup>Sparse Table</sup>이라고 부릅니다.
