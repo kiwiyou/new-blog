@@ -2,9 +2,16 @@ import { slugifyStr } from '@utils/slugify';
 import Datetime from './Datetime';
 import type { CollectionEntry } from 'astro:content';
 
+export type Frontmatter = {
+  title: string;
+  pubDatetime: string | Date;
+  modDatetime?: string | Date;
+  description: string;
+};
+
 export interface Props {
   href?: string;
-  frontmatter: CollectionEntry<'blog'>['data'];
+  frontmatter: Frontmatter;
   secHeading?: boolean;
 }
 

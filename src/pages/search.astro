@@ -5,18 +5,33 @@ import Layout from '@layouts/Layout.astro';
 import Main from '@layouts/Main.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
-import SearchBar from '@components/Search';
+import SearchBar, { type SearchItem } from '@components/Search';
 
 // Retrieve all articles
 const posts = await getCollection('blog', ({ data }) => !data.draft);
+const lyrics = await getCollection('lyrics');
 
 // List of items to search in
-const searchList = posts.map(({ data, slug }) => ({
-  title: data.title,
-  description: data.description,
-  data,
-  slug,
-}));
+const searchList = ([] as SearchItem[])
+  .concat(
+    posts.map(({ data, slug }) => ({
+      title: data.title,
+      description: data.description,
+      data,
+      href: `/posts/${slug}`,
+    })),
+  )
+  .concat(
+    lyrics.map(({ data, slug }) => ({
+      title: data.title,
+      description: '',
+      data: {
+        ...data,
+        description: '',
+      },
+      href: `/lyrics/${slug}`,
+    })),
+  );
 ---
 
 <Layout title={`검색 | ${SITE.title}`}>

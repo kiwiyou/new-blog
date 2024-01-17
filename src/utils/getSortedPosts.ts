@@ -1,6 +1,12 @@
-import type { CollectionEntry } from 'astro:content';
+interface DateSortable {
+  data: {
+    draft?: boolean;
+    modDatetime?: string | Date;
+    pubDatetime: string | Date;
+  };
+}
 
-const getSortedPosts = (posts: CollectionEntry<'blog'>[]) => {
+function getSortedPosts<T extends DateSortable>(posts: T[]) {
   return posts
     .filter(({ data }) => !data.draft)
     .sort(
@@ -12,6 +18,6 @@ const getSortedPosts = (posts: CollectionEntry<'blog'>[]) => {
           new Date(a.data.modDatetime ?? a.data.pubDatetime).getTime() / 1000,
         ),
     );
-};
+}
 
 export default getSortedPosts;
