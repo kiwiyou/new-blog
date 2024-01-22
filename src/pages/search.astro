@@ -27,7 +27,7 @@ const searchList = ([] as SearchItem[])
       description: data.author,
       data: {
         ...data,
-        description: '',
+        description: data.author,
       },
       href: `/lyrics/${slug}`,
     })),
