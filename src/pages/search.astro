@@ -24,7 +24,7 @@ const searchList = ([] as SearchItem[])
   .concat(
     lyrics.map(({ data, slug }) => ({
       title: data.title,
-      description: '',
+      description: data.author,
       data: {
         ...data,
         description: '',

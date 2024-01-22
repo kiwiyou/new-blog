@@ -30,11 +30,11 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
             >
               <h3 transition:name={slug}>{data.title}</h3>
             </a>
-            <h4>{data.author}</h4>
             <Datetime
               pubDatetime={data.pubDatetime}
               modDatetime={data.modDatetime}
             />
+            <p>{data.author}</p>
           </li>
         ))
       }
