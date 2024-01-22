@@ -40,6 +40,8 @@ const lyrics = defineCollection({
         .or(z.string())
         .optional(),
       comment: z.boolean().optional(),
+      youtube: z.string().optional(),
+      lang: z.string().array().optional(),
     }),
 });
 

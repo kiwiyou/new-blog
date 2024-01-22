@@ -2,56 +2,17 @@
 import { getCollection } from 'astro:content';
 import getSortedPosts from '@utils/getSortedPosts';
 import getPagination from '@utils/getPagination';
-import Layout from '@layouts/Layout.astro';
-import Main from '@layouts/Main.astro';
-import { SITE } from '@config';
-import Header from '@components/Header.astro';
-import Pagination from '@components/Pagination.astro';
-import Footer from '@components/Footer.astro';
-import Datetime from '@components/Datetime';
+import Lyrics from '@layouts/Lyrics.astro';
 
 const posts = await getCollection('lyrics');
 
 const sortedPosts = getSortedPosts(posts);
 
-const { paginatedPosts, currentPage, totalPages } = getPagination({
+const pagination = getPagination({
   posts: sortedPosts,
   page: 1,
   isIndex: true,
 });
 ---
 
-<Layout title={`가사 | ${SITE.title}`}>
-  <Header activeNav="lyrics" />
-  <Main pageTitle="가사" pageDesc="제가 번역한 가사들입니다.">
-    <ul>
-      {
-        paginatedPosts.map(({ data, slug }) => (
-          <li class="my-6">
-            <a
-              href={`/lyrics/${slug}`}
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-            >
-              <h3 transition:name={slug}>
-                {data.author} - {data.title}
-              </h3>
-            </a>
-            <Datetime
-              pubDatetime={data.pubDatetime}
-              modDatetime={data.modDatetime}
-            />
-          </li>
-        ))
-      }
-    </ul>
-  </Main>
-
-  <Pagination
-    {currentPage}
-    {totalPages}
-    prevUrl={`/posts${currentPage - 1 !== 1 ? '/' + (currentPage - 1) : ''}`}
-    nextUrl={`/posts/${currentPage + 1}`}
-  />
-
-  <Footer noMarginTop={totalPages > 1} />
-</Layout>
+<Lyrics {...pagination} />

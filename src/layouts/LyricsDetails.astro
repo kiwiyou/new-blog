@@ -1,0 +1,175 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import Datetime from '@components/Datetime';
+import TopButton from '@components/TopButton.astro';
+import type { CollectionEntry } from 'astro:content';
+import { slugifyStr } from '@utils/slugify';
+
+export interface Props {
+  post: CollectionEntry<'lyrics'>;
+}
+
+const { post } = Astro.props;
+
+const { title, author, pubDatetime, modDatetime, youtube, comment, lang } =
+  post.data;
+
+const { Content } = await post.render();
+
+const ogUrl = new URL(`/lyrics/${slugifyStr(title)}.png`, Astro.url.origin)
+  .href;
+
+const layoutProps = {
+  title,
+  author,
+  pubDatetime,
+  modDatetime,
+  ogImage: ogUrl,
+};
+---
+
+<Layout {...layoutProps}>
+  <Header />
+  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+    <button
+      class="focus-outline mb-2 mt-8 flex hover:opacity-75"
+      onclick="history.back()"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+        ><path
+          d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+        ></path>
+      </svg><span>뒤로 가기</span>
+    </button>
+  </div>
+  <main id="main-content">
+    <h1 transition:name={slugifyStr(title)} class="post-title">
+      {author} - {title}
+    </h1>
+    <Datetime
+      pubDatetime={pubDatetime}
+      modDatetime={modDatetime}
+      size="lg"
+      className="my-2"
+    />
+    <article
+      id="article"
+      role="article"
+      class="prose mx-auto mt-8 flex max-w-3xl flex-col items-center text-center"
+    >
+      <p><a href={youtube} target="_blank">youtube</a></p>
+      <div id="lyrics" class="flex flex-col gap-4 text-lg">
+        <Content />
+      </div>
+      {
+        lang && (
+          <div class="sticky bottom-0 flex select-none gap-1 rounded-t-md bg-[rgba(var(--color-fill))] px-2 text-lg">
+            {lang.includes('ja') && (
+              <div>
+                <input type="checkbox" id="ja" name="ja" checked />
+                <label for="ja" class="checked">
+                  あ
+                </label>
+              </div>
+            )}
+            {lang.includes('yomigana') && (
+              <div>
+                <input type="checkbox" id="yomigana" name="yomigana" checked />
+                <label for="yomigana" class="checked">
+                  読み
+                </label>
+              </div>
+            )}
+            {lang.includes('ko') && (
+              <div>
+                <input type="checkbox" id="ko" name="ko" checked />
+                <label for="ko" class="checked">
+                  가
+                </label>
+              </div>
+            )}
+          </div>
+        )
+      }
+    </article>
+    <div class="flex justify-end">
+      <TopButton />
+    </div>
+    {
+      comment && (
+        <script
+          src="https://giscus.kiwiyou.dev/client.js"
+          data-repo="kiwiyou/new-blog"
+          data-repo-id="R_kgDOGoQLHw"
+          data-category="댓글"
+          data-category-id="DIC_kwDOGoQLH84CcGYV"
+          data-mapping="og:title"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="dark"
+          data-lang="ko"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async
+        />
+      )
+    }
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    @apply mx-auto w-full max-w-3xl px-4 pb-12;
+  }
+  .post-title {
+    @apply text-balance break-keep text-2xl font-semibold text-skin-accent;
+  }
+  :global(ruby) {
+    ruby-align: center;
+  }
+  :global(rt) {
+    @apply text-xs;
+  }
+  input {
+    display: none;
+  }
+  :global(.checked) {
+    color: rgba(var(--color-accent));
+  }
+  label {
+    @apply cursor-pointer;
+  }
+  :global(.hide-ja) :global(.lang-ja) {
+    display: none;
+  }
+  :global(.hide-ko) :global(.lang-ko) {
+    display: none;
+  }
+  :global(.hide-yomigana) :global(rt:not(.show)) {
+    display: none;
+  }
+  :global(rp),
+  :global(rt) {
+    user-select: none;
+  }
+</style>
+
+<script is:inline>
+  const lyrics = document.getElementById('lyrics');
+  for (const input of document.querySelectorAll('input[type="checkbox"]')) {
+    input.addEventListener('change', () => {
+      if (input.checked) {
+        input.nextElementSibling.classList.add('checked');
+        lyrics.classList.remove(`hide-${input.id}`);
+      } else {
+        input.nextElementSibling.classList.remove('checked');
+        lyrics.classList.add(`hide-${input.id}`);
+      }
+    });
+  }
+</script>

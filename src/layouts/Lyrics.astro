@@ -1,0 +1,52 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+import Main from '@layouts/Main.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import Pagination from '@components/Pagination.astro';
+import { SITE } from '@config';
+import Datetime from '@components/Datetime';
+
+export interface Props {
+  currentPage: number;
+  totalPages: number;
+  paginatedPosts: CollectionEntry<'lyrics'>[];
+}
+
+const { currentPage, totalPages, paginatedPosts } = Astro.props;
+---
+
+<Layout title={`가사 | ${SITE.title}`}>
+  <Header activeNav="lyrics" />
+  <Main pageTitle="가사" pageDesc="제가 번역한 가사들입니다.">
+    <ul>
+      {
+        paginatedPosts.map(({ data, slug }) => (
+          <li class="my-6">
+            <a
+              href={`/lyrics/${slug}`}
+              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+            >
+              <h3 transition:name={slug}>{data.title}</h3>
+            </a>
+            <h4>{data.author}</h4>
+            <Datetime
+              pubDatetime={data.pubDatetime}
+              modDatetime={data.modDatetime}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </Main>
+
+  <Pagination
+    {currentPage}
+    {totalPages}
+    prevUrl={`/lyrics${currentPage - 1 !== 1 ? '/' + (currentPage - 1) : ''}`}
+    nextUrl={`/lyrics/${currentPage + 1}`}
+  />
+
+  <Footer noMarginTop={totalPages > 1} />
+</Layout>
