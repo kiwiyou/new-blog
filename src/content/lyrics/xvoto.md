@@ -10,6 +10,7 @@ lang:
   - yomigana
   - ko
 ---
+
 <div>
     <div class="lang-ja"><ruby>誰<rp>(</rp><rt>た</rt><rp>)</rp></ruby>が<ruby>為<rp>(</rp><rt>ため</rt><rp>)</rp></ruby>に<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>た<ruby>夢<rp>(</rp><rt>ゆめ</rt><rp>)</rp></ruby>か？</div>
     <div class="lang-ko">누구를 위해서 꾼 꿈인가?</div>

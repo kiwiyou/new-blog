@@ -10,6 +10,7 @@ lang:
   - yomigana
   - ko
 ---
+
 <div>
     <div class="lang-ja"><ruby>重力<rp>(</rp><rt>じゅうりょく</rt><rp>)</rp></ruby>に　<ruby>引<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>かれて</div>
     <div class="lang-ko">중력장에 이끌려서</div>

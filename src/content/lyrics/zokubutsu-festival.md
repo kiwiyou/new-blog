@@ -10,6 +10,7 @@ lang:
   - yomigana
   - ko
 ---
+
 <div>
     <div class="lang-ja"><ruby>俗物<rp>(</rp><rt>ぞくぶつ</rt><rp>)</rp></ruby>サマの　お<ruby>通<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>りだ！</div>
     <div class="lang-ko">속물님의 행차시다!</div>

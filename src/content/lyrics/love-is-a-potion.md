@@ -10,6 +10,7 @@ lang:
   - yomigana
   - ko
 ---
+
 <div>
     <div class="lang-ja">
         さっき、いっかいおわった　この<ruby>命<rp>(</rp><rt>いのち</rt><rp>)</rp></ruby>は</div>

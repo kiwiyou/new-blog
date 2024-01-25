@@ -69,7 +69,7 @@ typedef struct {
     Py_ssize_t ob_refcnt;
     PyTypeObject *ob_type;
     Py_ssize_t ob_size;
-    Py_ssize_t ob_alloc; 
+    Py_ssize_t ob_alloc;
     char *ob_bytes;
     char *ob_start;
     Py_ssize_t ob_exports;
