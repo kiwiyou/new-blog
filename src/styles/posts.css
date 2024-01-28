@@ -1,0 +1,19 @@
+pre[data-theme] {
+  word-break: keep-all;
+}
+
+[data-theme='light'] code span,
+[data-theme='light'] pre[data-theme] {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+[data-theme='dark'] code span,
+[data-theme='dark'] pre[data-theme] {
+  color: var(--shiki-dark);
+  background-color: var(--shiki-dark-bg);
+}
+
+figure[data-rehype-pretty-code-figure] {
+  margin: 0;
+}

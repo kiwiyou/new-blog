@@ -4,10 +4,10 @@ import react from '@astrojs/react';
 import remarkCollapse from 'remark-collapse';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import rehypePrettyCode from 'rehype-pretty-code';
 import sitemap from '@astrojs/sitemap';
 import { SITE } from './src/config';
 import mdx from '@astrojs/mdx';
-import codeblocks from '@thewebforge/astro-code-blocks';
 import gruvboxLight from './src/gruvbox-light-soft.json';
 import gruvboxDark from './src/gruvbox-dark-hard.json';
 
@@ -20,10 +20,6 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
-    codeblocks({
-      copyButtonTitle: '복사',
-      copyButtonTooltip: '코드가 클립보드에 복사되었습니다!',
-    }),
     mdx(),
   ],
   markdown: {
@@ -36,14 +32,19 @@ export default defineConfig({
       ],
       remarkMath,
     ],
-    rehypePlugins: [rehypeKatex],
-    shikiConfig: {
-      experimentalThemes: {
-        light: gruvboxLight as any,
-        dark: gruvboxDark as any,
-      },
-      wrap: false,
-    },
+    rehypePlugins: [
+      rehypeKatex,
+      [
+        rehypePrettyCode,
+        {
+          theme: {
+            dark: gruvboxDark,
+            light: gruvboxLight,
+          },
+        },
+      ],
+    ],
+    syntaxHighlight: false,
   },
   vite: {
     optimizeDeps: {

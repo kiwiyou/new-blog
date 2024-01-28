@@ -36,8 +36,7 @@ fn main() {
 }
 
 thread_local! {
-    static STDOUT: std::cell::RefCell<std::io::BufWriter<std::io::StdoutLock<'static>>> = std::cell::RefCell::new(
-std::io::BufWriter::with_capacity(1 << 17, std::io::stdout().lock()));
+    static STDOUT: std::cell::RefCell<std::io::BufWriter<std::io::StdoutLock<'static>>> = std::cell::RefCell::new(std::io::BufWriter::with_capacity(1 << 17, std::io::stdout().lock()));
 }
 
 #[macro_export]
