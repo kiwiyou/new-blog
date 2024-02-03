@@ -4,31 +4,24 @@ import { type CollectionEntry } from 'astro:content';
 import postOgImage from './og-templates/post';
 import lyricsOgImage from './og-templates/lyrics';
 import siteOgImage from './og-templates/site';
-import fs from 'fs/promises';
-import path from 'path';
-import notoSansRegularUrl from './og-templates/NotoSansCJKkr-Regular.otf';
-import notoSansBoldUrl from './og-templates/NotoSansCJKkr-Bold.otf';
 
 const fetchFonts = async () => {
   // Regular Font
-  const filePretendardRegular = await fetch(
+  const pretendardRegular = await fetch(
     'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff/Pretendard-Regular.woff',
-  );
-  const pretendardRegular: ArrayBuffer =
-    await filePretendardRegular.arrayBuffer();
+  ).then((r) => r.arrayBuffer());
 
   // Bold Font
-  const filePretendardBold = await fetch(
+  const pretendardBold = await fetch(
     'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard/dist/web/static/woff/Pretendard-Bold.woff',
-  );
-  const pretendardBold: ArrayBuffer = await filePretendardBold.arrayBuffer();
+  ).then((r) => r.arrayBuffer());
 
-  const notoSansRegular: ArrayBuffer = await fs
-    .readFile(new URL(path.join('../../', notoSansRegularUrl), import.meta.url))
-    .then((b) => b.buffer);
-  const notoSansBold: ArrayBuffer = await fs
-    .readFile(new URL(path.join('../../', notoSansBoldUrl), import.meta.url))
-    .then((b) => b.buffer);
+  const notoSansRegular: ArrayBuffer = await fetch(
+    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/Korean/NotoSansCJKkr-Regular.otf',
+  ).then((r) => r.arrayBuffer());
+  const notoSansBold: ArrayBuffer = await fetch(
+    'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/Korean/NotoSansCJKkr-Bold.otf',
+  ).then((r) => r.arrayBuffer());
 
   return {
     pretendardRegular,
