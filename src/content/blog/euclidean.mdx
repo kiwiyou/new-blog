@@ -1,0 +1,54 @@
+---
+author: kiwiyou
+pubDatetime: 2024-01-07T07:59:03.301Z
+modDatetime: 2024-01-10T07:20:11.428Z
+title: 유클리드 호제법 톺아보기
+slug: euclidean
+featured: true
+draft: true
+tags:
+  - 문제 해결
+description: 유클리드 호제법과 그 확장을 알아봅니다.
+comment: false
+math: true
+---
+
+import { Function, Scope, Line, Keyword } from '../../components/algorithm';
+
+$1$ 이상의 정수 $a$와 $b$의 최대공약수 $\gcd(a, b)$를 구하려고 합니다. 학교에서는 두 수를 소인수분해한 후 공통된 인수를 뽑아내지만, 큰 수의 경우 사람에게도, 컴퓨터에게도 소인수분해는 어려운 작업입니다.
+수학자 유클리드는 두 수의 약수를 명시적으로 구하지 않고 두 수의 최대공약수를 구하는 알고리즘을 발견했습니다.
+
+<Function>
+  <Line><Keyword>function</Keyword> gcd(a, b)</Line>
+  <Scope>
+    <Line><Keyword>while</Keyword> b &ne; 0</Line>
+    <Scope>
+      <Line>a, b := b, a - b</Line>
+    </Scope>
+    <Line><Keyword>return</Keyword> a</Line>
+  </Scope>
+</Function>
+
+$\gcd(a, b) = \gcd(a - b, b)$와 같고, 반복마다 수가 감소하므로 결국 식의 결과는 최소공약수로 귀결됩니다.
+위 알고리즘은 $\mathcal{O}(a/b)$ 시간이고, $b = 1$인 경우 수의 범위가 커지면 사용하기 힘듭니다.
+$a - b$의 결과가 음이 아닌 정수가 되도록 최대한 $b$를 뺀 결과는 $a \bmod b$이므로, $\gcd(a, b) = \gcd(a \bmod b, b)$와 같습니다.
+
+<Function>
+  <Line><Keyword>function</Keyword> gcd(a, b)</Line>
+  <Scope>
+    <Line><Keyword>while</Keyword> b &ne; 0</Line>
+    <Scope>
+      <Line>a, b := b, a <Keyword>mod</Keyword> b</Line>
+    </Scope>
+    <Line><Keyword>return</Keyword> a</Line>
+  </Scope>
+</Function>
+
+이 경우 한 번 반복에서 수가 반 이상 줄어드므로, 시간복잡도는 $\mathcal{O}(\log a)$가 됩니다.
+$\log a$는 수의 값이 아닌 수의 자릿수 즉, 크기와 관련된 변수이므로 이 알고리즘은 강하게 다항 시간인<sup>Strongly Polynomial</sup> 알고리즘입니다.
+유클리드 호제법<sup>互除法</sup>이라는 이름도 서로 나누는 모습에서 유래했습니다.
+
+한편, 유클리드 호제법의 식을 펼쳐 보겠습니다.
+$a \bmod b = r$일 때, $a = bq + r$이라고 표현할 수 있습니다.
+$\gcd(a, b)$를 구하기 위해 $a = bq + r$을 구하고, $\gcd(b, r)$을 구하기 위해 $b = rq' + r'$이 됩니다.
+$a = bq + r = (rq' + r')q + r$이 됩니다. 이를 반족하면 
