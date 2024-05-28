@@ -34,7 +34,7 @@ const { Content } = await post.render();
 const ogImageUrl = typeof ogImage === 'string' ? ogImage : ogImage?.src;
 const ogUrl = new URL(
   ogImageUrl ?? `/posts/${slugifyStr(title)}.png`,
-  Astro.url.origin,
+  Astro.url.origin
 ).href;
 
 const layoutProps = {
@@ -88,22 +88,21 @@ const layoutProps = {
     {
       comment && (
         <script
-          src="https://giscus.kiwiyou.dev/client.js"
+          src="https://giscus.app/client.js"
           data-repo="kiwiyou/new-blog"
           data-repo-id="R_kgDOGoQLHw"
           data-category="댓글"
           data-category-id="DIC_kwDOGoQLH84CcGYV"
           data-mapping="og:title"
-          data-strict="0"
+          data-strict="1"
           data-reactions-enabled="1"
           data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="dark"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
           data-lang="ko"
-          data-loading="lazy"
           crossorigin="anonymous"
           async
-        />
+        ></script>
       )
     }
   </main>
