@@ -32,16 +32,15 @@ function Reader() {
   const text = heap.subarray(0, len).toString('ascii');
   const io = new BytesIO({ Uint8Array }, {}, heap.buffer);
   io.init(len);
-  return {
-    token() {
-      const s = io.start();
-      const e = io.end();
-      return text.slice(s, e);
-    },
-    number() {
-      return this.token() | 0;
-    }
+  this.token = () => {
+    const s = io.start();
+    const e = io.end();
+    return text.slice(s, e);
+  };
+  this.number = () => {
+    return this.token() | 0;
   }
+  return this;
 }
 function BytesIO(stdlib, foreign, heap) {
   'use asm';
