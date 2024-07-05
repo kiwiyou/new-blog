@@ -31,18 +31,12 @@ io.print(b);
 ## 코드
 ```js
 function IO() {
-  const { Buffer } = require('node:buffer');
   const { readFileSync, writeSync } = require('node:fs');
   const stdin = readFileSync(0);
   const text = stdin.toString('ascii');
-  const buffer = Buffer.allocUnsafe(1 << 18);
+  let buffer = "";
   process.on('exit', () => this.flush());
-  let i = 0, off = 0;
-  const tryFlush = (k) => {
-    if (off + k > buffer.length) {
-      this.flush();
-    }
-  }
+  let i = 0;
   this.white = () => {
     while (stdin[i] <= 32) i++;
   };
@@ -56,18 +50,12 @@ function IO() {
     return this.token() | 0;
   };
   this.print = (v) => {
-    const s = v.toString();
-    tryFlush(s.length);
-    buffer.write(s, off, 'ascii');
-    off += s.length;
-  }
-  this.byte = (b) => {
-    tryFlush(1);
-    buffer[off++] = b;
+    buffer += v;
+    if (buffer.length > 1 << 19) this.flush();
   }
   this.flush = () => {
-    writeSync(1, buffer, 0, off);
-    off = 0;
+    writeSync(1, buffer, 'ascii');
+    buffer = "";
   }
   return this;
 }
