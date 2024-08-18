@@ -144,18 +144,10 @@ const layoutProps = {
   label {
     @apply cursor-pointer;
   }
-  :global(.hide-ja) :global(.lang-ja) {
-    display: none;
-  }
-  :global(.hide-ko) :global(.lang-ko) {
-    display: none;
-  }
+  :global(.hide-ja) :global(.lang-ja),
+  :global(.hide-ko) :global(.lang-ko),
   :global(.hide-yomigana) :global(rt:not(.show)) {
-    display: none;
-  }
-  :global(rp),
-  :global(rt) {
-    user-select: none;
+    visibility: collapse;
   }
 </style>
 
