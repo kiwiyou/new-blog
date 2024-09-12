@@ -1,6 +1,7 @@
 ---
 author: kiwiyou
 pubDatetime: 2024-01-25T03:08:15.595Z
+modDatetime: 2024-09-12T03:28:06.220Z
 title: Rust 빠른 입출력
 slug: rust-fastio
 featured: false
@@ -15,7 +16,35 @@ comment: true
 Rust로 문제 해결을 할 때 입출력은 항상 고민이 됩니다.
 `std::io::stdin()`을 매번 호출하면 락으로 인한 속도 저하가 발생하고,
 `StdinLock::read_line`을 매번 호출하기에는 입력이 줄로 구분되지 않고 공백으로 구분될 경우에 처리가 불편합니다.
-여기서는 제가 주로 쓰는 템플릿을 소개하고자 합니다.
+여기서는 두 가지 텡플릿을 소개합니다.
+예시 코드는 BOJ 15552 빠른 A+B입니다. 
+
+## 1. 짧은 템플릿
+
+```rust
+fn main() {
+    use std::fmt::Write;
+    let stdin = std::io::read_to_string(std::io::stdin()).unwrap();
+    let mut stdout = String::new();
+    let mut tokens = stdin.split_whitespace();
+    let mut next = || tokens.next().unwrap();
+    let t = next().parse().unwrap();
+    for _ in 0..t {
+        let a: i32 = next().parse().unwrap();
+        let b: i32 = next().parse().unwrap();
+        writeln!(stdout, "{}", a + b).unwrap();
+    }
+    print!("{stdout}");
+}
+```
+
+`tokens`는 받은 입력을 공백 및 개행 기준으로 나눈 반복자입니다. (`split_whitespace`)
+그리고 편의 클로저 `next`를 정의하는데, 이는 공백 및 개행으로 구분된 다음 문자열을 가져오는 역할을 합니다.
+문제 해결 분야에서 보통 값이 공백 혹은 개행으로 구분되어 주어지기 때문에 이런 형식을 채택했습니다.
+
+출력은 `stdout`에 모으고, 종료 시 `print!`를 해 줍니다.
+
+## 2. println!을 그대로 사용할 수 있는 템플릿
 
 ```rust
 fn solve(stdin: &str) {
@@ -60,9 +89,7 @@ macro_rules! print {
 ```
 
 우선 `main`을 살펴보면, 입력 전체를 받아 `solve` 함수에 넘겨주고 있습니다.
-`solve` 함수에서는 받은 입력을 공백 및 개행 기준으로 나눕니다. (`split_whitespace`)
-그리고 편의 클로저 `next`를 정의하는데, 이는 공백 및 개행으로 구분된 다음 문자열을 가져오는 역할을 합니다.
-문제 해결 분야에서 보통 값이 공백 혹은 개행으로 구분되어 주어지기 때문에 이런 형식을 채택했습니다.
+`solve` 부분은 1번과 같지만 `println!`을 사용하여 입출력이 가능합니다.
 `solve` 함수가 종료되면 `STDOUT`을 flush해 줍니다.
 
 아래의 매크로 부분은 `println` 및 `print`를 고속화하기 위한 장치입니다.
@@ -72,6 +99,6 @@ Thread Local 변수인 `STDOUT`에 표준 출력을 연결한 `BufWriter`를 배
 다음으로 `println`과 `print`가 `STDOUT`에 출력하도록 매크로를 재정의해줍니다.
 `LocalKey<RefCell>`에 `with_borrow_mut`이 존재하지만 많은 환경에서 지원하지 않아 풀어서 썼습니다.
 
-Rust로 문제 해결 시에 다양한 입출력 인터페이스를 구상하고 만들어 봤지만, 이 인터페이스가 가장 간단하고 쓰기 편한 것 같습니다.
+Rust로 문제 해결 시에 다양한 입출력 인터페이스를 구상하고 만들어 봤지만, 위 두 인터페이스가 가장 간단하고 쓰기 편한 것 같습니다.
 이 템플릿이 아무쪼록 편안한 문제 해결에 도움이 되길 바랍니다.
 읽어주셔서 감사합니다.
