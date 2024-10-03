@@ -3,7 +3,7 @@ author: kiwiyou
 pubDatetime: 2024-01-19T05:47:51.188Z
 title: CPython에서 임의 메모리 읽고 쓰기
 slug: unsafe-python
-featured: true
+featured: false
 draft: false
 tags:
   - Python
