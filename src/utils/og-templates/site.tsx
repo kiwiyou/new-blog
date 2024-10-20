@@ -1,4 +1,4 @@
-import { SITE } from '@config';
+import { SITE } from '@config'
 
 export default () => {
   return (
@@ -90,5 +90,5 @@ export default () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

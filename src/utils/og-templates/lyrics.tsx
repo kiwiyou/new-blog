@@ -1,4 +1,4 @@
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content'
 
 export default (post: CollectionEntry<'lyrics'>) => {
   return (
@@ -42,5 +42,5 @@ export default (post: CollectionEntry<'lyrics'>) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}

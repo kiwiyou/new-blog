@@ -1,10 +1,10 @@
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
-      return `rgba(var(${variableName}), ${opacityValue})`;
+      return `rgba(var(${variableName}), ${opacityValue})`
     }
-    return `rgb(var(${variableName}))`;
-  };
+    return `rgb(var(${variableName}))`
+  }
 }
 
 /** @type {import('tailwindcss').Config} */
@@ -96,4 +96,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/typography')],
-};
+}

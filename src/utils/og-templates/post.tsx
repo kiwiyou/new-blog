@@ -1,5 +1,5 @@
-import { SITE } from '@config';
-import type { CollectionEntry } from 'astro:content';
+import { SITE } from '@config'
+import type { CollectionEntry } from 'astro:content'
 
 export default (post: CollectionEntry<'blog'>) => {
   return (
@@ -94,5 +94,5 @@ export default (post: CollectionEntry<'blog'>) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

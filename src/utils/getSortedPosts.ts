@@ -1,9 +1,9 @@
 interface DateSortable {
   data: {
-    draft?: boolean;
-    modDatetime?: string | Date;
-    pubDatetime: string | Date;
-  };
+    draft?: boolean
+    modDatetime?: string | Date
+    pubDatetime: string | Date
+  }
 }
 
 function getSortedPosts<T extends DateSortable>(posts: T[]) {
@@ -17,7 +17,7 @@ function getSortedPosts<T extends DateSortable>(posts: T[]) {
         Math.floor(
           new Date(a.data.modDatetime ?? a.data.pubDatetime).getTime() / 1000,
         ),
-    );
+    )
 }
 
-export default getSortedPosts;
+export default getSortedPosts

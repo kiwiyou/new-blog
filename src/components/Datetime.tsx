@@ -1,13 +1,13 @@
-import { LOCALE } from '@config';
+import { LOCALE } from '@config'
 
 interface DatetimesProps {
-  pubDatetime: string | Date;
-  modDatetime: string | Date | undefined;
+  pubDatetime: string | Date
+  modDatetime: string | Date | undefined
 }
 
 interface Props extends DatetimesProps {
-  size?: 'sm' | 'lg';
-  className?: string;
+  size?: 'sm' | 'lg'
+  className?: string
 }
 
 export default function Datetime({
@@ -42,21 +42,21 @@ export default function Datetime({
         />
       </span>
     </div>
-  );
+  )
 }
 
 const FormattedDatetime = ({ pubDatetime, modDatetime }: DatetimesProps) => {
-  const myDatetime = new Date(modDatetime ? modDatetime : pubDatetime);
+  const myDatetime = new Date(modDatetime ? modDatetime : pubDatetime)
 
   const date = myDatetime.toLocaleDateString(LOCALE.langTag, {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-  });
+  })
 
   return (
     <>
       <time dateTime={myDatetime.toISOString()}>{date}</time>
     </>
-  );
-};
+  )
+}

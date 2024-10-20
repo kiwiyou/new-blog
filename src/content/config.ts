@@ -1,5 +1,5 @@
-import { SITE } from '@config';
-import { defineCollection, z } from 'astro:content';
+import { SITE } from '@config'
+import { defineCollection, z } from 'astro:content'
 
 const blog = defineCollection({
   type: 'content',
@@ -23,7 +23,7 @@ const blog = defineCollection({
       comment: z.boolean().optional(),
       math: z.boolean().optional(),
     }),
-});
+})
 
 const lyrics = defineCollection({
   type: 'content',
@@ -43,6 +43,6 @@ const lyrics = defineCollection({
       youtube: z.string().optional(),
       lang: z.string().array().optional(),
     }),
-});
+})
 
-export const collections = { blog, lyrics };
+export const collections = { blog, lyrics }

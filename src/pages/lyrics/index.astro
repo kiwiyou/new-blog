@@ -1,18 +1,18 @@
 ---
-import { getCollection } from 'astro:content';
-import getSortedPosts from '@utils/getSortedPosts';
-import getPagination from '@utils/getPagination';
-import Lyrics from '@layouts/Lyrics.astro';
+import { getCollection } from 'astro:content'
+import getSortedPosts from '@utils/getSortedPosts'
+import getPagination from '@utils/getPagination'
+import Lyrics from '@layouts/Lyrics.astro'
 
-const posts = await getCollection('lyrics');
+const posts = await getCollection('lyrics')
 
-const sortedPosts = getSortedPosts(posts);
+const sortedPosts = getSortedPosts(posts)
 
 const pagination = getPagination({
   posts: sortedPosts,
   page: 1,
   isIndex: true,
-});
+})
 ---
 
 <Lyrics {...pagination} />

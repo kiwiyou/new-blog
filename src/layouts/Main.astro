@@ -1,20 +1,20 @@
 ---
-import Breadcrumbs from '@components/Breadcrumbs.astro';
+import Breadcrumbs from '@components/Breadcrumbs.astro'
 
 interface StringTitleProp {
-  pageTitle: string;
-  pageDesc?: string;
+  pageTitle: string
+  pageDesc?: string
 }
 
 interface ArrayTitleProp {
-  pageTitle: [string, string];
-  titleTransition: string;
-  pageDesc?: string;
+  pageTitle: [string, string]
+  titleTransition: string
+  pageDesc?: string
 }
 
-export type Props = StringTitleProp | ArrayTitleProp;
+export type Props = StringTitleProp | ArrayTitleProp
 
-const { props } = Astro;
+const { props } = Astro
 ---
 
 <Breadcrumbs />

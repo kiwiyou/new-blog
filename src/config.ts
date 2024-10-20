@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from './types';
+import type { Site, SocialObjects } from './types'
 
 export const SITE: Site = {
   website: 'https://blog.kiwiyou.dev/', // replace this with your deployed domain
@@ -8,19 +8,19 @@ export const SITE: Site = {
   // ogImage: 'opengraph.png',
   lightAndDarkMode: true,
   postPerPage: 5,
-};
+}
 
 export const LOCALE = {
   lang: 'ko', // html lang code. Set this empty and default will be "en"
   langTag: ['ko-KR'], // BCP 47 Language Tags. Set this empty [] to use the environment default
-} as const;
+} as const
 
 export const LOGO_IMAGE = {
   enable: false,
   height: 0,
   width: 0,
   svg: null,
-};
+}
 
 export const SOCIALS: SocialObjects = [
   {
@@ -37,7 +37,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: 'Twitter',
-    href: 'https://twitter.com/giwiyou',
+    href: 'https://x.com/giwiyou',
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
   },
@@ -53,4 +53,4 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Telegram`,
     active: true,
   },
-];
+]

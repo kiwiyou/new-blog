@@ -1,17 +1,17 @@
 ---
-import LinkButton from './LinkButton.astro';
+import LinkButton from './LinkButton.astro'
 
 export interface Props {
-  currentPage: number;
-  totalPages: number;
-  prevUrl: string;
-  nextUrl: string;
+  currentPage: number
+  totalPages: number
+  prevUrl: string
+  nextUrl: string
 }
 
-const { currentPage, totalPages, prevUrl, nextUrl } = Astro.props;
+const { currentPage, totalPages, prevUrl, nextUrl } = Astro.props
 
-const prev = currentPage > 1 ? '' : 'disabled';
-const next = currentPage < totalPages ? '' : 'disabled';
+const prev = currentPage > 1 ? '' : 'disabled'
+const next = currentPage < totalPages ? '' : 'disabled'
 ---
 
 {

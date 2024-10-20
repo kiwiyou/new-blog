@@ -1,5 +1,8 @@
 {
   "singleQuote": true,
-  "semi": true,
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"]
+  "semi": false,
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "useTabs": false
 }

@@ -1,25 +1,24 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import Header from '@components/Header.astro';
-import Footer from '@components/Footer.astro';
-import Datetime from '@components/Datetime';
-import TopButton from '@components/TopButton.astro';
-import type { CollectionEntry } from 'astro:content';
-import { slugifyStr } from '@utils/slugify';
+import Layout from '@layouts/Layout.astro'
+import Header from '@components/Header.astro'
+import Footer from '@components/Footer.astro'
+import Datetime from '@components/Datetime'
+import TopButton from '@components/TopButton.astro'
+import type { CollectionEntry } from 'astro:content'
+import { slugifyStr } from '@utils/slugify'
 
 export interface Props {
-  post: CollectionEntry<'lyrics'>;
+  post: CollectionEntry<'lyrics'>
 }
 
-const { post } = Astro.props;
+const { post } = Astro.props
 
 const { title, author, pubDatetime, modDatetime, youtube, comment, lang } =
-  post.data;
+  post.data
 
-const { Content } = await post.render();
+const { Content } = await post.render()
 
-const ogUrl = new URL(`/lyrics/${slugifyStr(title)}.png`, Astro.url.origin)
-  .href;
+const ogUrl = new URL(`/lyrics/${slugifyStr(title)}.png`, Astro.url.origin).href
 
 const layoutProps = {
   title,
@@ -27,7 +26,7 @@ const layoutProps = {
   pubDatetime,
   modDatetime,
   ogImage: ogUrl,
-};
+}
 ---
 
 <Layout {...layoutProps}>
@@ -153,16 +152,16 @@ const layoutProps = {
 </style>
 
 <script is:inline>
-  const lyrics = document.getElementById('lyrics');
+  const lyrics = document.getElementById('lyrics')
   for (const input of document.querySelectorAll('input[type="checkbox"]')) {
     input.addEventListener('change', () => {
       if (input.checked) {
-        input.nextElementSibling.classList.add('checked');
-        lyrics.classList.remove(`hide-${input.id}`);
+        input.nextElementSibling.classList.add('checked')
+        lyrics.classList.remove(`hide-${input.id}`)
       } else {
-        input.nextElementSibling.classList.remove('checked');
-        lyrics.classList.add(`hide-${input.id}`);
+        input.nextElementSibling.classList.remove('checked')
+        lyrics.classList.add(`hide-${input.id}`)
       }
-    });
+    })
   }
 </script>

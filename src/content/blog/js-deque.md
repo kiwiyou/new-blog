@@ -20,62 +20,54 @@ JS는 내장 큐/덱이 없습니다. 대부분은 라이브러리를 사용하�
 설명은 코드 아래를 참고해 주세요.
 
 Here is the code:
+
 ```js
 class Deque {
   constructor() {
-    this.buf = [,];
-    this.front = 0;
-    this.back = 0;
+    this.buf = [,]
+    this.front = 0
+    this.back = 0
   }
   length() {
-    const len = this.back - this.front;
-    return len < 0 ? len + this.buf.length : len;
+    const len = this.back - this.front
+    return len < 0 ? len + this.buf.length : len
   }
   isEmpty() {
-    return this.front === this.back;
+    return this.front === this.back
   }
   double() {
-    const length = this.buf.length << 1;
+    const length = this.buf.length << 1
     if (this.back < this.front) {
-      const buf = this.buf.slice(this.front);
-      for (let i = 0; i < this.back; ++i)
-        buf.push(this.buf[i]);
-      this.buf = buf;
+      const buf = this.buf.slice(this.front)
+      for (let i = 0; i < this.back; ++i) buf.push(this.buf[i])
+      this.buf = buf
     }
-    this.buf.length = length;
-    this.front = 0;
-    this.back = (length >> 1) - 1;
+    this.buf.length = length
+    this.front = 0
+    this.back = (length >> 1) - 1
   }
   push(v) {
-    let back = this.back + 1;
-    if (back === this.buf.length)
-      back = 0;
-    if (back === this.front)
-      this.double();
-    this.buf[this.back++] = v;
-    if (this.back === this.buf.length)
-      this.back = 0;
+    let back = this.back + 1
+    if (back === this.buf.length) back = 0
+    if (back === this.front) this.double()
+    this.buf[this.back++] = v
+    if (this.back === this.buf.length) this.back = 0
   }
   pop() {
-    if (--this.back < 0)
-      this.back += this.buf.length;
-    return this.buf[this.back];
+    if (--this.back < 0) this.back += this.buf.length
+    return this.buf[this.back]
   }
   shift() {
-    const v = this.buf[this.front++];
-    if (this.front === this.buf.length)
-      this.front = 0;
-    return v;
+    const v = this.buf[this.front++]
+    if (this.front === this.buf.length) this.front = 0
+    return v
   }
   unshift(v) {
-    let front = this.front - 1;
-    if (front < 0)
-      front += this.buf.length;
-    if (front === this.back)
-      this.double();
-    if (--this.front < 0)
-      this.front += this.buf.length;
-    this.buf[this.front] = v;
+    let front = this.front - 1
+    if (front < 0) front += this.buf.length
+    if (front === this.back) this.double()
+    if (--this.front < 0) this.front += this.buf.length
+    this.buf[this.front] = v
   }
 }
 ```
