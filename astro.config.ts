@@ -1,15 +1,15 @@
-import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
+import mdx from '@astrojs/mdx'
 import react from '@astrojs/react'
-import remarkCollapse from 'remark-collapse'
-import remarkMath from 'remark-math'
+import sitemap from '@astrojs/sitemap'
+import tailwind from '@astrojs/tailwind'
+import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import rehypePrettyCode from 'rehype-pretty-code'
-import sitemap from '@astrojs/sitemap'
+import remarkCollapse from 'remark-collapse'
+import remarkMath from 'remark-math'
 import { SITE } from './src/config'
-import mdx from '@astrojs/mdx'
-import gruvboxLight from './src/gruvbox-light-soft.json'
 import gruvboxDark from './src/gruvbox-dark-hard.json'
+import gruvboxLight from './src/gruvbox-light-soft.json'
 
 // https://astro.build/config
 export default defineConfig({
