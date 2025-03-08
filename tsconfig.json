@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "paths": {
       "@assets/*": ["assets/*"],
       "@config": ["config.ts"],

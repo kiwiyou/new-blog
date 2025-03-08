@@ -148,5 +148,5 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>に<ruby>残<rp>(</rp><rt>のこ</rt><rp>)</rp></ruby>したいものだと<ruby>心<rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>に<ruby>誓<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>って<ruby>生<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きてくんだ</div>
-    <div class="lang-ko">내일에 남겨두고 싶디고 마음에 맹세하고 살아가는 거야</div>
+    <div class="lang-ko">내일에 남겨두고 싶다고 마음에 맹세하고 살아가는 거야</div>
 </div>

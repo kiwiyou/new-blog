@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/otf/NotoSansJP-VF.otf') format('opentype-variations');
+}
+
+@font-face {
   font-family: 'Monaspace Neon Variable';
   font-weight: 200 800;
   font-style: normal;

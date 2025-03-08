@@ -1,8 +1,8 @@
 ---
 import { LOCALE, SITE } from '@config'
-import '@styles/base.css'
 import '@styles/font.css'
-import { ViewTransitions } from 'astro:transitions'
+import '@styles/base.css'
+import { ClientRouter } from 'astro:transitions'
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION
 
@@ -28,7 +28,7 @@ const {
 
 const socialImageURL = new URL(
   ogImage ?? SITE.ogImage ?? 'og.png',
-  Astro.url.origin
+  Astro.url.origin,
 ).href
 ---
 
@@ -93,7 +93,7 @@ const socialImageURL = new URL(
       )
     }
 
-    <ViewTransitions />
+    <ClientRouter />
 
     <script src="./toggle-theme.js"></script>
   </head>

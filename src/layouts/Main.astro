@@ -36,6 +36,8 @@ const { props } = Astro
 </main>
 
 <style>
+  @reference "../styles/base.css";
+
   #main-content {
     @apply mx-auto w-full max-w-3xl px-4 pb-4;
   }
@@ -43,6 +45,6 @@ const { props } = Astro
     @apply text-2xl font-semibold sm:text-3xl;
   }
   #main-content p {
-    @apply mb-6 mt-2 italic;
+    @apply mt-2 mb-6 italic;
   }
 </style>

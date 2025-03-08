@@ -30,7 +30,7 @@ const { activeNav } = Astro.props
       </a>
       <nav id="nav-menu">
         <button
-          class="hamburger-menu focus-outline"
+          class="hamburger-menu"
           aria-label="Open Menu"
           aria-expanded="false"
           aria-controls="menu-items"
@@ -54,7 +54,7 @@ const { activeNav } = Astro.props
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="display-none sm:flex">
+        <ul id="menu-items" class="display-none">
           <li>
             <a href="/posts" class={activeNav === 'posts' ? 'active' : ''}>
               글 목록
@@ -98,7 +98,6 @@ const { activeNav } = Astro.props
               SITE.lightAndDarkMode && (
                 <button
                   id="theme-btn"
-                  class="focus-outline"
                   title="밝은 화면 및 어두운 화면 전환"
                   aria-label="auto"
                   aria-live="polite"
@@ -121,8 +120,10 @@ const { activeNav } = Astro.props
 </header>
 
 <style>
+  @reference "../styles/base.css";
+
   #skip-to-content {
-    @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
+    @apply absolute -top-full left-16 z-50 bg-[var(--color-accent)] px-3 py-2 text-[var(--color-fill)] transition-all focus:top-4;
   }
   .nav-container {
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
@@ -134,23 +135,23 @@ const { activeNav } = Astro.props
     @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
   }
   .hamburger-menu {
-    @apply self-end p-2 sm:hidden;
+    @apply focus-outline self-end p-2 sm:hidden;
   }
   .hamburger-menu svg {
-    @apply h-6 w-6 scale-125 fill-skin-base;
+    @apply h-6 w-6 scale-125 fill-[var(--color-text-base)];
   }
 
   nav {
-    @apply flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+    @apply flex w-full flex-col items-center sm:ml-2 sm:flex sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav ul {
-    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0;
+    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:mt-0 sm:ml-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
   }
   nav ul li a {
-    @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1;
+    @apply w-full px-4 py-3 text-center font-medium hover:text-[var(--color-accent)] sm:my-0 sm:px-2 sm:py-1;
   }
   nav ul li:nth-last-child(2) a {
     @apply w-auto;
@@ -163,14 +164,14 @@ const { activeNav } = Astro.props
     @apply underline decoration-wavy decoration-2 underline-offset-4;
   }
   nav a.active svg {
-    @apply fill-skin-accent;
+    @apply fill-[var(--color-accent)];
   }
 
   nav button {
     @apply p-1;
   }
   nav button svg {
-    @apply h-6 w-6 fill-skin-base hover:fill-skin-accent;
+    @apply h-6 w-6 fill-[var(--color-text-base)] hover:fill-[var(--color-accent)];
   }
   #theme-btn {
     @apply p-3 sm:p-1;

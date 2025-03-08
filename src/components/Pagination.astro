@@ -45,13 +45,15 @@ const next = currentPage < totalPages ? '' : 'disabled'
 }
 
 <style>
+  @reference "../styles/base.css";
+
   .pagination-wrapper {
-    @apply mb-8 mt-auto flex justify-center;
+    @apply mt-auto mb-8 flex justify-center;
   }
   .disabled {
-    @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;
+    @apply pointer-events-none opacity-50 select-none group-hover:fill-[var(--color-text-base)] hover:text-[var(--color-text-base)];
   }
   .disabled-svg {
-    @apply group-hover:!fill-skin-base;
+    @apply group-hover:!fill-[var(--color-text-base)];
   }
 </style>

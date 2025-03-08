@@ -26,7 +26,7 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props
           <li class="my-6">
             <a
               href={`/lyrics/${slug}`}
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+              class="inline-block text-lg font-medium text-[var(--color-accent)] decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
             >
               <h3 transition:name={slug}>{data.title}</h3>
             </a>

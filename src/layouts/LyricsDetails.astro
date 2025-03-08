@@ -33,7 +33,7 @@ const layoutProps = {
   <Header />
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
-      class="focus-outline mb-2 mt-8 flex hover:opacity-75"
+      class="focus-outline mt-8 mb-2 flex hover:opacity-75"
       onclick="history.back()"
     >
       <svg xmlns="http://www.w3.org/2000/svg"
@@ -59,12 +59,15 @@ const layoutProps = {
       class="prose mx-auto mt-8 flex max-w-3xl flex-col items-center text-center"
     >
       <p><a href={youtube} target="_blank">youtube</a></p>
-      <div id="lyrics" class="flex flex-col gap-4 text-lg">
+      <div
+        id="lyrics"
+        class="flex flex-col gap-4 text-lg text-[var(--color-text-base)]"
+      >
         <Content />
       </div>
       {
         lang && (
-          <div class="sticky bottom-0 flex select-none gap-1 rounded-t-md bg-[rgba(var(--color-fill))] px-2 text-lg">
+          <div class="sticky bottom-0 flex gap-1 rounded-t-md bg-[var(--color-fill)] px-2 text-2xl select-none">
             {lang.includes('ja') && (
               <div>
                 <input type="checkbox" id="ja" name="ja" checked />
@@ -123,11 +126,13 @@ const layoutProps = {
 </Layout>
 
 <style>
+  @reference "../styles/base.css";
+
   main {
     @apply mx-auto w-full max-w-3xl px-4 pb-12;
   }
   .post-title {
-    @apply text-balance break-keep text-2xl font-semibold text-skin-accent;
+    @apply text-2xl font-semibold text-balance break-keep text-[var(--color-accent)];
   }
   :global(ruby) {
     ruby-align: center;
@@ -139,10 +144,13 @@ const layoutProps = {
     display: none;
   }
   :global(.checked) {
-    color: rgba(var(--color-accent));
+    color: var(--color-accent);
   }
   label {
     @apply cursor-pointer;
+  }
+  :global(.lang-ja) {
+    @apply font-sans-jp;
   }
   :global(.hide-ja) :global(.lang-ja),
   :global(.hide-ko) :global(.lang-ko),
@@ -152,16 +160,18 @@ const layoutProps = {
 </style>
 
 <script is:inline>
-  const lyrics = document.getElementById('lyrics')
-  for (const input of document.querySelectorAll('input[type="checkbox"]')) {
-    input.addEventListener('change', () => {
-      if (input.checked) {
-        input.nextElementSibling.classList.add('checked')
-        lyrics.classList.remove(`hide-${input.id}`)
-      } else {
-        input.nextElementSibling.classList.remove('checked')
-        lyrics.classList.add(`hide-${input.id}`)
-      }
-    })
-  }
+  document.addEventListener('astro:page-load', () => {
+    const lyrics = document.getElementById('lyrics')
+    for (const input of document.querySelectorAll('input[type="checkbox"]')) {
+      input.addEventListener('change', () => {
+        if (input.checked) {
+          input.nextElementSibling.classList.add('checked')
+          lyrics.classList.remove(`hide-${input.id}`)
+        } else {
+          input.nextElementSibling.classList.remove('checked')
+          lyrics.classList.add(`hide-${input.id}`)
+        }
+      })
+    }
+  })
 </script>

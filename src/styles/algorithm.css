@@ -1,19 +1,23 @@
-.comment {
-  @apply font-sans italic opacity-50;
-}
+@reference "./base.css";
 
-.function {
-  @apply my-8 overflow-x-scroll whitespace-nowrap text-left font-mono text-sm;
-}
+@layer base {
+  .comment {
+    @apply font-sans italic opacity-50;
+  }
 
-.function p {
-  @apply m-0 inline;
-}
+  .function {
+    @apply my-8 overflow-x-scroll text-left font-mono text-sm whitespace-nowrap;
+  }
 
-.keyword {
-  @apply font-bold;
-}
+  .function p {
+    @apply m-0 inline;
+  }
 
-.scope {
-  @apply m-0 list-none;
+  .keyword {
+    @apply font-bold;
+  }
+
+  .scope {
+    @apply m-0 list-none;
+  }
 }
