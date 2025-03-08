@@ -1,5 +1,5 @@
 ---
-title: けだもの ft. 裏命
+title: けだもの (ft. 裏命)
 draft: true
 author: 霄
 pubDatetime: 2024-10-21T13:26:48.153Z

@@ -6,6 +6,7 @@ import Datetime from '@components/Datetime'
 import TopButton from '@components/TopButton.astro'
 import type { CollectionEntry } from 'astro:content'
 import { slugifyStr } from '@utils/slugify'
+import { SITE } from '@config'
 
 export interface Props {
   post: CollectionEntry<'lyrics'>
@@ -21,7 +22,7 @@ const { Content } = await post.render()
 const ogUrl = new URL(`/lyrics/${slugifyStr(title)}.png`, Astro.url.origin).href
 
 const layoutProps = {
-  title,
+  title: `${author} - ${title} | ${SITE.title}`,
   author,
   pubDatetime,
   modDatetime,
