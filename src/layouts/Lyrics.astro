@@ -6,7 +6,7 @@ import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import Pagination from '@components/Pagination.astro'
 import { SITE } from '@config'
-import Datetime from '@components/Datetime'
+import Card from '@components/Card.astro'
 
 export interface Props {
   currentPage: number
@@ -18,24 +18,15 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props
 ---
 
 <Layout title={`가사 | ${SITE.title}`}>
-  <Header activeNav="lyrics" />
+  <Header activeNav="lyrics" transition:persist />
   <Main pageTitle="가사" pageDesc="제가 번역한 가사들입니다.">
     <ul>
       {
         paginatedPosts.map(({ data, slug }) => (
-          <li class="my-6">
-            <a
-              href={`/lyrics/${slug}`}
-              class="inline-block text-lg font-medium text-[var(--color-accent)] decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
-            >
-              <h3 transition:name={slug}>{data.title}</h3>
-            </a>
-            <Datetime
-              pubDatetime={data.pubDatetime}
-              modDatetime={data.modDatetime}
-            />
-            <p>{data.author}</p>
-          </li>
+          <Card
+            href={`/lyrics/${slug}`}
+            frontmatter={{ ...data, description: data.author }}
+          />
         ))
       }
     </ul>

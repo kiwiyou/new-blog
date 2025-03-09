@@ -34,6 +34,7 @@ const { activeNav } = Astro.props
           aria-label="Open Menu"
           aria-expanded="false"
           aria-controls="menu-items"
+          transition:persist
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +55,7 @@ const { activeNav } = Astro.props
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="display-none">
+        <ul id="menu-items" class="hidden sm:flex">
           <li>
             <a href="/posts" class={activeNav === 'posts' ? 'active' : ''}>
               글 목록
@@ -122,81 +123,171 @@ const { activeNav } = Astro.props
 <style>
   @reference "../styles/base.css";
 
-  #skip-to-content {
-    @apply absolute -top-full left-16 z-50 bg-[var(--color-accent)] px-3 py-2 text-[var(--color-fill)] transition-all focus:top-4;
-  }
-  .nav-container {
-    @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
-  }
-  .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
-  }
-  .logo {
-    @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
-  }
-  .hamburger-menu {
-    @apply focus-outline self-end p-2 sm:hidden;
-  }
-  .hamburger-menu svg {
-    @apply h-6 w-6 scale-125 fill-[var(--color-text-base)];
-  }
+  @layer base {
+    #skip-to-content {
+      @apply absolute -top-full left-16 z-50 bg-[var(--color-accent)] px-3 py-2 text-[var(--color-fill)] transition-all focus:top-4;
+    }
+    .nav-container {
+      @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
+    }
+    .top-nav-wrap {
+      @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
+    }
+    .logo {
+      @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    }
+    .hamburger-menu {
+      @apply focus-outline self-end p-2 sm:hidden;
+    }
+    .hamburger-menu svg {
+      @apply h-6 w-6 scale-125 fill-[var(--color-text-base)];
+    }
 
-  nav {
-    @apply flex w-full flex-col items-center sm:ml-2 sm:flex sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
-  }
-  nav ul {
-    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:mt-0 sm:ml-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0;
-  }
-  nav ul li {
-    @apply col-span-2 flex items-center justify-center;
-  }
-  nav ul li a {
-    @apply w-full px-4 py-3 text-center font-medium hover:text-[var(--color-accent)] sm:my-0 sm:px-2 sm:py-1;
-  }
-  nav ul li:nth-last-child(2) a {
-    @apply w-auto;
-  }
-  nav ul li:nth-last-child(1),
-  nav ul li:nth-last-child(2) {
-    @apply col-span-1;
-  }
-  nav a.active {
-    @apply underline decoration-wavy decoration-2 underline-offset-4;
-  }
-  nav a.active svg {
-    @apply fill-[var(--color-accent)];
-  }
+    nav {
+      @apply flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+    }
+    nav ul {
+      @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:mt-0 sm:ml-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0;
+    }
+    nav ul li {
+      @apply col-span-2 flex items-center justify-center;
+    }
+    nav ul li a {
+      @apply w-full px-4 py-3 text-center font-medium hover:text-[var(--color-accent)] sm:my-0 sm:px-2 sm:py-1;
+    }
+    nav ul li:nth-last-child(2) a {
+      @apply w-auto;
+    }
+    nav ul li:nth-last-child(1),
+    nav ul li:nth-last-child(2) {
+      @apply col-span-1;
+    }
+    nav a.active {
+      @apply underline decoration-wavy decoration-2 underline-offset-4;
+    }
+    nav a.active svg {
+      @apply fill-[var(--color-accent)];
+    }
 
-  nav button {
-    @apply p-1;
-  }
-  nav button svg {
-    @apply h-6 w-6 fill-[var(--color-text-base)] hover:fill-[var(--color-accent)];
-  }
-  #theme-btn {
-    @apply p-3 sm:p-1;
-  }
-  #theme-btn svg {
-    @apply scale-125 hover:rotate-12 sm:scale-100;
-  }
+    nav button {
+      @apply p-1;
+    }
+    nav button svg {
+      @apply h-6 w-6 fill-[var(--color-text-base)] hover:fill-[var(--color-accent)];
+    }
+    #theme-btn {
+      @apply p-3 sm:p-1;
+    }
+    #theme-btn svg {
+      @apply scale-125 hover:rotate-12 sm:scale-100;
+    }
 
-  .menu-icon line {
-    @apply transition-opacity duration-75 ease-in-out;
-  }
-  .menu-icon .close {
-    opacity: 0;
-  }
-  .menu-icon.is-active .line {
-    @apply opacity-0;
-  }
-  .menu-icon.is-active .close {
-    @apply opacity-100;
+    .menu-icon line {
+      @apply transition-opacity duration-75 ease-in-out;
+    }
+    .menu-icon .close {
+      opacity: 0;
+    }
+    .menu-icon.is-active .line {
+      @apply opacity-0;
+    }
+    .menu-icon.is-active .close {
+      @apply opacity-100;
+    }
   }
 </style>
 
-<script>
+<script is:inline>
+  const primaryColorScheme = 'dark' // "light" | "dark"
+
+  // Get theme data from local storage
+  const currentTheme = localStorage.getItem('theme')
+
+  let themeValue = getPreferTheme()
+
+  // set early so no page flashes / CSS is made aware
+  reflectPreference()
+  setThemeFeature()
+  document.addEventListener('astro:after-swap', setThemeFeature)
+
+  // sync with system changes
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', ({ matches: isDark }) => {
+      themeValue = isDark ? 'dark' : 'light'
+      setPreference()
+    })
+
+  function getPreferTheme() {
+    // return theme value in local storage if it is set
+    if (currentTheme) return currentTheme
+
+    // return primary color scheme if it is set
+    if (primaryColorScheme) return primaryColorScheme
+
+    // return user device's prefer color scheme
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light'
+  }
+
+  function setPreference() {
+    localStorage.setItem('theme', themeValue)
+    reflectPreference()
+  }
+
+  function reflectPreference() {
+    document.firstElementChild.setAttribute('data-theme', themeValue)
+
+    document.querySelector('#theme-btn')?.setAttribute('aria-label', themeValue)
+
+    // Get a reference to the body element
+    const body = document.body
+
+    // Check if the body element exists before using getComputedStyle
+    if (body) {
+      // Get the computed styles for the body element
+      const computedStyles = window.getComputedStyle(body)
+
+      // Get the background color property
+      const bgColor = computedStyles.backgroundColor
+
+      // Set the background color in <meta theme-color ... />
+      document
+        .querySelector("meta[name='theme-color']")
+        ?.setAttribute('content', bgColor)
+    }
+
+    changeGiscusTheme()
+  }
+
+  function changeGiscusTheme() {
+    const iframe = document.querySelector('iframe.giscus-frame')
+    if (!iframe) return
+    iframe.contentWindow.postMessage(
+      {
+        giscus: {
+          setConfig: {
+            theme: themeValue,
+          },
+        },
+      },
+      'https://giscus.kiwiyou.dev',
+    )
+  }
+
+  function setThemeFeature() {
+    // set on load so screen readers can get the latest value on the button
+    reflectPreference()
+
+    // now this script can find and listen for clicks on the control
+    document.querySelector('#theme-btn')?.addEventListener('click', () => {
+      themeValue = themeValue === 'light' ? 'dark' : 'light'
+      setPreference()
+    })
+  }
+
   function toggleNav() {
-    // Toggle menu
     const menuBtn = document.querySelector('.hamburger-menu')
     const menuIcon = document.querySelector('.menu-icon')
     const menuItems = document.querySelector('#menu-items')
@@ -209,12 +300,10 @@ const { activeNav } = Astro.props
         'aria-label',
         menuExpanded ? '메뉴 열기' : '메뉴 닫기',
       )
-      menuItems?.classList.toggle('display-none')
+      menuItems?.classList.toggle('hidden')
     })
   }
 
   toggleNav()
-
-  // Runs on view transitions navigation
   document.addEventListener('astro:after-swap', toggleNav)
 </script>

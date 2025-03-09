@@ -1,5 +1,5 @@
 ---
-title: 一疋狼 ft. 可不
+title: 一疋狼 (ft. 可不)
 author: 霄
 pubDatetime: 2024-10-20T14:29:38.516Z
 slug: lone-wolf

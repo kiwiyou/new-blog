@@ -5,14 +5,14 @@ import Layout from '@layouts/Layout.astro'
 import Main from '@layouts/Main.astro'
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
-import SearchBar, { type SearchItem } from '@components/Search'
+import SearchBar, { type SearchItem } from '@components/SearchBar'
 
 // Retrieve all articles
 const posts = await getCollection('blog', ({ data }) => !data.draft)
 const lyrics = await getCollection('lyrics')
 
 // List of items to search in
-const searchList = ([] as SearchItem[])
+const searchList = Array<SearchItem>()
   .concat(
     posts.map(({ data, slug }) => ({
       title: data.title,

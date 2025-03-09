@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props
 ---
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
-  <Header activeNav="about" />
+  <Header activeNav="about" transition:persist />
   <Breadcrumbs />
   <main id="main-content">
     <section id="about" class="prose prose-img:border-0 mb-28 max-w-3xl">

@@ -1,0 +1,31 @@
+---
+import Datetime from './Datetime.astro'
+
+export interface Props {
+  href?: string
+  frontmatter: Frontmatter
+}
+
+export interface Frontmatter {
+  title: string
+  pubDatetime: string | Date
+  modDatetime?: string | Date
+  description: string
+}
+
+const { href, frontmatter } = Astro.props
+const { title, pubDatetime, modDatetime, description } = frontmatter
+---
+
+<li class="my-6" transition:animate="slide">
+  <a
+    href={href}
+    class="inline-block text-lg font-medium text-[var(--color-accent)] decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+  >
+    <h3 class="text-lg font-medium decoration-dashed hover:underline">
+      {title}
+    </h3>
+  </a>
+  <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
+  <p>{description}</p>
+</li>

@@ -5,7 +5,7 @@ import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import LinkButton from '@components/LinkButton.astro'
 import Hr from '@components/Hr.astro'
-import Card from '@components/Card'
+import Card from '@components/Card.astro'
 import Socials from '@components/Socials.astro'
 import getSortedPosts from '@utils/getSortedPosts'
 import { SOCIALS } from '@config'
@@ -64,11 +64,7 @@ const socialCount = SOCIALS.filter((social) => social.active).length
             <h2>추천</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
+                <Card href={`/posts/${slug}`} frontmatter={data} />
               ))}
             </ul>
           </section>
@@ -86,11 +82,7 @@ const socialCount = SOCIALS.filter((social) => social.active).length
             .map(
               ({ data, slug }, index) =>
                 index < 4 && (
-                  <Card
-                    href={`/posts/${slug}`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
+                  <Card href={`/posts/${slug}`} frontmatter={data} />
                 ),
             )
         }

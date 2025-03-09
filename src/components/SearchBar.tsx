@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js'
 import { useEffect, useRef, useState, useMemo } from 'react'
-import Card, { type Frontmatter } from '@components/Card'
+import Card, { type Frontmatter } from '@components/Card.astro'
 
 export type SearchItem = {
   title: string
@@ -106,11 +106,17 @@ export default function SearchBar({ searchList }: Props) {
       <ul>
         {searchResults &&
           searchResults.map(({ item, refIndex }) => (
-            <Card
-              href={item.href}
-              frontmatter={item.data}
-              key={`${refIndex}-${item.href}`}
-            />
+            <li className="my-6" key={`${refIndex}-${item.href}`}>
+              <a
+                href={item.href}
+                className="inline-block text-lg font-medium text-[var(--color-accent)] decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+              >
+                <h3 className="text-lg font-medium decoration-dashed hover:underline">
+                  {item.title}
+                </h3>
+              </a>
+              <p>{item.description}</p>
+            </li>
           ))}
       </ul>
     </>
