@@ -19,14 +19,14 @@ const { title, author, pubDatetime, modDatetime, youtube, comment, lang } =
 
 const { Content } = await post.render()
 
-const ogUrl = new URL(`/lyrics/${slugifyStr(title)}.png`, Astro.url.origin).href
+const ogImage = new URL(`/lyrics/${post.slug}.png`, Astro.url.origin).href
 
 const layoutProps = {
   title: `${author} - ${title} | ${SITE.title}`,
   author,
   pubDatetime,
   modDatetime,
-  ogImage: ogUrl,
+  ogImage,
 }
 ---
 
@@ -45,7 +45,7 @@ const layoutProps = {
     </button>
   </div>
   <main id="main-content">
-    <h1 class="post-title">
+    <h1 transition:name={slugifyStr(title)} class="post-title">
       {author} - {title}
     </h1>
     <Datetime
