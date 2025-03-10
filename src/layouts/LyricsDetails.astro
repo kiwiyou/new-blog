@@ -59,16 +59,9 @@ const layoutProps = {
       role="article"
       class="prose mx-auto mt-8 flex max-w-3xl flex-col items-center text-center"
     >
-      <p><a href={youtube} target="_blank">youtube</a></p>
-      <div
-        id="lyrics"
-        class="flex flex-col gap-4 text-lg text-[var(--color-text-base)]"
-      >
-        <Content />
-      </div>
       {
         lang && (
-          <div class="sticky bottom-0 flex gap-1 rounded-t-md bg-[var(--color-fill)] px-2 text-2xl select-none">
+          <div class="sticky top-0 flex gap-1 self-end rounded-t-md bg-[var(--color-fill)] px-2 text-2xl select-none">
             {lang.includes('ja') && (
               <div>
                 <input type="checkbox" id="ja" name="ja" checked />
@@ -96,6 +89,13 @@ const layoutProps = {
           </div>
         )
       }
+      <p><a href={youtube} target="_blank">youtube</a></p>
+      <div
+        id="lyrics"
+        class="flex flex-col gap-4 text-lg text-[var(--color-text-base)]"
+      >
+        <Content />
+      </div>
     </article>
     <div class="flex justify-end">
       <TopButton />

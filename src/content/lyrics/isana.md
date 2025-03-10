@@ -211,4 +211,4 @@ lang:
 <div>
     <div class="lang-ja"><ruby>僕<rp>(</rp><rt>ぼく</rt><rp>)</rp></ruby>が<ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>くから！</div>
     <div class="lang-ko">내가 울 테니까!</div>
-</div> 
+</div>
