@@ -23,6 +23,7 @@ const ogImage = new URL(`/lyrics/${post.slug}.png`, Astro.url.origin).href
 
 const layoutProps = {
   title: `${author} - ${title} | ${SITE.title}`,
+  description: `${author} - ${title} 가사 번역`,
   author,
   pubDatetime,
   modDatetime,
@@ -75,6 +76,14 @@ const layoutProps = {
                 <input type="checkbox" id="yomigana" name="yomigana" checked />
                 <label for="yomigana" class="checked">
                   読み
+                </label>
+              </div>
+            )}
+            {lang.includes('ko-transliteration') && (
+              <div>
+                <input type="checkbox" id="ko-tl" name="ko-tl" checked />
+                <label for="ko-tl" class="checked">
+                  발음
                 </label>
               </div>
             )}
@@ -155,8 +164,9 @@ const layoutProps = {
   }
   :global(.hide-ja) :global(.lang-ja),
   :global(.hide-ko) :global(.lang-ko),
+  :global(.hide-ko-tl) :global(.lang-ko-tl),
   :global(.hide-yomigana) :global(rt:not(.show)) {
-    visibility: collapse;
+    display: none;
   }
 </style>
 

@@ -41,7 +41,10 @@ const lyrics = defineCollection({
         .optional(),
       comment: z.boolean().optional(),
       youtube: z.string().optional(),
-      lang: z.string().array().optional(),
+      lang: z
+        .enum(['ko', 'ja', 'yomigana', 'ko-transliteration'])
+        .array()
+        .optional(),
     }),
 })
 
