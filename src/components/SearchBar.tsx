@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js'
 import { useEffect, useRef, useState, useMemo } from 'react'
-import Card, { type Frontmatter } from '@components/Card.astro'
+import { type Frontmatter } from '@components/Card.astro'
 
 export type SearchItem = {
   title: string

@@ -6,7 +6,6 @@ import Datetime from '@components/Datetime.astro'
 import TopButton from '@components/TopButton.astro'
 import type { CollectionEntry } from 'astro:content'
 import { slugifyStr } from '@utils/slugify'
-import { SITE } from '@config'
 
 export interface Props {
   post: CollectionEntry<'lyrics'>
@@ -22,7 +21,7 @@ const { Content } = await post.render()
 const ogImage = new URL(`/lyrics/${post.slug}.png`, Astro.url.origin).href
 
 const layoutProps = {
-  title: `${author} - ${title} | ${SITE.title}`,
+  title: `${author} - ${title}`,
   description: `${author} - ${title} 가사 번역`,
   author,
   pubDatetime,
@@ -62,7 +61,7 @@ const layoutProps = {
     >
       {
         lang && (
-          <div class="sticky top-0 flex gap-1 self-end rounded-t-md bg-[var(--color-fill)] px-2 text-2xl select-none">
+          <div class="sticky top-0 flex gap-1 self-end rounded-b-md bg-[var(--color-fill)] px-2 text-2xl select-none">
             {lang.includes('ja') && (
               <div>
                 <input type="checkbox" id="ja" name="ja" checked />
@@ -140,6 +139,9 @@ const layoutProps = {
 
   main {
     @apply mx-auto w-full max-w-3xl px-4 pb-12;
+  }
+  #article > * {
+    @apply max-w-full;
   }
   .post-title {
     @apply text-2xl font-semibold text-balance break-keep text-[var(--color-accent)];
