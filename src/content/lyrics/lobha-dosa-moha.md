@@ -127,8 +127,8 @@ lang:
     <div class="lang-ko">용의 수염을 쓰다듬고 범의 꼬리를 밟는다;</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>虎<rp>(</rp><rt>とら</rt><rp>)</rp></ruby>の<ruby>尾<rp>(</rp><rt>を</rt><rp>)</rp></ruby>つぽを<ruby>踏<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>み<ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp></ruby>ら<ruby>氷<rp>(</rp><rt>こほり</rt><rp>)</rp></ruby>を<ruby>涉<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>る。</div>
-    <div class="lang-ko-tl">토라노 옷포오 후미 우스라 코오리오 와타루</div>
+    <div class="lang-ja"><ruby>虎<rp>(</rp><rt>とら</rt><rp>)</rp></ruby>の<ruby>尾<rp>(</rp><rt>を</rt><rp>)</rp></ruby>つぽを<ruby>踏<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>み<ruby>薄<rp>(</rp><rt>うす</rt><rp>)</rp></ruby>ら<ruby>氷<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>を<ruby>涉<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>る。</div>
+    <div class="lang-ko-tl">토라노 옷포오 후미 우스라히오 와타루</div>
     <div class="lang-ko">범의 꼬리를 밟고 살얼음판을 건넌다.</div>
 </div>
 <div>

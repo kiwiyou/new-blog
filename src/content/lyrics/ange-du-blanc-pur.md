@@ -51,7 +51,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja">Cœur…　<ruby>導<rp>(</rp><rt>みちび</rt><rp>)</rp></ruby>く<ruby>鐘<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>　<ruby>響<rp>(</rp><rt>ひび</rt><rp>)</rp></ruby>かせ</div>
-    <div class="lang-ko-tl">Cœur... 미치비쿠 카네 히비카세</div>
+    <div class="lang-ko-tl">Cœur⋯ 미치비쿠 카네 히비카세</div>
     <div class="lang-ko">Cœur⋯ 이끄는 종 울려라</div>
 </div>
 <div>
@@ -76,7 +76,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>虹<rp>(</rp><rt>にじ</rt><rp>)</rp></ruby>かかる<ruby>空<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>　<ruby>澪標<rp>(</rp><rt>みおつくし</rt><rp>)</rp></ruby>　<ruby>紫電<rp>(</rp><rt>しでん</rt><rp>)</rp></ruby>　<ruby>劈<rp>(</rp><rt>つんざ</rt><rp>)</rp></ruby>いて</div>
-    <div class="lang-ko-tl">니지카카루 소라 미오츠쿠시 시데은 츤자이테</div>
+    <div class="lang-ko-tl">니지카카루 소라 미오츠쿠시 시덴 츤자이테</div>
     <div class="lang-ko">무지개가 걸린 하늘 <ruby>몸 받혀<rp>(</rp><rt class="show">몸 바쳐</rt><rp>)</rp></ruby> 자색 번개여 찢어라</div>
 </div>
 <div>
@@ -96,12 +96,12 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>指<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>し<ruby>示<rp>(</rp><rt>しめ</rt><rp>)</rp></ruby>す<ruby>楽園<rp>(</rp><rt>エデン</rt><rp>)</rp></ruby>は　<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>も<ruby>近<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>づいて</div>
-    <div class="lang-ko-tl">사시시메스 에데은와 이마모 치카즈이테</div>
+    <div class="lang-ko-tl">사시시메스 에덴와 이마모 치카즈이테</div>
     <div class="lang-ko">가리키는 <ruby>낙원<rp>(</rp><rt class="show">에덴</rt><rp>)</rp></ruby>은 지금도 가까워져서</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>虹<rp>(</rp><rt>にじ</rt><rp>)</rp></ruby>かかる<ruby>空<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>　<ruby>澪標<rp>(</rp><rt>みおつくし</rt><rp>)</rp></ruby>　<ruby>紫雲<rp>(</rp><rt>しでん</rt><rp>)</rp></ruby>　<ruby>劈<rp>(</rp><rt>つんざ</rt><rp>)</rp></ruby>いて</div>
-    <div class="lang-ko-tl">니지카카루 소라 미오츠쿠시 시데은 츤자이테</div>
+    <div class="lang-ko-tl">니지카카루 소라 미오츠쿠시 시덴 츤자이테</div>
     <div class="lang-ko">무지개가 걸린 하늘 <ruby>몸 받혀<rp>(</rp><rt class="show">몸 바쳐</rt><rp>)</rp></ruby> 자색 번개여 찢어라</div>
 </div>
 <div>
@@ -126,6 +126,6 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>貴方<rp>(</rp><rt>あなた</rt><rp>)</rp></ruby>と<ruby>共<rp>(</rp><rt>とも</rt><rp>)</rp></ruby>に…</div>
-    <div class="lang-ko-tl">아나타토 토모니...</div>
+    <div class="lang-ko-tl">아나타토 토모니⋯</div>
     <div class="lang-ko">당신과 함께⋯</div>
 </div>

@@ -46,7 +46,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja">そちらは<ruby>惑曐<rp>(</rp><rt>わくせい</rt><rp>)</rp>　</ruby>こちら<ruby>衞曐<rp>(</rp><rt>えいせい</rt><rp>)</rp>　</ruby>けども<ruby>泛<rp>(</rp><rt>うか</rt><rp>)</rp></ruby>んだ</div>
-    <div class="lang-ko-tl">소치라와 와쿠세에 코치라 에에세에 케도모 우칸다</div>
+    <div class="lang-ko-tl">소치라와 와쿠세에 코치라 에이세에 케도모 우칸다</div>
     <div class="lang-ko">그쪽은 행성이고 이쪽은 위성 그러나 떠올라</div>
 </div>
 <div>
@@ -101,7 +101,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>幾<rp>(</rp><rt>いく</rt><rp>)</rp></ruby>つもの<ruby>帶<rp>(</rp><rt>おび</rt><rp>)</rp></ruby>　<ruby>攜<rp>(</rp><rt>たずさ</rt><rp>)</rp></ruby>えている<ruby>意味<rp>(</rp><rt>いみ</rt><rp>)</rp></ruby></div>
-    <div class="lang-ko-tl">이쿠츠모노 오비 타즈사에테이루 이미</div>
+    <div class="lang-ko-tl">이쿠츠모노 오비 타즈사에테루 이미</div>
     <div class="lang-ko">수많은 고리들을 두르고 있는 의미</div>
 </div>
 <div>
@@ -116,7 +116,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja">そちらは<ruby>惑曐<rp>(</rp><rt>わくせい</rt><rp>)</rp></ruby>　こちら<ruby>衞曐<rp>(</rp><rt>えいせい</rt><rp>)</rp></ruby>　<ruby>只<rp>(</rp><rt>ただ</rt><rp>)</rp></ruby>の<ruby>裝置<rp>(</rp><rt>そうち</rt><rp>)</rp></ruby>は</div>
-    <div class="lang-ko-tl">소치라와 와쿠세에 코치라 에에세에 타다노 소오치와</div>
+    <div class="lang-ko-tl">소치라와 와쿠세에 코치라 에이세에 타다노 소오치와</div>
     <div class="lang-ko">그쪽은 행성이고 이쪽은 위성 한낱 장치일 뿐</div>
 </div>
 <div>
@@ -202,7 +202,7 @@ lang:
 <div>
     <div class="lang-ja"><ruby>嗚呼<rp>(</rp><rt>ああ</rt><rp>)</rp></ruby>　<ruby>君<rp>(</rp><rt>きみ</rt><rp>)</rp></ruby>の<ruby>負<rp>(</rp><rt>お</rt><rp>)</rp></ruby>う<ruby>質量<rp>(</rp><rt>しつりょう</rt><rp>)</rp></ruby>に</div>
     <div class="lang-ko-tl">아아 키미노 오우 시츠료오니</div>
-    <div class="lang-ko">아아 네게 매인 질량에</div>
+    <div class="lang-ko">아아 네가 짊어진 질량에</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>軌道<rp>(</rp><rt>きどう</rt><rp>)</rp></ruby><ruby>失<rp>(</rp><rt>な</rt><rp>)</rp></ruby>くし　<ruby>臥<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>せるのでしょう</div>
@@ -230,8 +230,8 @@ lang:
     <div class="lang-ko">아아 무너져 떨어져나가지만</div>
 </div>
 <div>
-    <div class="lang-ja">この<ruby>眼<rp>(</rp><rt>め</rt><rp>)</rp></ruby>　<ruby>瞼<rp>(</rp><rt>まぶた</rt><rp>)</rp></ruby>　<ruby>閉<rp>(</rp><rt>とじ</rt><rp>)</rp></ruby>す<ruby>事<rp>(</rp><rt>こと</rt><rp>)</rp></ruby><ruby>無<rp>(</rp><rt>な</rt><rp>)</rp></ruby>く</div>
-    <div class="lang-ko-tl">코노 메 마부타 토지스코토나쿠</div>
+    <div class="lang-ja">この<ruby>眼<rp>(</rp><rt>め</rt><rp>)</rp></ruby>　<ruby>瞼<rp>(</rp><rt>まぶた</rt><rp>)</rp></ruby>　<ruby>閉<rp>(</rp><rt>とざ</rt><rp>)</rp></ruby>す<ruby>事<rp>(</rp><rt>こと</rt><rp>)</rp></ruby><ruby>無<rp>(</rp><rt>な</rt><rp>)</rp></ruby>く</div>
+    <div class="lang-ko-tl">코노 메 마부타 토자스코토나쿠</div>
     <div class="lang-ko">이 한 눈 눈꺼풀 절대 닫지 않아</div>
 </div>
 <div>
@@ -241,7 +241,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>只<rp>(</rp><rt>ただ</rt><rp>)</rp></ruby><ruby>周廻<rp>(</rp><rt>しゅうかい</rt><rp>)</rp></ruby>する　<ruby>系<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>の　<ruby>丗畍<rp>(</rp><rt>せかい</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>のち</rt><rp>)</rp></ruby>で</div>
-    <div class="lang-ko-tl">타다 슈우카이스루 케에노 세카이노 노치데</div>
+    <div class="lang-ko-tl">타다 슈우카이스루 케이노 세카이노 노치데</div>
     <div class="lang-ko">그저 주위를 돌 뿐인 계의 세계의 종말에</div>
 </div>
 <div>

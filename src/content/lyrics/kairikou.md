@@ -13,6 +13,7 @@ lang:
 ---
 
 Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.
+가사가 전반적으로 난해하고 추상적으로 작성되어 있어 곡과 어울리네요.
 
 <div>
     <div class="lang-ja"><ruby>雲間<rp>(</rp><rt>くもま</rt><rp>)</rp></ruby>を<ruby>剌<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>す<ruby>彼我<rp>(</rp><rt>ひが</rt><rp>)</rp></ruby>の<ruby>眼二<rp>(</rp><rt>まなこ</rt><rp>)</rp></ruby></div>
@@ -35,9 +36,9 @@ Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.
     <div class="lang-ko">군청을 지웠다</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>途切<rp>(</rp><rt>とぎ</rt><rp>)</rp></ruby>れを<ruby>増<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>す　<ruby>側<rp>(</rp><rt>そば</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>で</div>
-    <div class="lang-ko-tl">토기레오 마스 소바노 나카데</div>
-    <div class="lang-ko">끊김을 더하는 옆 안에서</div>
+    <div class="lang-ja"><ruby>途切<rp>(</rp><rt>とぎ</rt><rp>)</rp></ruby>れを<ruby>増<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>す　<ruby>側<rp>(</rp><rt>はた</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>で</div>
+    <div class="lang-ko-tl">토기레오 마스 하타노 나카데</div>
+    <div class="lang-ko">끊김을 더하는 주변인 속에서</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>証明<rp>(</rp><rt>しょうめい</rt><rp>)</rp></ruby>は<ruby>混濁<rp>(</rp><rt>こんだく</rt><rp>)</rp></ruby>から<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>れ</div>
@@ -221,7 +222,7 @@ Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.
 </div>
 <div>
     <div class="lang-ja">「<ruby>此処<rp>(</rp><rt>ここ</rt><rp>)</rp></ruby>だ。」<ruby>暗闇<rp>(</rp><rt>くらやみ</rt><rp>)</rp></ruby>から<ruby>響<rp>(</rp><rt>ひび</rt><rp>)</rp></ruby>き<ruby>渡<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>る<ruby>声<rp>(</rp><rt>こえ</rt><rp>)</rp></ruby></div>
-    <div class="lang-ko-tl">「코코다」쿠라야미카라 히비키와타루 코에</div>
+    <div class="lang-ko-tl">코코다 쿠라야미카라 히비키와타루 코에</div>
     <div class="lang-ko">"여기다." 어둠에서 울려퍼지는 목소리</div>
 </div>
 <div>
@@ -231,7 +232,7 @@ Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.
 </div>
 <div>
     <div class="lang-ja">きっと<ruby>後悔<rp>(</rp><rt>こうかい</rt><rp>)</rp></ruby>も<ruby>失<rp>(</rp><rt>う</rt><rp>)</rp></ruby>せる<ruby>迄<rp>(</rp><rt>まで</rt><rp>)</rp></ruby>　さあ。</div>
-    <div class="lang-ko-tl">킷토 코오카이모 우세루 마데 사아</div>
+    <div class="lang-ko-tl">킷토 코오카이모 우세루마데 사아</div>
     <div class="lang-ko">꼭 후회도 사라질 때까지 자.</div>
 </div>
 <div>

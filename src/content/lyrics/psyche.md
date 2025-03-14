@@ -113,6 +113,6 @@ lang:
 <div>
     <div class="lang-ja"><ruby>他人情<rp>(</rp><rt>ヒトナサケ</rt><rp>)</rp></ruby>ガ<ruby>壞<rp>(</rp><rt>コハ</rt><rp>)</rp></ruby>レタ ────
     </div>
-    <div class="lang-ko-tl">히토나사케가 코와레타 ────</div>
+    <div class="lang-ko-tl">히토나사케가 코와레타</div>
     <div class="lang-ko">인정이 무너졌다 ────</div>
 </div>

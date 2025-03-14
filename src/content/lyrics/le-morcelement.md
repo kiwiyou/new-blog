@@ -12,6 +12,8 @@ lang:
   - ko-transliteration
 ---
 
+아다치 레이의 음색과 찢어지는 이별이 잘 어울리는 곡입니다.
+
 <div>
     <div class="lang-ja"><ruby>貴方<rp>(</rp><rt>あなた</rt><rp>)</rp></ruby>のまなざしが<ruby>純粋無垢<rp>(</rp><rt>じゅんすいむく</rt><rp>)</rp></ruby>な<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>手<rp>(</rp><rt>て</rt><rp>)</rp></ruby>を</div>
     <div class="lang-ko-tl">아나타노 마나자시가 쥰스이무쿠나 와타시노 테오</div>
@@ -43,13 +45,13 @@ lang:
     <div class="lang-ko">잡아맬 것이 있을 리도 없고</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>縮<rp>(</rp><rt>ちぢ</rt><rp>)</rp></ruby>んだ<ruby>心臓<rp>(</rp><rt>しんぞう</rt><rp>)</rp></ruby>／<ruby>膨<rp>(</rp><rt>ふくら</rt><rp>)</rp></ruby>んだ<ruby>愛憎<rp>(</rp><rt>あいぞう</rt><rp>)</rp></ruby>で<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>て</div>
-    <div class="lang-ko-tl">치진다 신조오 / 후쿠란다 아이조오데 모테</div>
+    <div class="lang-ja"><ruby>縮<rp>(</rp><rt>ちぢく</rt><rp>)</rp></ruby>んだ<ruby>心臓<rp>(</rp><rt>しんぞう</rt><rp>)</rp></ruby>／<ruby>膨<rp>(</rp><rt>ふくら</rt><rp>)</rp></ruby>んだ<ruby>愛憎<rp>(</rp><rt>あいぞう</rt><rp>)</rp></ruby>で<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>て</div>
+    <div class="lang-ko-tl">치지쿤다 신조오 / 후쿠란다 아이조오데 모테</div>
     <div class="lang-ko">오그라든 심장 / 부푼 애증을 갖고</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>余<rp>(</rp><rt>あま</rt><rp>)</rp></ruby>された<ruby>自我<rp>(</rp><rt>じが</rt><rp>)</rp></ruby>は<ruby>縡<rp>(</rp><rt>こと</rt><rp>)</rp></ruby><ruby>切<rp>(</rp><rt>き</rt><rp>)</rp></ruby>れたのでしょう</div>
-    <div class="lang-ko-tl">아마사레타 지가와 코토키레타노데쇼오</div>
+    <div class="lang-ja"><ruby>余<rp>(</rp><rt>あま</rt><rp>)</rp></ruby>された<ruby>自我<rp>(</rp><rt>じが</rt><rp>)</rp></ruby>は<ruby>縡<rp>(</rp><rt>こと</rt><rp>)</rp></ruby><ruby>切<rp>(</rp><rt>ぎ</rt><rp>)</rp></ruby>れたのでしょう</div>
+    <div class="lang-ko-tl">아마사레타 지가와 코토기레타노데쇼오</div>
     <div class="lang-ko">남겨진 자아는 임종한 거겠죠</div>
 </div>
 <div>
@@ -69,41 +71,41 @@ lang:
 </div>
 <div>
     <div class="lang-ja">まあ<ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby><ruby>虚<rp>(</rp><rt>うそ</rt><rp>)</rp></ruby>に<ruby>塗<rp>(</rp><rt>まみ</rt><rp>)</rp></ruby>れた<ruby>貴方<rp>(</rp><rt>あなた</rt><rp>)</rp></ruby>なのだけれどね</div>
-    <div class="lang-ko-tl">마아 젠부 우소니 마미레타 아나타나노다케레도네</div>
+    <div class="lang-ko-tl">마아 젠부 우소니 마미레타 아나타난다케레도네</div>
     <div class="lang-ko">뭐 전부 거짓으로 점철된 당신이었을 뿐이지만요</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>崩<rp>(</rp><rt>くず</rt><rp>)</rp></ruby>れていく</div>
-    <div class="lang-ko-tl">쿠즈레테이쿠</div>
+    <div class="lang-ko-tl">쿠즈레테쿠</div>
     <div class="lang-ko">무너져가네</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -124,7 +126,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>一個<rp>(</rp><rt>いっこ</rt><rp>)</rp></ruby><ruby>術<rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>を<ruby>辷<rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>ればまあ<ruby>酷<rp>(</rp><rt>ひど</rt><rp>)</rp></ruby>いが<ruby>然<rp>(</rp><rt>しか</rt><rp>)</rp></ruby>し</div>
-    <div class="lang-ko-tl">잇코 스베오 스베레바 마아 히도이가 시카시</div>
+    <div class="lang-ko-tl">잇코 스베오 스베랴 마아 히도이가 시카시</div>
     <div class="lang-ko">한 수가 수틀리면 뭐 힘들지만</div>
 </div>
 <div>
@@ -134,7 +136,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>欠陥<rp>(</rp><rt>けっかん</rt><rp>)</rp></ruby>された<ruby>結果論<rp>(</rp><rt>けっかろん</rt><rp>)</rp></ruby>なのです</div>
-    <div class="lang-ko-tl">켓칸사레타 켓카론나노데스</div>
+    <div class="lang-ko-tl">켓칸사레타 켓카론난데스</div>
     <div class="lang-ko">불완전한 결과론입니다</div>
 </div>
 <div>
@@ -174,41 +176,41 @@ lang:
 </div>
 <div>
     <div class="lang-ja">ほら<ruby>真実<rp>(</rp><rt>ほんとう</rt><rp>)</rp></ruby>の<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>が<ruby>真実<rp>(</rp><rt>ほんとう</rt><rp>)</rp></ruby>じゃなくなっていく</div>
-    <div class="lang-ko-tl">호라 혼토오노 와타시가 혼토오쟈나쿠낫테이쿠</div>
+    <div class="lang-ko-tl">호라 혼토오노 와타시가 혼토오쟈나쿠낫테쿠</div>
     <div class="lang-ko">이봐, 진실된 내가 거짓되고 있잖아</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>崩<rp>(</rp><rt>くず</rt><rp>)</rp></ruby>れていく</div>
-    <div class="lang-ko-tl">쿠즈레테이쿠</div>
+    <div class="lang-ko-tl">쿠즈레테쿠</div>
     <div class="lang-ko">무너져가네</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -217,17 +219,17 @@ lang:
     <div class="lang-ko">토하고 있네</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -237,17 +239,17 @@ lang:
     <div class="lang-ko">스러져가네</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てんでんばらばら</div>
+    <div class="lang-ja">てん〴〵ばら〴〵</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>

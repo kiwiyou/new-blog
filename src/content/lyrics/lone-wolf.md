@@ -79,7 +79,7 @@ lang:
 
 <div>
     <div class="lang-ja"><ruby>最低<rp>(</rp><rt>さいてい</rt><rp>)</rp></ruby>な<ruby>価値<rp>(</rp><rt>かち</rt><rp>)</rp></ruby>を<ruby>見出<rp>(</rp><rt>みいだ</rt><rp>)</rp></ruby>して</div>
-    <div class="lang-ko-tl">사이테이나 카치오 미이다시테</div>
+    <div class="lang-ko-tl">사이테에나 카치오 미이다시테</div>
     <div class="lang-ko">가장 낮은 가치를 찾아내서</div>
 </div>
 <div>
@@ -114,9 +114,9 @@ lang:
     <div class="lang-ko">창연히 만취해</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>懐<rp>(</rp><rt>はず</rt><rp>)</rp></ruby>かしい<ruby>彼<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>の<ruby>景色<rp>(</rp><rt>けしき</rt><rp>)</rp></ruby>は</div>
-    <div class="lang-ko-tl">하즈카시이 아노 케시키와</div>
-    <div class="lang-ko">부끄러운 그 광경은</div>
+    <div class="lang-ja"><ruby>懐<rp>(</rp><rt>なつ</rt><rp>)</rp></ruby>かしい<ruby>彼<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>の<ruby>景色<rp>(</rp><rt>けしき</rt><rp>)</rp></ruby>は</div>
+    <div class="lang-ko-tl">나츠카시이 아노 케시키와</div>
+    <div class="lang-ko">아련한 그 광경은</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>嘘<rp>(</rp><rt>うそ</rt><rp>)</rp></ruby>と<ruby>不徳<rp>(</rp><rt>ふとく</rt><rp>)</rp></ruby>に<ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わり</div>
@@ -178,7 +178,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>滑稽<rp>(</rp><rt>こっけい</rt><rp>)</rp></ruby>な<ruby>唄<rp>(</rp><rt>うた</rt><rp>)</rp></ruby>で<ruby>紡<rp>(</rp><rt>つむ</rt><rp>)</rp></ruby>ごうぜ</div>
-    <div class="lang-ko-tl">콧케이나 우타데 츠무고오제</div>
+    <div class="lang-ko-tl">콧케에나 우타데 츠무고오제</div>
     <div class="lang-ko">우스꽝스런 노래를 자아내자고</div>
 </div>
 <div>
@@ -215,6 +215,6 @@ lang:
 
 <div>
     <div class="lang-ja">…<ruby>奥底<rp>(</rp><rt>おくそこ</rt><rp>)</rp></ruby>の<ruby>衷<rp>(</rp><rt>こころ</rt><rp>)</rp></ruby>を<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>も<ruby>分<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>かりやしない</div>
-    <div class="lang-ko-tl">…오쿠소코노 코코로오 다레모 와카랴시나이</div>
-    <div class="lang-ko">…깊숙한 속마음은 아무도 모를 테지</div>
+    <div class="lang-ko-tl">⋯오쿠소코노 코코로오 다레모 와카랴시나이</div>
+    <div class="lang-ko">⋯깊숙한 속마음은 아무도 모를 테지</div>
 </div>

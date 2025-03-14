@@ -43,7 +43,7 @@ lang:
 
 <div>
     <div class="lang-ja"><ruby>嗚呼<rp>(</rp><rt>あゝ</rt><rp>)</rp></ruby>、ゆら〳〵<ruby>靜謐<rp>(</rp><rt>せいひつ</rt><rp>)</rp></ruby>が</div>
-    <div class="lang-ko-tl">아아, 유라유라 세이히츠가</div>
+    <div class="lang-ko-tl">아아 유라유라 세이히츠가</div>
     <div class="lang-ko">아아, 흔들리는 정적이</div>
 </div>
 <div>
@@ -52,7 +52,7 @@ lang:
     <div class="lang-ko">불길하게 꿈틀거리고</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>視<rp>(</rp><rt>み</rt><rp>)</rp></ruby>えたのは<ruby>彼<rp>(</rp><rt>か</rt><rp>)</rp></ruby>の<ruby>日<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>の<ruby>景<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>で</div>
+    <div class="lang-ja"><ruby>視<rp>(</rp><rt>み</rt><rp>)</rp></ruby>えたのは<ruby>彼<rp>(</rp><rt>か</rt><rp>)</rp></ruby>の<ruby>日<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>の<ruby>景<rp>(</rp><rt>きやう</rt><rp>)</rp></ruby>で</div>
     <div class="lang-ko-tl">미에타노와 카노 히노 쿄오데</div>
     <div class="lang-ko">보인 것은 그날의 풍경이고</div>
 </div>
@@ -138,7 +138,7 @@ lang:
 
 <div>
     <div class="lang-ja"><ruby>嗚呼<rp>(</rp><rt>あゝ</rt><rp>)</rp></ruby>、くらりと<ruby>宙<rp>(</rp><rt>ちう</rt><rp>)</rp></ruby>を<ruby>舞<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>ふ</div>
-    <div class="lang-ko-tl">아아, 쿠라리토 츄우오 마우</div>
+    <div class="lang-ko-tl">아아 쿠라리토 츄우오 마우</div>
     <div class="lang-ko">아아, 휘청이며 허공을 춤추는</div>
 </div>
 <div>
@@ -185,7 +185,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>出逢<rp>(</rp><rt>であひ</rt><rp>)</rp></ruby>と<ruby>別<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>れ、そして<ruby>惜別<rp>(</rp><rt>せきべつ</rt><rp>)</rp></ruby></div>
-    <div class="lang-ko-tl">데아이토 와카레, 소시테 세키베츠</div>
+    <div class="lang-ko-tl">데아이토 와카레 소시테 세키베츠</div>
     <div class="lang-ko">만남과 이별, 그리고 석별</div>
 </div>
 <div>
@@ -201,7 +201,7 @@ lang:
 
 <div>
     <div class="lang-ja">「<ruby>其<rp>(</rp><rt>そ</rt><rp>)</rp></ruby>の<ruby>眼<rp>(</rp><rt>め</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>を<ruby>映<rp>(</rp><rt>うつ</rt><rp>)</rp></ruby>すの？」</div>
-    <div class="lang-ko-tl">「소노 메와 나니오 우츠스노?」</div>
+    <div class="lang-ko-tl">소노 메와 나니오 우츠스노?</div>
     <div class="lang-ko">"그 눈은 무엇을 비추는 거지?"</div>
 </div>
 
