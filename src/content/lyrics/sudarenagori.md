@@ -24,7 +24,7 @@ lang:
 </div>
 
 <div>
-    <div class="lang-ja"><ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby>〳〵<ruby>解<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>つてゐる<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby><ruby>程<rp>(</rp><rt>ほど</rt><rp>)</rp></ruby></div>
+    <div class="lang-ja"><ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby>〱<ruby>解<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>つてゐる<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby><ruby>程<rp>(</rp><rt>ほど</rt><rp>)</rp></ruby></div>
     <div class="lang-ko-tl">젠부젠부 와캇테루 모노호도</div>
     <div class="lang-ko">속속들이 이해한 것 정도야</div>
 </div>
@@ -68,7 +68,7 @@ lang:
 </div>
 
 <div>
-    <div class="lang-ja"><ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby>〳〵<ruby>解<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>つてゐる<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby><ruby>程<rp>(</rp><rt>ほど</rt><rp>)</rp></ruby></div>
+    <div class="lang-ja"><ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby>〱<ruby>解<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>つてゐる<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby><ruby>程<rp>(</rp><rt>ほど</rt><rp>)</rp></ruby></div>
     <div class="lang-ko-tl">젠부젠부 와캇테루 모노호도</div>
     <div class="lang-ko">속속들이 이해한 것 정도야</div>
 </div>
@@ -90,7 +90,7 @@ lang:
 </div>
 
 <div>
-    <div class="lang-ja">ずつと〳〵<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>つてゐやす</div>
+    <div class="lang-ja">ずつと〱<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>つてゐやす</div>
     <div class="lang-ko-tl">즛토즛토 맛테이야스</div>
     <div class="lang-ko">얼마든지 기다릴 겝니다</div>
 </div>
@@ -129,7 +129,7 @@ lang:
 </div>
 
 <div>
-    <div class="lang-ja">ずつと〳〵<ruby>愛<rp>(</rp><rt>あい</rt><rp>)</rp></ruby>してゐやすさう</div>
+    <div class="lang-ja">ずつと〱<ruby>愛<rp>(</rp><rt>あい</rt><rp>)</rp></ruby>してゐやすさう</div>
     <div class="lang-ko-tl">즛토즛토 아이시테이야스 소오</div>
     <div class="lang-ko">얼마든지 사랑할 겝니다 네</div>
 </div>

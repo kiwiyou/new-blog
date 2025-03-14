@@ -75,17 +75,17 @@ lang:
     <div class="lang-ko">뭐 전부 거짓으로 점철된 당신이었을 뿐이지만요</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -95,17 +95,17 @@ lang:
     <div class="lang-ko">무너져가네</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -180,17 +180,17 @@ lang:
     <div class="lang-ko">이봐, 진실된 내가 거짓되고 있잖아</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -200,17 +200,17 @@ lang:
     <div class="lang-ko">무너져가네</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -219,17 +219,17 @@ lang:
     <div class="lang-ko">토하고 있네</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
@@ -239,17 +239,17 @@ lang:
     <div class="lang-ko">스러져가네</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>
 <div>
-    <div class="lang-ja">てん〴〵ばら〴〵</div>
+    <div class="lang-ja">てん〲ばら〲</div>
     <div class="lang-ko-tl">텐덴바라바라</div>
     <div class="lang-ko">갈기갈기 찢어져서</div>
 </div>

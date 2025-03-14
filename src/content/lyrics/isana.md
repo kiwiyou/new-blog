@@ -42,7 +42,7 @@ lang:
 </div>
 
 <div>
-    <div class="lang-ja"><ruby>嗚呼<rp>(</rp><rt>あゝ</rt><rp>)</rp></ruby>、ゆら〳〵<ruby>靜謐<rp>(</rp><rt>せいひつ</rt><rp>)</rp></ruby>が</div>
+    <div class="lang-ja"><ruby>嗚呼<rp>(</rp><rt>あゝ</rt><rp>)</rp></ruby>、ゆら〱<ruby>靜謐<rp>(</rp><rt>せいひつ</rt><rp>)</rp></ruby>が</div>
     <div class="lang-ko-tl">아아 유라유라 세이히츠가</div>
     <div class="lang-ko">아아, 흔들리는 정적이</div>
 </div>

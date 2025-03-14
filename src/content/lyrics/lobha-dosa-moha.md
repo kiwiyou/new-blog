@@ -164,7 +164,7 @@ lang:
 </div>
 
 <div>
-    <div class="lang-ja"><ruby>只〻<rp>(</rp><rt>ただただ</rt><rp>)</rp></ruby><ruby>慥<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>かめて<ruby>疾<rp>(</rp><rt>と</rt><rp>)</rp></ruby>く〳〵と<ruby>腐<rp>(</rp><rt>くさ</rt><rp>)</rp></ruby>るは<ruby>見慣<rp>(</rp><rt>みな</rt><rp>)</rp></ruby>れた<ruby>事實<rp>(</rp><rt>こと</rt><rp>)</rp></ruby>でせう？</div>
+    <div class="lang-ja"><ruby>只〻<rp>(</rp><rt>ただただ</rt><rp>)</rp></ruby><ruby>慥<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>かめて<ruby>疾<rp>(</rp><rt>と</rt><rp>)</rp></ruby>く〱と<ruby>腐<rp>(</rp><rt>くさ</rt><rp>)</rp></ruby>るは<ruby>見慣<rp>(</rp><rt>みな</rt><rp>)</rp></ruby>れた<ruby>事實<rp>(</rp><rt>こと</rt><rp>)</rp></ruby>でせう？</div>
     <div class="lang-ko-tl">타다타다 타시카메테 토쿠토쿠토 쿠사루와 미나레타 코토데쇼오</div>
     <div class="lang-ko">가만가만 되새기며 부쩍부쩍 썩어가는 건 익숙해진 일이겠지?</div>
 </div>
