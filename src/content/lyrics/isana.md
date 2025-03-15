@@ -57,7 +57,7 @@ lang:
     <div class="lang-ko">보인 것은 그날의 풍경이고</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby>屹度<rp>(</rp><rt>きつと</rt><rp>)</rp></ruby>、<ruby>相違<rp>(</rp><rt>そうゐ</rt><rp>)</rp></ruby>は<ruby>無<rp>(</rp><rt>な</rt><rp>)</rp></ruby>くて</div>
+    <div class="lang-ja"><ruby>屹度<rp>(</rp><rt>きつと</rt><rp>)</rp></ruby>、<ruby>相違<rp>(</rp><rt>さうゐ</rt><rp>)</rp></ruby>は<ruby>無<rp>(</rp><rt>な</rt><rp>)</rp></ruby>くて</div>
     <div class="lang-ko-tl">킷토 소오이와 나쿠테</div>
     <div class="lang-ko">분명, 한 치 틀림없이</div>
 </div>
