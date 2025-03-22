@@ -81,12 +81,12 @@ lang:
 </div>
 <div>
     <div class="lang-ja">ご<ruby>愁傷<rp>(</rp><rt>しゅうしょう</rt><rp>)</rp></ruby>な<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>さえ<ruby>映<rp>(</rp><rt>は</rt><rp>)</rp></ruby>えてハッピー</div>
-    <div class="lang-ko-tl">고슈우쇼오나 와타시사에 하에테 햇피</div>
+    <div class="lang-ko-tl">고슈우쇼오나 와타시사에 하에테 핫피</div>
     <div class="lang-ko">애도하는 나조차 찬란해서 해피</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>風切<rp>(</rp><rt>かぜき</rt><rp>)</rp></ruby>った<ruby>青<rp>(</rp><rt>せい</rt><rp>)</rp></ruby>のファンキー</div>
-    <div class="lang-ko-tl">카제킷타 세이노 판키이</div>
+    <div class="lang-ko-tl">카제킷타 세이노 환키이</div>
     <div class="lang-ko">바람을 가르는 청색 펑키</div>
 </div>
 <div>
