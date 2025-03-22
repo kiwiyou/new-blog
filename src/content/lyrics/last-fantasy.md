@@ -106,7 +106,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja">チャージしちゃう<ruby>青春<rp>(</rp><rt>せいしゅん</rt><rp>)</rp></ruby>のバンガー</div>
-    <div class="lang-ko-tl">챠지시챠우 세이슌노 방가아</div>
+    <div class="lang-ko-tl">챠아지시챠우 세이슌노 방가아</div>
     <div class="lang-ko">충전되는 청춘의 뱅어</div>
 </div>
 <div>
