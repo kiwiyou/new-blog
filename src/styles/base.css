@@ -93,6 +93,10 @@
     @apply prose-headings:!mb-3 prose-headings:!text-[var(--color-text-base)] prose-h3:italic prose-p:!text-[var(--color-text-base)] prose-a:!text-[var(--color-text-base)] prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-[var(--color-accent)] prose-blockquote:!border-l-[var(--color-accent)] prose-blockquote:border-[var(--color-border)]/50 prose-blockquote:opacity-80 prose-figcaption:!text-[var(--color-text-base)] prose-figcaption:opacity-70 prose-strong:!text-[var(--color-text-base)] prose-code:!text-[var(--color-text-base)] prose-code:rounded prose-code:bg-[var(--color-card)]/75 prose-code:p-1 prose-code:before:!content-[''] prose-code:after:!content-[''] prose-ol:!text-[var(--color-text-base)] prose-ul:overflow-x-clip prose-ul:!text-[var(--color-text-base)] prose-li:marker:!text-[var(--color-accent)] prose-table:text-[var(--color-text-base)] prose-th:border prose-th:border-[var(--color-border)] prose-td:border prose-td:border-[var(--color-border)] prose-img:mx-auto prose-img:!mt-2 prose-img:border-2 prose-img:border-[var(--color-border)] prose-hr:!border-[var(--color-border)];
   }
 
+  .prose .katex {
+    @apply text-[var(--color-text-base)];
+  }
+
   .prose a {
     @apply break-words hover:!text-[var(--color-accent)];
   }
