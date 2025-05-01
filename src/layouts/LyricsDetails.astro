@@ -110,24 +110,28 @@ const layoutProps = {
     </div>
     {
       comment && (
-        <script
-          is:inline
-          src="https://giscus.kiwiyou.dev/client.js"
-          data-repo="kiwiyou/new-blog"
-          data-repo-id="R_kgDOGoQLHw"
-          data-category="댓글"
-          data-category-id="DIC_kwDOGoQLH84CcGYV"
-          data-mapping="og:title"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="dark"
-          data-lang="ko"
-          data-loading="lazy"
-          crossorigin="anonymous"
-          async
-        />
+      <div id="giscus-placeholder">
+          <script>
+            document.addEventListener('astro:page-load', () => {
+              const script = document.createElement('script')
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'kiwiyou/new-blog')
+              script.setAttribute('data-repo-id', 'R_kgDOGoQLHw')
+              script.setAttribute('data-category', '댓글')
+              script.setAttribute('data-category-id', 'DIC_kwDOGoQLH84CcGYV')
+              script.setAttribute('data-mapping', 'og:title')
+              script.setAttribute('data-strict', '1')
+              script.setAttribute('data-reactions-enabled', '1')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('data-theme', 'preferred_color_scheme')
+              script.setAttribute('data-lang', 'ko')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('async', 'true')
+              document.getElementById('giscus-placeholder')?.appendChild(script)
+            })
+          </script>
+        </div>
       )
     }
   </main>
