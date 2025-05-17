@@ -1,6 +1,7 @@
 ---
 author: kiwiyou
 pubDatetime: 2024-07-05T09:10:14.776Z
+modDatetime: 2025-05-17T17:50:40.389Z
 title: NodeJS 빠른 입출력
 slug: node-fastio
 featured: false
@@ -60,5 +61,34 @@ function IO() {
     buffer = ''
   }
   return this
+}
+```
+
+(2025-05-17 수정) 현재는 입력만 남기고 number을 최적화한 아래 코드를 사용하고 있습니다.
+
+```js
+function IO() {
+  const { readFileSync, writeSync } = require('node:fs')
+  this.writeSync = writeSync
+  this.stdin = readFileSync(0)
+  this.text = this.stdin.toString('ascii')
+  this.i = 0
+  this.white = () => {
+    while (this.stdin[this.i] <= 32) this.i++
+  }
+  this.token = () => {
+    this.white()
+    const s = this.i
+    while (this.stdin[this.i] > 32) this.i++
+    return this.text.slice(s, this.i)
+  }
+  this.number = () => {
+    this.white()
+    let v = 0
+    const neg = this.stdin[this.i] === 45
+    if (neg) this.i++
+    while (this.stdin[this.i] >= 48) v = v * 10 + (this.stdin[this.i++] - 48)
+    return neg ? -v : v
+  }
 }
 ```
