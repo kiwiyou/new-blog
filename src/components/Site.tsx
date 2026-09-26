@@ -2,6 +2,7 @@ import { component$, useSignal } from '@qwik.dev/core'
 import { useLocation } from '@qwik.dev/router'
 import { slugifyTag } from '../lib/content'
 import Icon from './Icon'
+import SocialLinks from './SocialLinks'
 import menuSvg from 'lucide-static/icons/menu.svg?raw'
 import searchSvg from 'lucide-static/icons/search.svg?raw'
 import sunSvg from 'lucide-static/icons/sun.svg?raw'
@@ -55,7 +56,7 @@ export default component$(() => {
 
 export const SiteFooter = component$(() => <footer class="site-footer">
   <div class="footer-inner">
-    <div class="social-links"><a href="https://github.com/kiwiyou" aria-label="GitHub">GitHub</a><a href="https://x.com/giwiyou" aria-label="X">X</a><a href="https://discordapp.com/users/kiwiyou" aria-label="Discord">Discord</a><a href="https://t.me/kiwiyou" aria-label="Telegram">Telegram</a></div>
+    <SocialLinks />
     <small>Copyright © kiwiyou 2026 <span aria-hidden="true">|</span> All rights reserved.</small>
   </div>
 </footer>)
