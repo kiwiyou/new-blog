@@ -1,6 +1,9 @@
 import { component$, Slot } from '@qwik.dev/core'
 import { useDocumentHead, useLocation } from '@qwik.dev/router'
 import Site, { DateStamp, SiteFooter, TagLink } from '../components/Site'
+import Icon from '../components/Icon'
+import backSvg from 'lucide-static/icons/arrow-left.svg?raw'
+import upSvg from 'lucide-static/icons/arrow-up.svg?raw'
 
 type ArticleFrontmatter = {
   title?: string
@@ -26,7 +29,7 @@ export default component$(() => {
   return <>
     <Site />
     {isPost || isLyric ? <>
-      <div class="back-link container"><a href={isLyric ? '/lyrics/' : '/posts/'}>‹ 뒤로 가기</a></div>
+      <div class="back-link container"><a href={isLyric ? '/lyrics/' : '/posts/'}><Icon svg={backSvg} /> 뒤로 가기</a></div>
       <main id="main-content" class="article-main">
         <h1 class="article-title">{title}</h1>
         {meta.pubDatetime && <DateStamp published={meta.pubDatetime} modified={meta.modDatetime} />}
@@ -40,7 +43,7 @@ export default component$(() => {
           <div id={isLyric ? 'lyrics' : undefined} class={isLyric ? 'lyric-lines prose' : undefined}><Slot /></div>
         </article>
         {isPost && meta.tags?.length ? <ul class="tag-list article-tags">{meta.tags.map(tag => <TagLink key={tag} tag={tag} />)}</ul> : null}
-        <div class="back-to-top"><a href="#main-content">맨 위로 ↑</a></div>
+        <div class="back-to-top"><a href="#main-content">맨 위로 <Icon svg={upSvg} /></a></div>
         {meta.comment && <div class="comments"><script src="https://giscus.app/client.js" data-repo="kiwiyou/new-blog" data-repo-id="R_kgDOGoQLHw" data-category="댓글" data-category-id="DIC_kwDOGoQLH84CcGYV" data-mapping="og:title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="ko" crossOrigin="anonymous" async /></div>}
       </main>
     </> : <Slot />}

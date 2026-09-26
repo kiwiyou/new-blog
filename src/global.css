@@ -56,6 +56,9 @@ a { color: inherit; }
 a:hover { color: var(--accent); }
 :focus-visible { outline: 2px dashed var(--accent); outline-offset: 3px; }
 svg { width: 1.5em; height: 1.5em; fill: currentColor; vertical-align: middle; }
+.icon { display: inline-flex; vertical-align: -.15em; }
+.icon svg { width: 1em; height: 1em; fill: none; stroke: currentColor; }
+:root[data-theme='dark'] .show-light, :root[data-theme='light'] .show-dark { display: none; }
 img, video { max-width: 100%; height: auto; }
 
 .container, main, .site-header, .site-footer, header, footer {
@@ -103,12 +106,14 @@ h3 { font-size: 1.125rem; }
 .post-list a:hover, .post-card a:hover { text-decoration: underline dashed; text-underline-offset: .25em; }
 .post-list p, .post-card p { margin: 0; }
 .post-list time, .post-card time, .post-date { display: block; font-size: .875rem; font-style: italic; opacity: .8; }
+.post-date .icon { margin-right: .2em; }
 .post-date time { display: inline; }
 .post-title, .article-title { margin: .5rem 0; color: var(--accent); font-size: 1.5rem; line-height: 1.35; font-weight: 600; word-break: keep-all; }
 .back-link { display: inline-block; margin-top: 2rem; text-decoration: none; }
 .pagination { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-block: 2rem; }
 .tags, .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; list-style: none; }
 .tags a, .tag-list a { text-decoration: underline dashed; text-underline-offset: .35em; }
+.tag-list .icon { margin-right: .2em; }
 .tag-list li { margin: .5rem; }
 .site-footer, footer { margin-top: auto; padding-block: 1.5rem; border-top: 1px solid var(--border); text-align: center; }
 .site-footer .socials, footer .socials { display: flex; justify-content: center; gap: .5rem; }
