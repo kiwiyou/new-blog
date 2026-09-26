@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/AboutLayout.astro
 title: '소개'
 ---
 
