@@ -1,16 +1,21 @@
----
-title: XVOTO
-author: ETIA.
-pubDatetime: 2024-01-21T13:54:20.690Z
-slug: xvoto
-comment: true
-youtube: https://youtu.be/LarhLVd0l-s?si=g4490cIRfnkMFl8i
-lang:
-  - ja
-  - yomigana
-  - ko
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "XVOTO",
+  "author": "ETIA.",
+  "pubDatetime": "2024-01-21T13:54:20.690Z",
+  "slug": "xvoto",
+  "comment": true,
+  "youtube": "https://youtu.be/LarhLVd0l-s?si=g4490cIRfnkMFl8i",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja"><ruby>誰<rp>(</rp><rt>た</rt><rp>)</rp></ruby>が<ruby>為<rp>(</rp><rt>ため</rt><rp>)</rp></ruby>に<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>た<ruby>夢<rp>(</rp><rt>ゆめ</rt><rp>)</rp></ruby>か？</div>
     <div class="lang-ko">누구를 위해서 꾼 꿈인가?</div>
@@ -113,8 +118,7 @@ lang:
 </div>
 <div>
     <div class="lang-ja"><ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby> ってばっかじゃno way</div>
-    행할 뿐이라면 no way
-    <div class="lang-ko"></div>
+    <div class="lang-ko">행할 뿐이라면 no way</div>
 </div>
 <div>
     <div class="lang-ja"><ruby>創造<rp>(</rp><rt>そうぞう</rt><rp>)</rp></ruby>に　<ruby>破壊<rp>(</rp><rt>はかい</rt><rp>)</rp></ruby>はセットだって</div>
@@ -132,3 +136,4 @@ lang:
     <div class="lang-ja">ただそれだけ　yeah</div>
     <div class="lang-ko">단지 그것뿐 yeah</div>
 </div>
+</>)

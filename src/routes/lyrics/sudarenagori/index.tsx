@@ -1,17 +1,22 @@
----
-title: すだれなごり (ft. 濾過)
-author: 霄
-pubDatetime: 2025-03-08T18:26:15.707Z
-slug: sudarenagori
-comment: true
-youtube: https://youtu.be/e-Rku7CzGFM?si=E2JOebtDH51PIyf-
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "すだれなごり (ft. 濾過)",
+  "author": "霄",
+  "pubDatetime": "2025-03-08T18:26:15.707Z",
+  "slug": "sudarenagori",
+  "comment": true,
+  "youtube": "https://youtu.be/e-Rku7CzGFM?si=E2JOebtDH51PIyf-",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja"><ruby>変幻自在<rp>(</rp><rt>へんげんじざい</rt><rp>)</rp></ruby>の<ruby>出逢<rp>(</rp><rt>であひ</rt><rp>)</rp></ruby>と<ruby>別<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>れと</div>
     <div class="lang-ko-tl">헨겐지자이노 데아이토 와카레토</div>
@@ -144,3 +149,4 @@ lang:
     <div class="lang-ko-tl">아아 스다레나고리카나⋯⋯</div>
     <div class="lang-ko">아아, 발 너머로 비치는 그리움이여⋯⋯</div>
 </div>
+</>)

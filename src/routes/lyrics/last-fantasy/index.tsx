@@ -1,18 +1,23 @@
----
-title: ラストファンシー
-author: 缶缶 & Such
-pubDatetime: 2025-03-22T09:54:23.986Z
-slug: last-fantasy
-comment: true
-youtube: https://youtu.be/7-nkPV3YjIY?si=0xLTl4me1FhAc2xh
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-경쾌한 곡조에 상쾌한 음색이 잘 어울리는 곡입니다.
+export const metadata = {
+  "title": "ラストファンシー",
+  "author": "缶缶 & Such",
+  "pubDatetime": "2025-03-22T09:54:23.986Z",
+  "slug": "last-fantasy",
+  "comment": true,
+  "youtube": "https://youtu.be/7-nkPV3YjIY?si=0xLTl4me1FhAc2xh",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>경쾌한 곡조에 상쾌한 음색이 잘 어울리는 곡입니다.</p>
 
 <div>
     <div class="lang-ja">それは<ruby>人違<rp>(</rp><rt>ひとちが</rt><rp>)</rp></ruby>いと<ruby>見紛<rp>(</rp><rt>みまご</rt><rp>)</rp></ruby>うほどに</div>
@@ -349,3 +354,4 @@ lang:
     <div class="lang-ko-tl">스쿳테</div>
     <div class="lang-ko">구해줘</div>
 </div>
+</>)

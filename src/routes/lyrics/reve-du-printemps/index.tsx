@@ -1,18 +1,23 @@
----
-title: 朧月 (ft. 狼音アロ)
-author: 霄
-pubDatetime: 2025-03-10T09:02:10.631Z
-slug: reve-du-printemps
-comment: true
-youtube: https://youtu.be/g2Pu1gIS1pA?si=qU272UMehhVLrvkY
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-朧月(おぼろづき)는 "농월" 또는 "으스름달"로 번역됩니다. 안개에 덮인 흐릿한 달을 뜻하며, 일본에서는 특히 봄을 나타냅니다.
+export const metadata = {
+  "title": "朧月 (ft. 狼音アロ)",
+  "author": "霄",
+  "pubDatetime": "2025-03-10T09:02:10.631Z",
+  "slug": "reve-du-printemps",
+  "comment": true,
+  "youtube": "https://youtu.be/g2Pu1gIS1pA?si=qU272UMehhVLrvkY",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>朧月(おぼろづき)는 "농월" 또는 "으스름달"로 번역됩니다. 안개에 덮인 흐릿한 달을 뜻하며, 일본에서는 특히 봄을 나타냅니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>倖<rp>(</rp><rt>しあわ</rt><rp>)</rp></ruby>せは<ruby>何時<rp>(</rp><rt>いつ</rt><rp>)</rp></ruby>も<ruby>仄暗<rp>(</rp><rt>ほのぐら</rt><rp>)</rp></ruby>くて</div>
@@ -156,3 +161,4 @@ lang:
     <div class="lang-ko-tl">츠타나쿠모 다이지나 이노치데</div>
     <div class="lang-ko">서투를지언정, 소중한 목숨으로.</div>
 </div>
+</>)

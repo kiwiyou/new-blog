@@ -1,16 +1,21 @@
----
-title: 俗物フェスティバル
-author: みせる
-pubDatetime: 2024-01-21T14:32:53.506Z
-slug: zokubutsu-festival
-comment: true
-youtube: https://youtu.be/c_7KdZWCtys?si=wz0XJmzTFDHDI_pr
-lang:
-  - ja
-  - yomigana
-  - ko
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "俗物フェスティバル",
+  "author": "みせる",
+  "pubDatetime": "2024-01-21T14:32:53.506Z",
+  "slug": "zokubutsu-festival",
+  "comment": true,
+  "youtube": "https://youtu.be/c_7KdZWCtys?si=wz0XJmzTFDHDI_pr",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja"><ruby>俗物<rp>(</rp><rt>ぞくぶつ</rt><rp>)</rp></ruby>サマの　お<ruby>通<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>りだ！</div>
     <div class="lang-ko">속물님의 행차시다!</div>
@@ -195,3 +200,4 @@ lang:
     <div class="lang-ja"><ruby>俗物<rp>(</rp><rt>ぞくぶつ</rt><rp>)</rp></ruby>するヒト　この<ruby>指<rp>(</rp><rt>ゆび</rt><rp>)</rp></ruby><ruby>止<rp>(</rp><rt>と</rt><rp>)</rp></ruby>まれ！</div>
     <div class="lang-ko">속물같은 인간 여기 여기 붙어라!</div>
 </div>
+</>)

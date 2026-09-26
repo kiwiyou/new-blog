@@ -1,17 +1,22 @@
----
-title: ReI
-author: THE ORAL CIGARETTES
-pubDatetime: 2024-08-18T05:27:29.269Z
-slug: rei
-comment: true
-youtube: https://youtu.be/z4LEqH58LGA?si=8vheQ4ECQ2dpbGjj
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "ReI",
+  "author": "THE ORAL CIGARETTES",
+  "pubDatetime": "2024-08-18T05:27:29.269Z",
+  "slug": "rei",
+  "comment": true,
+  "youtube": "https://youtu.be/z4LEqH58LGA?si=8vheQ4ECQ2dpbGjj",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja">この<ruby>先<rp>(</rp><rt>さき</rt><rp>)</rp></ruby>で<ruby>何十回<rp>(</rp><rt>なんじゅうかい</rt><rp>)</rp></ruby>も<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>り<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>した</div>
     <div class="lang-ko-tl">코노 사키데 난쥬카이모 후리다시타</div>
@@ -184,3 +189,4 @@ lang:
     <div class="lang-ko-tl">아시타니 노코시타이 모노다토 코코로니 치캇테 이키테쿤다</div>
     <div class="lang-ko">내일에 남겨두고 싶다고 마음에 맹세하고 살아가는 거야</div>
 </div>
+</>)

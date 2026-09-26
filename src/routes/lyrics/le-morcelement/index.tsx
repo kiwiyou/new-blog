@@ -1,18 +1,23 @@
----
-title: てんでんばらばら (ft. 足立レイ)
-author: 霄
-pubDatetime: 2024-01-17T04:06:34.488Z
-slug: le-morcelement
-comment: true
-youtube: https://youtu.be/gX_CceIMUuY?si=anj7HtFKpvELiA6X
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-아다치 레이의 음색과 찢어지는 이별이 잘 어울리는 곡입니다.
+export const metadata = {
+  "title": "てんでんばらばら (ft. 足立レイ)",
+  "author": "霄",
+  "pubDatetime": "2024-01-17T04:06:34.488Z",
+  "slug": "le-morcelement",
+  "comment": true,
+  "youtube": "https://youtu.be/gX_CceIMUuY?si=anj7HtFKpvELiA6X",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>아다치 레이의 음색과 찢어지는 이별이 잘 어울리는 곡입니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>貴方<rp>(</rp><rt>あなた</rt><rp>)</rp></ruby>のまなざしが<ruby>純粋無垢<rp>(</rp><rt>じゅんすいむく</rt><rp>)</rp></ruby>な<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>手<rp>(</rp><rt>て</rt><rp>)</rp></ruby>を</div>
@@ -268,3 +273,4 @@ lang:
     <div class="lang-ko-tl">아이가 나니카오사</div>
     <div class="lang-ko">사랑이 무엇인지를</div>
 </div>
+</>)

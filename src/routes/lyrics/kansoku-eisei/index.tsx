@@ -1,18 +1,23 @@
----
-title: 觀測衞曐
-author: ななひら feat. かめりあ
-pubDatetime: 2024-01-22T00:36:10.258Z
-slug: kansoku-eisei
-comment: true
-youtube: https://youtu.be/gpYAzEotlXI?si=uU22tI_LtdSg3LWQ
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-나나히라와 카메리아의 觀測衞曐(관측위성)입니다. 한자 표기에 이체자를 사용했습니다.
+export const metadata = {
+  "title": "觀測衞曐",
+  "author": "ななひら feat. かめりあ",
+  "pubDatetime": "2024-01-22T00:36:10.258Z",
+  "slug": "kansoku-eisei",
+  "comment": true,
+  "youtube": "https://youtu.be/gpYAzEotlXI?si=uU22tI_LtdSg3LWQ",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>나나히라와 카메리아의 觀測衞曐(관측위성)입니다. 한자 표기에 이체자를 사용했습니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>重力<rp>(</rp><rt>じゅうりょく</rt><rp>)</rp></ruby>に　<ruby>引<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>かれて</div>
@@ -259,3 +264,4 @@ lang:
     <div class="lang-ko-tl">마와루 마와루 마와루</div>
     <div class="lang-ko">돌거야 돌거야 돌거야</div>
 </div>
+</>)

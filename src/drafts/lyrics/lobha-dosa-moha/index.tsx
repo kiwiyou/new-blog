@@ -1,19 +1,24 @@
----
-title: けだもの (ft. 裏命)
-draft: true
-author: 霄
-pubDatetime: 2024-10-21T13:26:48.153Z
-slug: lobha-dosa-moha
-comment: true
-youtube: https://youtu.be/h-zHiEYicII?si=fBL3r5KjaY7EimFf
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-제목 けだもの는 짐승이라는 뜻입니다. 가사에 반야심경을 인용한 것이 인상적입니다.
+export const metadata = {
+  "title": "けだもの (ft. 裏命)",
+  "draft": true,
+  "author": "霄",
+  "pubDatetime": "2024-10-21T13:26:48.153Z",
+  "slug": "lobha-dosa-moha",
+  "comment": true,
+  "youtube": "https://youtu.be/h-zHiEYicII?si=fBL3r5KjaY7EimFf",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>제목 けだもの는 짐승이라는 뜻입니다. 가사에 반야심경을 인용한 것이 인상적입니다.</p>
 
 <div>
     <div class="lang-ja">「<ruby>兩義性<rp>(</rp><rt>リヤウギセイ</rt><rp>)</rp></ruby>ヲ<ruby>宿<rp>(</rp><rt>ヤド</rt><rp>)</rp></ruby>ス<ruby>壹<rp>(</rp><rt>ヒト</rt><rp>)</rp></ruby>ツノ<ruby>事象<rp>(</rp><rt>ジシヤウ</rt><rp>)</rp></ruby>／<ruby>凡<rp>(</rp><rt>オヨ</rt><rp>)</rp></ruby>ソ<ruby>參佰<rp>(</rp><rt>サンビヤク</rt><rp>)</rp></ruby><ruby>瓦<rp>(</rp><rt>グラム</rt><rp>)</rp></ruby>ノ<ruby>愛憎<rp>(</rp><rt>アイゾウ</rt><rp>)</rp></ruby></div>
@@ -106,7 +111,7 @@ lang:
     <div class="lang-ko">바보같지. 사랑하고 있거든.</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby><ruby>己<rp>(</rp><rt>おのれ</rt><rp>)</rp></ruby>を<ruby>壞<rp>(</rp><rt>こは</rt><rp>)</rp></ruby>して<ruby>仕舞<rp>(</rp><rt>しま</rt><rp>)</rp></ruby>ふ<ruby>程<rp>(</rp><rt>ほど</rt><rp>)</rp></ruby>。</div>
+    <div class="lang-ja"><ruby>己<rp>(</rp><rt>おのれ</rt><rp>)</rp></ruby>を<ruby>壞<rp>(</rp><rt>こは</rt><rp>)</rp></ruby>して<ruby>仕舞<rp>(</rp><rt>しま</rt><rp>)</rp></ruby>ふ<ruby>程<rp>(</rp><rt>ほど</rt><rp>)</rp></ruby>。</div>
     <div class="lang-ko-tl">오노레오 코와시치마우 호도</div>
     <div class="lang-ko">스스로를 무너뜨려 버릴 정도로.</div>
 </div>
@@ -216,7 +221,7 @@ lang:
     <div class="lang-ko">한 번이라도, 행복이며 너를 알고 싶었으며,</div>
 </div>
 <div>
-    <div class="lang-ja"><ruby><ruby>慥<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>かめ<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>ひ<ruby>度<rp>(</rp><rt>た</rt><rp>)</rp></ruby>かつたんだ。</div>
+    <div class="lang-ja"><ruby>慥<rp>(</rp><rt>たし</rt><rp>)</rp></ruby>かめ<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>ひ<ruby>度<rp>(</rp><rt>た</rt><rp>)</rp></ruby>かつたんだ。</div>
     <div class="lang-ko-tl">타시카메아이타캇탄다</div>
     <div class="lang-ko">서로 확인해보고 싶었어.</div>
 </div>
@@ -279,3 +284,4 @@ lang:
     <div class="lang-ko-tl">⋯세메테 아이사레테미타캇탄다</div>
     <div class="lang-ko">⋯적어도 사랑받아 보고 싶었어.</div>
 </div>
+</>)

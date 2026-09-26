@@ -22,6 +22,6 @@ const fromRoutes = (modules: Record<string, unknown>): Entry[] =>
   )
 
 export const posts = fromRoutes(import.meta.glob('../routes/posts/*/index.{md,mdx}', { eager: true, import: 'frontmatter' }))
-export const lyrics = fromRoutes(import.meta.glob('../routes/lyrics/*/index.{md,mdx}', { eager: true, import: 'frontmatter' }))
+export const lyrics = fromRoutes(import.meta.glob('../routes/lyrics/[a-z]*/index.tsx', { eager: true, import: 'metadata' }))
 
 export const slugifyTag = (tag: string) => tag.toLowerCase().replace(/\s+/g, '-')

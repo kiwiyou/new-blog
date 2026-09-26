@@ -1,17 +1,22 @@
----
-title: あいいれない
-author: RuLu
-pubDatetime: 2025-05-01T05:17:00.000Z
-slug: aiirenai
-youtube: https://youtu.be/yjx1_bpON0I?si=e99Gckj4Nj2UMMBz
-comment: true
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "あいいれない",
+  "author": "RuLu",
+  "pubDatetime": "2025-05-01T05:17:00.000Z",
+  "slug": "aiirenai",
+  "youtube": "https://youtu.be/yjx1_bpON0I?si=e99Gckj4Nj2UMMBz",
+  "comment": true,
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja"><ruby>通<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>り<ruby>過<rp>(</rp><rt>す</rt><rp>)</rp></ruby>ぎていく<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>の<ruby>雑踏<rp>(</rp><rt>ネオン</rt><rp>)</rp></ruby>に</div>
     <div class="lang-ko-tl">토오리 스기테유쿠 히토노 네온니</div>
@@ -247,3 +252,4 @@ lang:
     <div class="lang-ko-tl">키미가 노조무 와타시니와 나레나이카라</div>
     <div class="lang-ko">네가 바라는 나로는 될 수 없으니까</div>
 </div>
+</>)

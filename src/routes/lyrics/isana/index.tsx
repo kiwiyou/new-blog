@@ -1,18 +1,23 @@
----
-title: いさな (ft. 水音ラル)
-author: 霄
-pubDatetime: 2025-03-09T04:51:04.889Z
-slug: isana
-comment: true
-youtube: https://youtu.be/ij5XZB9cPhk?si=XS3xwH-4Lv-Eb4Aj
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-いさな(이사나)는 고래를 뜻하는 말입니다.
+export const metadata = {
+  "title": "いさな (ft. 水音ラル)",
+  "author": "霄",
+  "pubDatetime": "2025-03-09T04:51:04.889Z",
+  "slug": "isana",
+  "comment": true,
+  "youtube": "https://youtu.be/ij5XZB9cPhk?si=XS3xwH-4Lv-Eb4Aj",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>いさな(이사나)는 고래를 뜻하는 말입니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>澱<rp>(</rp><rt>よど</rt><rp>)</rp></ruby>む<ruby>現<rp>(</rp><rt>うつつ</rt><rp>)</rp></ruby>が<ruby>陰<rp>(</rp><rt>かげ</rt><rp>)</rp></ruby>を<ruby>喚<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んで</div>
@@ -262,3 +267,4 @@ lang:
     <div class="lang-ko-tl">보쿠가 나쿠카라!</div>
     <div class="lang-ko">내가 울 테니까!</div>
 </div>
+</>)

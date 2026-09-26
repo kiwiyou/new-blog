@@ -1,18 +1,23 @@
----
-title: 一疋狼 (ft. 可不)
-author: 霄
-pubDatetime: 2024-10-20T14:29:38.516Z
-slug: lone-wolf
-comment: true
-youtube: https://youtu.be/aFoSnAlrI-g
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-원제 一疋狼는 보통 一匹狼(いっぴきおおかみ)로 쓰며, 홀로서기하는 사람을 뜻합니다. 미조레님의 늑대 캐릭터와 외로운 모습에 잘 어울리는 제목입니다.
+export const metadata = {
+  "title": "一疋狼 (ft. 可不)",
+  "author": "霄",
+  "pubDatetime": "2024-10-20T14:29:38.516Z",
+  "slug": "lone-wolf",
+  "comment": true,
+  "youtube": "https://youtu.be/aFoSnAlrI-g",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>원제 一疋狼는 보통 一匹狼(いっぴきおおかみ)로 쓰며, 홀로서기하는 사람을 뜻합니다. 미조레님의 늑대 캐릭터와 외로운 모습에 잘 어울리는 제목입니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>腐<rp>(</rp><rt>くさ</rt><rp>)</rp></ruby>り<ruby>果<rp>(</rp><rt>は</rt><rp>)</rp></ruby>てた<ruby>情<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby>を<ruby>育<rp>(</rp><rt>そだ</rt><rp>)</rp></ruby>てては</div>
@@ -218,3 +223,4 @@ lang:
     <div class="lang-ko-tl">⋯오쿠소코노 코코로오 다레모 와카랴시나이</div>
     <div class="lang-ko">⋯깊숙한 속마음은 아무도 모를 테지</div>
 </div>
+</>)

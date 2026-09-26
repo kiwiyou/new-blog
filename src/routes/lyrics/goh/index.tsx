@@ -1,18 +1,23 @@
----
-title: 業曝し (ft. flower)
-author: 霄
-pubDatetime: 2025-03-14T17:31:23.701Z
-slug: goh
-comment: true
-youtube: https://youtu.be/clORvyS-WQc?si=OmNO3MSQk9O17OmS
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-제목인 業曝し는 전생에 쌓은 업이 현재에 고통을 주는 것을 뜻하며, 세간이 사람을 욕하는 것을 가리키기도 합니다.
+export const metadata = {
+  "title": "業曝し (ft. flower)",
+  "author": "霄",
+  "pubDatetime": "2025-03-14T17:31:23.701Z",
+  "slug": "goh",
+  "comment": true,
+  "youtube": "https://youtu.be/clORvyS-WQc?si=OmNO3MSQk9O17OmS",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>제목인 業曝し는 전생에 쌓은 업이 현재에 고통을 주는 것을 뜻하며, 세간이 사람을 욕하는 것을 가리키기도 합니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>明日<rp>(</rp><rt>あす</rt><rp>)</rp></ruby><ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>らない<ruby>憂<rp>(</rp><rt>う</rt><rp>)</rp></ruby>き<ruby>世<rp>(</rp><rt>よ</rt><rp>)</rp></ruby></div>
@@ -275,3 +280,4 @@ lang:
     <div class="lang-ko-tl">고오오 사라세요!</div>
     <div class="lang-ko">내 업을 탓해라!</div>
 </div>
+</>)

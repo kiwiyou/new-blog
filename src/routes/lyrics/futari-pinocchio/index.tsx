@@ -1,17 +1,22 @@
----
-title: ふたりピノキオ
-author: harmoe
-pubDatetime: 2024-01-21T11:02:07.720Z
-slug: futari-pinocchio
-comment: true
-youtube: https://youtu.be/E-e5M9S9y3k?si=7QI2Fg4WSbJqrmJb
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "ふたりピノキオ",
+  "author": "harmoe",
+  "pubDatetime": "2024-01-21T11:02:07.720Z",
+  "slug": "futari-pinocchio",
+  "comment": true,
+  "youtube": "https://youtu.be/E-e5M9S9y3k?si=7QI2Fg4WSbJqrmJb",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja">いつかいい<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>になれるといいな</div>
     <div class="lang-ko-tl">이츠카 이이 코니 나레루토 이이나</div>
@@ -242,3 +247,4 @@ lang:
     <div class="lang-ko-tl">호시니 네가이오 SUGAR SUGAR SUGAR</div>
     <div class="lang-ko">별에 소원을 SUGAR SUGAR SUGAR</div>
 </div>
+</>)

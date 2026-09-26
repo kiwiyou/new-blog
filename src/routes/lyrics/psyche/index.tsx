@@ -1,18 +1,23 @@
----
-title: てふ〱 (ft. ヤイ)
-author: 霄
-pubDatetime: 2024-01-18T12:35:01.807Z
-slug: psyche
-comment: true
-youtube: https://youtu.be/LbOPhK3jnS4?si=Qm44mRUlg6OEKl_e
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-제목은 蝶々(ちょうちょう)로 나비라는 뜻입니다.
+export const metadata = {
+  "title": "てふ〱 (ft. ヤイ)",
+  "author": "霄",
+  "pubDatetime": "2024-01-18T12:35:01.807Z",
+  "slug": "psyche",
+  "comment": true,
+  "youtube": "https://youtu.be/LbOPhK3jnS4?si=Qm44mRUlg6OEKl_e",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>제목은 蝶々(ちょうちょう)로 나비라는 뜻입니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>奈何<rp>(</rp><rt>ドウモ</rt><rp>)</rp></ruby><ruby>現狀<rp>(</rp><rt>ゲムジヤウ</rt><rp>)</rp></ruby>ガ<ruby>厭<rp>(</rp><rt>イト</rt><rp>)</rp></ruby>ハシクテ、</div>
@@ -114,3 +119,4 @@ lang:
     <div class="lang-ko-tl">히토나사케가 코와레타</div>
     <div class="lang-ko">인정이 무너졌다 ────</div>
 </div>
+</>)

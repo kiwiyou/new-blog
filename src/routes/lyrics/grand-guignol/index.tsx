@@ -1,18 +1,23 @@
----
-title: グランギニョル (feat. つぐ)
-author: RuLu
-pubDatetime: 2025-03-22T09:41:13.006Z
-slug: grand-guignol
-comment: true
-youtube: https://youtu.be/hQpofbfyOK4?si=2dlxVjUmoXgfVqIw
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-"グランギニョル"는 프랑스어 "Grand Guignol"에서 온 말로, 공포와 잔혹함을 주제로 한 극장이나 극을 의미합니다.
+export const metadata = {
+  "title": "グランギニョル (feat. つぐ)",
+  "author": "RuLu",
+  "pubDatetime": "2025-03-22T09:41:13.006Z",
+  "slug": "grand-guignol",
+  "comment": true,
+  "youtube": "https://youtu.be/hQpofbfyOK4?si=2dlxVjUmoXgfVqIw",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>"グランギニョル"는 프랑스어 "Grand Guignol"에서 온 말로, 공포와 잔혹함을 주제로 한 극장이나 극을 의미합니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>腐<rp>(</rp><rt>くさ</rt><rp>)</rp></ruby>っちまった<ruby>平穏<rp>(</rp><rt>へいおん</rt><rp>)</rp></ruby>と <ruby>這<rp>(</rp><rt>は</rt><rp>)</rp></ruby>いよる<ruby>影<rp>(</rp><rt>かげ</rt><rp>)</rp></ruby> <ruby>帳<rp>(</rp><rt>とばり</rt><rp>)</rp></ruby>が<ruby>下<rp>(</rp><rt>お</rt><rp>)</rp></ruby>りる</div>
@@ -129,3 +134,4 @@ lang:
     <div class="lang-ko-tl">코타에노 나이 쇼우메이 토바리가 아가루</div>
     <div class="lang-ko">정답이 없는 증명 막이 오른다</div>
 </div>
+</>)

@@ -1,16 +1,21 @@
----
-title: Love is a potion
-author: harmoe
-pubDatetime: 2024-01-21T14:11:17.870Z
-slug: love-is-a-potion
-comment: true
-youtube: https://youtu.be/R3JkWVjpw0c?si=_dImv8nzsW3Te6v3
-lang:
-  - ja
-  - yomigana
-  - ko
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "Love is a potion",
+  "author": "harmoe",
+  "pubDatetime": "2024-01-21T14:11:17.870Z",
+  "slug": "love-is-a-potion",
+  "comment": true,
+  "youtube": "https://youtu.be/R3JkWVjpw0c?si=_dImv8nzsW3Te6v3",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja">さっき、いっかいおわった　この<ruby>命<rp>(</rp><rt>いのち</rt><rp>)</rp></ruby>は</div>
     <div class="lang-ko">방금, 한 번 끝난 이 목숨은</div>
@@ -116,3 +121,4 @@ lang:
     <div class="lang-ja">Grow with experience</div>
     <div class="lang-ko">Grow with experience</div>
 </div>
+</>)

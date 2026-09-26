@@ -1,17 +1,22 @@
----
-title: 笑えない
-author: PSYQUI feat. mikanzil
-pubDatetime: 2025-05-01T06:20:00.000Z
-slug: waraenai
-youtube: https://youtu.be/nnXClR0uSjc?si=bRUuRyJoDi2w2kcF
-comment: true
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
+export const metadata = {
+  "title": "笑えない",
+  "author": "PSYQUI feat. mikanzil",
+  "pubDatetime": "2025-05-01T06:20:00.000Z",
+  "slug": "waraenai",
+  "youtube": "https://youtu.be/nnXClR0uSjc?si=bRUuRyJoDi2w2kcF",
+  "comment": true,
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
 <div>
     <div class="lang-ja">ゆらゆら　<ruby>由来<rp>(</rp><rt>ゆらい</rt><rp>)</rp></ruby><ruby>無<rp>(</rp><rt>な</rt><rp>)</rp></ruby>い　<ruby>迷走<rp>(</rp><rt>めいそう</rt><rp>)</rp></ruby></div>
     <div class="lang-ko-tl">유라유라 유라이 나이 메이소오</div>
@@ -292,3 +297,4 @@ lang:
     <div class="lang-ko-tl">코에다시테 핫피이엔도</div>
     <div class="lang-ko">목소리 내고 해피엔딩</div>
 </div>
+</>)

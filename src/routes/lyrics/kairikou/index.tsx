@@ -1,19 +1,24 @@
----
-title: 乖離光
-author: Feryquitous feat. 藍月なくる
-pubDatetime: 2024-01-25T04:32:24.251Z
-slug: kairikou
-comment: true
-youtube: https://www.youtube.com/watch?v=GMGOLjwWu3o
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.
-가사가 전반적으로 난해하고 추상적으로 작성되어 있어 곡과 어울리네요.
+export const metadata = {
+  "title": "乖離光",
+  "author": "Feryquitous feat. 藍月なくる",
+  "pubDatetime": "2024-01-25T04:32:24.251Z",
+  "slug": "kairikou",
+  "comment": true,
+  "youtube": "https://www.youtube.com/watch?v=GMGOLjwWu3o",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.</p>
+<p>가사가 전반적으로 난해하고 추상적으로 작성되어 있어 곡과 어울리네요.</p>
 
 <div>
     <div class="lang-ja"><ruby>雲間<rp>(</rp><rt>くもま</rt><rp>)</rp></ruby>を<ruby>剌<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>す<ruby>彼我<rp>(</rp><rt>ひが</rt><rp>)</rp></ruby>の<ruby>眼二<rp>(</rp><rt>まなこ</rt><rp>)</rp></ruby></div>
@@ -255,3 +260,4 @@ Feryquitous와 아이츠키 나쿠루의 乖離光(괴리광)입니다.
     <div class="lang-ko-tl">쇼오소오 히카리노 나카 토오쿠</div>
     <div class="lang-ko">초조 빛의 속 멀리.</div>
 </div>
+</>)

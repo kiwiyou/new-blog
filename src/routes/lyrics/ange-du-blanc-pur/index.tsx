@@ -1,18 +1,23 @@
----
-title: Ange du Blanc Pur
-author: ななひら
-pubDatetime: 2024-01-22T00:36:10.258Z
-slug: ange-du-blanc-pur
-comment: true
-youtube: https://youtu.be/5bfbmDB8rMM?si=3pR431H-_txmqqFs
-lang:
-  - ja
-  - yomigana
-  - ko
-  - ko-transliteration
----
+import { component$ } from '@qwik.dev/core'
 
-"Ange du Blanc Pur"는 프랑스어로 "순백의 천사"라는 뜻입니다. 가사에서도 프랑스어가 등장합니다.
+export const metadata = {
+  "title": "Ange du Blanc Pur",
+  "author": "ななひら",
+  "pubDatetime": "2024-01-22T00:36:10.258Z",
+  "slug": "ange-du-blanc-pur",
+  "comment": true,
+  "youtube": "https://youtu.be/5bfbmDB8rMM?si=3pR431H-_txmqqFs",
+  "lang": [
+    "ja",
+    "yomigana",
+    "ko",
+    "ko-transliteration"
+  ]
+}
+export const head = { title: metadata.title, frontmatter: metadata }
+
+export default component$(() => <>
+<p>"Ange du Blanc Pur"는 프랑스어로 "순백의 천사"라는 뜻입니다. 가사에서도 프랑스어가 등장합니다.</p>
 
 <div>
     <div class="lang-ja"><ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>まり<ruby>告<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>げる<ruby>鐘<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>　<ruby>遠<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>く</div>
@@ -129,3 +134,4 @@ lang:
     <div class="lang-ko-tl">아나타토 토모니⋯</div>
     <div class="lang-ko">당신과 함께⋯</div>
 </div>
+</>)
