@@ -5,5 +5,7 @@ import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 
 export default defineConfig({
+  optimizeDeps: { exclude: ['@resvg/resvg-js'] },
+  ssr: { external: ['@resvg/resvg-js'] },
   plugins: [qwikRouter({ mdx: { remarkPlugins: [remarkMath], rehypePlugins: [rehypeKatex] } }), qwikVite()],
 })
