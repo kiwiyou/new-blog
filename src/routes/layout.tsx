@@ -16,8 +16,8 @@ type ArticleFrontmatter = {
 export default component$(() => {
   const { url } = useLocation()
   const parts = url.pathname.split('/').filter(Boolean)
-  const isPost = parts[0] === 'posts' && parts.length === 2
-  const isLyric = parts[0] === 'lyrics' && parts.length === 2
+  const isPost = parts[0] === 'posts' && parts.length === 2 && !/^\d+$/.test(parts[1])
+  const isLyric = parts[0] === 'lyrics' && parts.length === 2 && !/^\d+$/.test(parts[1])
   const head = useDocumentHead()
   const meta = (head.frontmatter || {}) as ArticleFrontmatter
   const author = meta.author || head.meta?.find(item => item.name === 'author')?.content
