@@ -162,13 +162,14 @@ rt { font-size: .7em; }
 .lyric-body:has(input[name='ja']:not(:checked)) .lang-ja,
 .lyric-body:has(input[name='ko']:not(:checked)) .lang-ko,
 .lyric-body:has(input[name='ko-transliteration']:not(:checked)) .lang-ko-tl,
-.lyric-body:has(input[name='yomigana']:not(:checked)) rt:not(.show) { display: none; }
+.lyric-body:has(input[name='yomigana']:not(:checked)) rt:not(.show) { visibility: hidden; }
 .lyrics.hide-ja .lang-ja, .lyrics[data-lang-hidden~='ja'] .lang-ja,
 .lyrics.hide-ko .lang-ko, .lyrics[data-lang-hidden~='ko'] .lang-ko,
 .lyrics.hide-ko-tl .lang-ko-tl, .lyrics[data-lang-hidden~='ko-transliteration'] .lang-ko-tl,
-.lyrics.hide-yomigana rt:not(.show), .lyrics[data-lang-hidden~='yomigana'] rt:not(.show) { display: none; }
+.lyrics.hide-yomigana rt:not(.show), .lyrics[data-lang-hidden~='yomigana'] rt:not(.show) { visibility: hidden; }
 .lyric-lines.hide-ja .lang-ja, .lyric-lines.hide-ko .lang-ko,
-.lyric-lines.hide-ko-tl .lang-ko-tl, .lyric-lines.hide-yomigana rt:not(.show) { display: none; }
+.lyric-lines.hide-ko-tl .lang-ko-tl { display: none; }
+.lyric-lines.hide-yomigana rt:not(.show) { visibility: hidden; }
 
 @media (max-width: 640px) {
   .site-header, header { padding-block: 1rem; }
