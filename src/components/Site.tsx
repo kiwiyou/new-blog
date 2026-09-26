@@ -47,7 +47,7 @@ export default component$(() => {
         <nav id="site-nav" class={menu.value ? 'site-nav open' : 'site-nav'} aria-label="주 메뉴">
           {nav.map(([href, label]) => <a key={href} href={href} class={url.pathname.startsWith(href) ? 'active' : undefined}>{label}</a>)}
           <a href="/search/" aria-label="검색" title="검색" class={url.pathname.startsWith('/search/') ? 'active' : undefined}><Icon svg={searchSvg} /></a>
-          <button class="theme-button" type="button" aria-label="화면 색상 전환" onClick$={() => { const root = document.documentElement; const next = root.dataset.theme === 'dark' ? 'light' : 'dark'; root.dataset.theme = next; localStorage.setItem('theme', next) }}><span class="show-dark"><Icon svg={sunSvg} /></span><span class="show-light"><Icon svg={moonSvg} /></span></button>
+          <button class="theme-button" type="button" aria-label="화면 색상 전환" onClick$={() => { const root = document.documentElement; const next = root.dataset.theme === 'dark' ? 'light' : 'dark'; root.dataset.theme = next; localStorage.setItem('theme', next); document.querySelector<HTMLIFrameElement>('iframe.giscus-frame')?.contentWindow?.postMessage({ giscus: { setConfig: { theme: next } } }, 'https://giscus.app') }}><span class="show-dark"><Icon svg={sunSvg} /></span><span class="show-light"><Icon svg={moonSvg} /></span></button>
         </nav>
       </div>
     </header>

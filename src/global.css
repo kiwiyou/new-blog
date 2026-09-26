@@ -68,7 +68,8 @@ a:hover { color: var(--accent); }
 svg { width: 1.5em; height: 1.5em; fill: currentColor; vertical-align: middle; }
 .icon { display: inline-flex; vertical-align: -.15em; }
 .icon svg { width: 1em; height: 1em; fill: none; stroke: currentColor; }
-:root[data-theme='dark'] .show-light, :root[data-theme='light'] .show-dark { display: none; }
+.show-light, :root[data-theme='light'] .show-dark { display: none; }
+:root[data-theme='light'] .show-light { display: inline; }
 img, video { max-width: 100%; height: auto; }
 
 .container, main, .site-header, .site-footer, header, footer {

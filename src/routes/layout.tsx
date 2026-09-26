@@ -1,4 +1,4 @@
-import { component$, Slot } from '@qwik.dev/core'
+import { component$, Slot, useSignal, useVisibleTask$ } from '@qwik.dev/core'
 import { useDocumentHead, useLocation } from '@qwik.dev/router'
 import Site, { DateStamp, SiteFooter, TagLink } from '../components/Site'
 import Icon from '../components/Icon'
@@ -15,6 +15,23 @@ type ArticleFrontmatter = {
   youtube?: string
   comment?: boolean
 }
+
+const Giscus = component$(() => {
+  const container = useSignal<HTMLDivElement>()
+  useVisibleTask$(() => {
+    const script = document.createElement('script')
+    Object.assign(script.dataset, {
+      repo: 'kiwiyou/new-blog', repoId: 'R_kgDOGoQLHw', category: '댓글', categoryId: 'DIC_kwDOGoQLH84CcGYV',
+      mapping: 'og:title', strict: '1', reactionsEnabled: '1', emitMetadata: '0', inputPosition: 'top',
+      theme: document.documentElement.dataset.theme || 'dark', lang: 'ko',
+    })
+    script.src = 'https://giscus.app/client.js'
+    script.crossOrigin = 'anonymous'
+    script.async = true
+    container.value?.append(script)
+  }, { strategy: 'document-ready' })
+  return <div class="comments" ref={container} />
+})
 
 export default component$(() => {
   const { url } = useLocation()
@@ -44,7 +61,7 @@ export default component$(() => {
         </article>
         {isPost && meta.tags?.length ? <ul class="tag-list article-tags">{meta.tags.map(tag => <TagLink key={tag} tag={tag} />)}</ul> : null}
         <div class="back-to-top"><a href="#main-content">맨 위로 <Icon svg={upSvg} /></a></div>
-        {meta.comment && <div class="comments"><script src="https://giscus.app/client.js" data-repo="kiwiyou/new-blog" data-repo-id="R_kgDOGoQLHw" data-category="댓글" data-category-id="DIC_kwDOGoQLH84CcGYV" data-mapping="og:title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="ko" crossOrigin="anonymous" async /></div>}
+        {meta.comment && <Giscus key={url.pathname} />}
       </main>
     </> : <Slot />}
     <SiteFooter />
