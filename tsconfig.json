@@ -1,19 +1,8 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "src",
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "paths": {
-      "@assets/*": ["assets/*"],
-      "@config": ["config.ts"],
-      "@components/*": ["components/*"],
-      "@content/*": ["content/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"]
-    }
+    "target": "ES2022", "module": "ESNext", "moduleResolution": "Bundler",
+    "jsx": "react-jsx", "jsxImportSource": "@qwik.dev/core", "strict": true,
+    "noEmit": true, "skipLibCheck": true, "types": ["vite/client"]
   },
-  "exclude": ["dist/"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite*.ts"]
 }
