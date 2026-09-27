@@ -28,6 +28,7 @@ export default defineConfig({
 				rehypeSyntaxHighlight: false,
 			},
 			mdx: {
+				format: "mdx",
 				remarkPlugins: [remarkMath],
 				rehypePlugins: [
 					rehypeKatex,
