@@ -11,5 +11,12 @@
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab"
+	},
+	"linter": {
+		"rules": {
+			"style": {
+				"noDescendingSpecificity": "off"
+			}
+		}
 	}
 }

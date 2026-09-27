@@ -5,13 +5,15 @@ const xml = (value: string) =>
 	value.replace(
 		/[<>&"']/g,
 		(char) =>
-			({
-				"<": "&lt;",
-				">": "&gt;",
-				"&": "&amp;",
-				'"': "&quot;",
-				"'": "&apos;",
-			})[char]!,
+			(
+				({
+					"<": "&lt;",
+					">": "&gt;",
+					"&": "&amp;",
+					'"': "&quot;",
+					"'": "&apos;",
+				}) as Record<string, string>
+			)[char],
 	);
 
 export const onGet: RequestHandler = ({ headers, send }) => {

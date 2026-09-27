@@ -17,7 +17,7 @@ const fromRoutes = (modules: Record<string, unknown>): Entry[] =>
 	Object.entries(modules)
 		.map(([path, value]) => ({
 			...(value as Omit<Entry, "slug">),
-			slug: path.split("/").at(-2)!,
+			slug: path.split("/").at(-2) ?? "",
 		}))
 		.filter((entry) => !entry.draft)
 		.sort(

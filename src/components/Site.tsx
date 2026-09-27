@@ -1,14 +1,14 @@
 import { component$, useSignal } from "@qwik.dev/core";
 import { useLocation } from "@qwik.dev/router";
+import calendarSvg from "lucide-static/icons/calendar-days.svg?raw";
+import menuSvg from "lucide-static/icons/menu.svg?raw";
+import moonSvg from "lucide-static/icons/moon.svg?raw";
+import searchSvg from "lucide-static/icons/search.svg?raw";
+import sunSvg from "lucide-static/icons/sun.svg?raw";
+import tagSvg from "lucide-static/icons/tag.svg?raw";
 import { slugifyTag } from "../lib/content";
 import Icon from "./Icon";
 import SocialLinks from "./SocialLinks";
-import menuSvg from "lucide-static/icons/menu.svg?raw";
-import searchSvg from "lucide-static/icons/search.svg?raw";
-import sunSvg from "lucide-static/icons/sun.svg?raw";
-import moonSvg from "lucide-static/icons/moon.svg?raw";
-import calendarSvg from "lucide-static/icons/calendar-days.svg?raw";
-import tagSvg from "lucide-static/icons/tag.svg?raw";
 
 export const DateStamp = component$(
 	({ published, modified }: { published: string; modified?: string }) => {
@@ -102,75 +102,73 @@ export default component$(() => {
 		["/about/", "소개"],
 	];
 	return (
-		<>
-			<header class="site-header">
-				<a class="skip-link" href="#main-content">
-					본문 바로가기
+		<header class="site-header">
+			<a class="skip-link" href="#main-content">
+				본문 바로가기
+			</a>
+			<div class="header-inner">
+				<a class="site-logo" href="/">
+					kiwifarm
 				</a>
-				<div class="header-inner">
-					<a class="site-logo" href="/">
-						kiwifarm
+				<button
+					class="menu-button"
+					type="button"
+					aria-label="메뉴 열기"
+					aria-controls="site-nav"
+					aria-expanded={menu.value}
+					onClick$={() => (menu.value = !menu.value)}
+				>
+					<Icon svg={menuSvg} />
+				</button>
+				<nav
+					id="site-nav"
+					class={menu.value ? "site-nav open" : "site-nav"}
+					aria-label="주 메뉴"
+				>
+					{nav.map(([href, label]) => (
+						<a
+							key={href}
+							href={href}
+							class={url.pathname.startsWith(href) ? "active" : undefined}
+						>
+							{label}
+						</a>
+					))}
+					<a
+						href="/search/"
+						aria-label="검색"
+						title="검색"
+						class={url.pathname.startsWith("/search/") ? "active" : undefined}
+					>
+						<Icon svg={searchSvg} />
 					</a>
 					<button
-						class="menu-button"
+						class="theme-button"
 						type="button"
-						aria-label="메뉴 열기"
-						aria-controls="site-nav"
-						aria-expanded={menu.value}
-						onClick$={() => (menu.value = !menu.value)}
+						aria-label="화면 색상 전환"
+						onClick$={() => {
+							const root = document.documentElement;
+							const next = root.dataset.theme === "dark" ? "light" : "dark";
+							root.dataset.theme = next;
+							localStorage.setItem("theme", next);
+							document
+								.querySelector<HTMLIFrameElement>("iframe.giscus-frame")
+								?.contentWindow?.postMessage(
+									{ giscus: { setConfig: { theme: next } } },
+									"https://giscus.app",
+								);
+						}}
 					>
-						<Icon svg={menuSvg} />
+						<span class="show-dark">
+							<Icon svg={sunSvg} />
+						</span>
+						<span class="show-light">
+							<Icon svg={moonSvg} />
+						</span>
 					</button>
-					<nav
-						id="site-nav"
-						class={menu.value ? "site-nav open" : "site-nav"}
-						aria-label="주 메뉴"
-					>
-						{nav.map(([href, label]) => (
-							<a
-								key={href}
-								href={href}
-								class={url.pathname.startsWith(href) ? "active" : undefined}
-							>
-								{label}
-							</a>
-						))}
-						<a
-							href="/search/"
-							aria-label="검색"
-							title="검색"
-							class={url.pathname.startsWith("/search/") ? "active" : undefined}
-						>
-							<Icon svg={searchSvg} />
-						</a>
-						<button
-							class="theme-button"
-							type="button"
-							aria-label="화면 색상 전환"
-							onClick$={() => {
-								const root = document.documentElement;
-								const next = root.dataset.theme === "dark" ? "light" : "dark";
-								root.dataset.theme = next;
-								localStorage.setItem("theme", next);
-								document
-									.querySelector<HTMLIFrameElement>("iframe.giscus-frame")
-									?.contentWindow?.postMessage(
-										{ giscus: { setConfig: { theme: next } } },
-										"https://giscus.app",
-									);
-							}}
-						>
-							<span class="show-dark">
-								<Icon svg={sunSvg} />
-							</span>
-							<span class="show-light">
-								<Icon svg={moonSvg} />
-							</span>
-						</button>
-					</nav>
-				</div>
-			</header>
-		</>
+				</nav>
+			</div>
+		</header>
 	);
 });
 

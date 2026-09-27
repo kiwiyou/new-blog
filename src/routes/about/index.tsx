@@ -1,5 +1,5 @@
 import { component$ } from "@qwik.dev/core";
-import { type DocumentHead } from "@qwik.dev/router";
+import type { DocumentHead } from "@qwik.dev/router";
 import { PageHeader } from "../../components/Site";
 
 export const head: DocumentHead = { title: "소개" };

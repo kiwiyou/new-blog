@@ -1,5 +1,6 @@
 import { component$, Slot } from "@qwik.dev/core";
 
+// biome-ignore lint/suspicious/noShadowRestrictedNames: Existing MDX component API.
 export const Function = component$(() => (
 	<div class="algorithm-function">
 		<Slot />

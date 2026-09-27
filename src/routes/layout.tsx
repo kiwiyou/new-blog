@@ -82,7 +82,12 @@ export default component$(() => {
 							{isLyric && (
 								<>
 									{meta.lang?.length ? (
-										<div class="lyric-controls" aria-label="가사 언어 표시">
+										// biome-ignore lint/a11y/useSemanticElements: Fieldset browser styles would change this sticky control bar.
+										<div
+											class="lyric-controls"
+											role="group"
+											aria-label="가사 언어 표시"
+										>
 											{(["ja", "yomigana", "ko-transliteration", "ko"] as const)
 												.filter((value) => meta.lang?.includes(value))
 												.map((value) => (
