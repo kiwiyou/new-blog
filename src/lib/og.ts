@@ -5,24 +5,27 @@ import yogaWasm from "satori/yoga.wasm";
 
 const wasmReady = initWasm(resvgWasm);
 const satoriReady = init(yogaWasm);
-let fontPromise: Promise<ArrayBuffer> | undefined;
-const loadFont = () =>
-	(fontPromise ??= fetch(
-		"https://kiwiyou.github.io/new-blog/fonts/NotoSansCJKkr-Regular.otf",
-	)
-		.then((response) => {
-			if (!response.ok)
-				throw new Error(`OG font fetch failed: ${response.status}`);
-			return response.arrayBuffer();
-		})
-		.catch((error) => {
-			fontPromise = undefined;
-			throw error;
-		}));
+let fontPromise: Promise<[ArrayBuffer, ArrayBuffer]> | undefined;
+const loadFont = async (font: string) => {
+	const response = await fetch(
+		`https://kiwiyou.github.io/new-blog/fonts/${font}`,
+	);
+	if (!response.ok)
+		throw new Error(`OG font fetch failed: ${font} ${response.status}`);
+	return response.arrayBuffer();
+};
+const loadFonts = () =>
+	(fontPromise ??= Promise.all([
+		loadFont("Pretendard-Regular.otf"),
+		loadFont("NotoSansCJKkr-Regular.otf"),
+	]).catch((error) => {
+		fontPromise = undefined;
+		throw error;
+	}));
 
 export async function ogImage(title: string, subtitle = "") {
 	await satoriReady;
-	const fontData = await loadFont();
+	const [pretendard, notoSans] = await loadFonts();
 	const node = {
 		type: "div",
 		props: {
@@ -35,7 +38,7 @@ export async function ogImage(title: string, subtitle = "") {
 				padding: "72px 84px",
 				background: "#302e2a",
 				color: "#f1eff0",
-				fontFamily: "Noto Sans CJK",
+				fontFamily: "Pretendard, Noto Sans CJK",
 				borderTop: "20px solid #93de58",
 			},
 			children: [
@@ -89,7 +92,8 @@ export async function ogImage(title: string, subtitle = "") {
 		width: 1200,
 		height: 630,
 		fonts: [
-			{ name: "Noto Sans CJK", data: fontData, weight: 400, style: "normal" },
+			{ name: "Pretendard", data: pretendard, weight: 400, style: "normal" },
+			{ name: "Noto Sans CJK", data: notoSans, weight: 400, style: "normal" },
 		],
 	});
 	await wasmReady;
