@@ -471,23 +471,17 @@ footer .socials {
 :is(.prose, .article-body) code,
 :is(.prose, .article-body) pre {
 	font-family: Monaspace, monospace;
+	font-size: 0.875rem;
 }
-:is(.prose, .article-body) :not(pre) > code {
-	padding: 0.1em 0.3em;
-	border-radius: 0.2rem;
-	background: var(--card);
+:is(.prose, .article-body) :not(pre) code {
+    font-size: 0.8em;
 }
 :is(.prose, .article-body) pre {
-	padding: 1rem;
+	padding: 0.75rem;
 	overflow-x: auto;
 	background: var(--card);
-	font-size: 0.875rem;
-	line-height: 1.6;
+	line-height: 1.3;
 	text-align: left;
-}
-:is(.prose, .article-body) pre code {
-	padding: 0;
-	background: none;
 }
 :root:not([data-theme="light"]) .shiki,
 :root:not([data-theme="light"]) .shiki span {
