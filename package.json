@@ -22,6 +22,7 @@
 		"@qwik.dev/core": "2.0.0-beta.45",
 		"@qwik.dev/router": "2.0.0-beta.45",
 		"@resvg/resvg-wasm": "^2.6.2",
+		"@shikijs/rehype": "^4.4.3",
 		"@types/node": "^26.6.3",
 		"katex": "^0.18.9",
 		"lucide-static": "^1.48.0",

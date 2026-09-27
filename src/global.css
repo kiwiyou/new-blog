@@ -27,11 +27,6 @@
 	--accent: oklch(77.33% 0.2007 138.85);
 	--card: oklch(40.43% 0.0377 66.42);
 	--border: oklch(76.14% 0.2152 143.1);
-	--code-comment: #d2c0b0;
-	--code-keyword: #cff09e;
-	--code-name: #a6d9ff;
-	--code-string: #ffc999;
-	--code-number: #e6b5ed;
 }
 
 :root[data-theme="light"] {
@@ -41,11 +36,6 @@
 	--accent: oklch(63.81% 0.1807 139.25);
 	--card: oklch(92.49% 0 0);
 	--border: oklch(93.63% 0.0032 17.22);
-	--code-comment: #655e56;
-	--code-keyword: #2d6f22;
-	--code-name: #235886;
-	--code-string: #87530c;
-	--code-number: #693a70;
 }
 
 * {
@@ -499,24 +489,15 @@ footer .socials {
 	padding: 0;
 	background: none;
 }
-:is(.prose, .article-body) pre .token.comment {
-	color: var(--code-comment);
+:root:not([data-theme="light"]) .shiki,
+:root:not([data-theme="light"]) .shiki span {
+	color: var(--shiki-dark);
+	background-color: var(--shiki-dark-bg);
 }
-:is(.prose, .article-body) pre :is(.token.keyword, .token.operator) {
-	color: var(--code-keyword);
-}
-:is(.prose, .article-body)
-	pre
-	:is(.token.function, .token.class-name, .token.builtin) {
-	color: var(--code-name);
-}
-:is(.prose, .article-body) pre .token.string {
-	color: var(--code-string);
-}
-:is(.prose, .article-body)
-	pre
-	:is(.token.number, .token.boolean, .token.constant) {
-	color: var(--code-number);
+:root[data-theme="light"] .shiki,
+:root[data-theme="light"] .shiki span {
+	color: var(--shiki-light);
+	background-color: var(--shiki-light-bg);
 }
 :is(.prose, .article-body) .katex-display {
 	overflow-x: auto;
