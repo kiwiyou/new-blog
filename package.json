@@ -1,26 +1,35 @@
 {
-  "name": "kiwifarm",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite --mode ssr",
-    "build": "vite build && vite build -c vite.ssg.config.ts && node scripts/legacy-og.mjs",
-    "check": "tsc --noEmit"
-  },
-  "engines": {
-    "node": ">=26"
-  },
-  "devDependencies": {
-    "@qwik.dev/core": "2.0.0-beta.45",
-    "@qwik.dev/router": "2.0.0-beta.45",
-    "@resvg/resvg-js": "^2.6.2",
-    "@types/node": "^26.6.2",
-    "katex": "^0.16.21",
-    "lucide-static": "^1.48.0",
-    "rehype-katex": "^7.0.1",
-    "remark-math": "^6.0.0",
-    "satori": "^0.33.5",
-    "typescript": "^5.9.3",
-    "vite": "^8.3.1"
-  }
+	"name": "kiwifarm",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "qwik build",
+		"build.client": "vite build",
+		"build.server": "qwik check-client src dist && vite build -c adapters/cloudflare-workers/vite.config.ts",
+		"build.types": "tsc --incremental --noEmit",
+		"check": "pnpm build.types && pnpm fmt.check",
+		"deploy": "wrangler deploy",
+		"dev": "vite --mode ssr",
+		"fmt": "biome format --write .",
+		"fmt.check": "biome format .",
+		"serve": "wrangler dev"
+	},
+	"engines": {
+		"node": ">=26"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.14",
+		"@qwik.dev/core": "2.0.0-beta.45",
+		"@qwik.dev/router": "2.0.0-beta.45",
+		"@resvg/resvg-wasm": "^2.6.2",
+		"@types/node": "^26.6.3",
+		"katex": "^0.18.9",
+		"lucide-static": "^1.48.0",
+		"rehype-katex": "^7.0.1",
+		"remark-math": "^6.0.0",
+		"satori": "0.32.0",
+		"typescript": "^5.9.3",
+		"vite": "^8.3.1",
+		"wrangler": "^4.141.0"
+	}
 }

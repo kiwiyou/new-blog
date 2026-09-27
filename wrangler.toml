@@ -1,0 +1,12 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "kiwiyou-new-blog"
+main = "./dist/_worker.js"
+compatibility_date = "2026-09-27"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+[assets]
+binding = "ASSETS"
+directory = "./dist"
+
+[observability]
+enabled = true

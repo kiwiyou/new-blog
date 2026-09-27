@@ -5,6 +5,7 @@ server/
 # generated files
 .qwik/
 .cache/
+*.tsbuildinfo
 
 # dependencies
 node_modules/
@@ -21,3 +22,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Cloudflare
+functions/**/*.js
+.wrangler/
