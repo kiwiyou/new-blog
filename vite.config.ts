@@ -7,6 +7,20 @@ import rehypeKatex from "rehype-katex";
 
 export default defineConfig({
 	plugins: [
+		{
+			name: "wasm-modules-for-node-dev",
+			apply: "serve",
+			enforce: "pre",
+			load(id, options) {
+				if (
+					options?.ssr &&
+					(id.endsWith("@resvg/resvg-wasm/index_bg.wasm") ||
+						id.endsWith("satori/yoga.wasm"))
+				) {
+					return `import { readFileSync } from "node:fs"; export default new WebAssembly.Module(readFileSync(${JSON.stringify(id)}));`;
+				}
+			},
+		},
 		qwikRouter({
 			mdxPlugins: {
 				remarkGfm: true,
