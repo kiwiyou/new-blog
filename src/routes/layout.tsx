@@ -68,7 +68,9 @@ export default component$(() => {
 						</a>
 					</div>
 					<main id="main-content" class="article-main">
-						<h1 class="article-title">{title}</h1>
+						<h1 class={isLyric ? "article-title lang-ja" : "article-title"}>
+							{title}
+						</h1>
 						{meta.pubDatetime && (
 							<DateStamp
 								published={meta.pubDatetime}
