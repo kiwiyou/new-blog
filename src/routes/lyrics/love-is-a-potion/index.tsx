@@ -222,7 +222,7 @@ export default component$(() => (
 					<rt>はなし</rt>
 					<rp>)</rp>
 				</ruby>
-				を　キミが
+				を　キミが{" "}
 				<ruby>
 					聞<rp>(</rp>
 					<rt>き</rt>

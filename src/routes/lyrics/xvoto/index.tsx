@@ -286,7 +286,7 @@ export default component$(() => (
 				リリカルのカス
 			</div>
 			<div class="lang-ko">
-				Tiger의 위세를 빌리는 자칭 리리컬한
+				Tiger의 위세를 빌리는 자칭 리리컬한{" "}
 				<ruby>
 					찌꺼기<rp>(</rp>
 					<rt>카스</rt>
@@ -315,7 +315,7 @@ export default component$(() => (
 				す？
 			</div>
 			<div class="lang-ko">
-				누가 귀를
+				누가 귀를{" "}
 				<ruby>
 					빌려준대<rp>(</rp>
 					<rt class="show">카스</rt>
@@ -346,7 +346,7 @@ export default component$(() => (
 				るミス
 			</div>
 			<div class="lang-ko">
-				타인의 언어로 real을 말하는
+				타인의 언어로 real을 말하는{" "}
 				<ruby>
 					실수<rp>(</rp>
 					<rt class="show">미스</rt>
@@ -408,7 +408,7 @@ export default component$(() => (
 		</div>
 		<div>
 			<div class="lang-ja">
-				Just the
+				Just the{" "}
 				<ruby>
 					本能<rp>(</rp>
 					<rt>ほんのう</rt>
