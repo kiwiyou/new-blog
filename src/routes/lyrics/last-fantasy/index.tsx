@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "ラストファンシー",
+	titleLang: "ja",
 	author: "缶缶 & Such",
+	authorLang: "ja",
 	pubDatetime: "2025-03-22T09:54:23.986Z",
 	slug: "last-fantasy",
 	comment: true,

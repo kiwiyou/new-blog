@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "いさな (ft. 水音ラル)",
+	titleLang: "ja",
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2025-03-09T04:51:04.889Z",
 	slug: "isana",
 	comment: true,

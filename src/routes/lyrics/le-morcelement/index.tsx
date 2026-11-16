@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "てんでんばらばら (ft. 足立レイ)",
+	titleLang: "ja",
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2024-01-17T04:06:34.488Z",
 	slug: "le-morcelement",
 	comment: true,

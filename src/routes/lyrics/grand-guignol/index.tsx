@@ -2,6 +2,7 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "グランギニョル (feat. つぐ)",
+	titleLang: "ja",
 	author: "RuLu",
 	pubDatetime: "2025-03-22T09:41:13.006Z",
 	slug: "grand-guignol",

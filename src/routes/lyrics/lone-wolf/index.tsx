@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "一疋狼 (ft. 可不)",
+	titleLang: "ja",
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2024-10-20T14:29:38.516Z",
 	slug: "lone-wolf",
 	comment: true,

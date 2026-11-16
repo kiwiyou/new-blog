@@ -41,7 +41,9 @@ export default component$(
 								key={entry.slug}
 								href={`/${lyrics ? "lyrics" : "posts"}/${entry.slug}/`}
 								title={entry.title}
+								titleLang={entry.titleLang}
 								description={lyrics ? entry.author : entry.description}
+								descriptionLang={lyrics ? entry.authorLang : undefined}
 								published={entry.pubDatetime}
 								modified={entry.modDatetime}
 							/>

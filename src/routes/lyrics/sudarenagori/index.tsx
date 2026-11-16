@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "すだれなごり (ft. 濾過)",
+	titleLang: "ja",
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2025-03-08T18:26:15.707Z",
 	slug: "sudarenagori",
 	comment: true,

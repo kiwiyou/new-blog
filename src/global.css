@@ -600,7 +600,8 @@ footer .socials {
 .lyric-video {
 	text-align: center;
 }
-.lang-ja {
+.lang-ja,
+[lang="ja"] {
 	font-family: PretendardJP, Pretendard, NotoJP, sans-serif;
 }
 ruby {

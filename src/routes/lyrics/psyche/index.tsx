@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "てふ〱 (ft. ヤイ)",
+	titleLang: "ja",
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2024-01-18T12:35:01.807Z",
 	slug: "psyche",
 	comment: true,

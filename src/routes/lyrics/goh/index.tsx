@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "業曝し (ft. flower)",
+	titleLang: "ja",
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2025-03-14T17:31:23.701Z",
 	slug: "goh",
 	comment: true,

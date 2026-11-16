@@ -32,28 +32,26 @@ export const PostCard = component$(
 	({
 		href,
 		title,
+		titleLang,
 		description,
+		descriptionLang,
 		published,
 		modified,
 	}: {
 		href: string;
 		title: string;
+		titleLang?: string;
 		description?: string;
+		descriptionLang?: string;
 		published: string;
 		modified?: string;
 	}) => (
 		<li class="post-card">
 			<a href={href}>
-				<h3 class={href.startsWith("/lyrics/") ? "lang-ja" : undefined}>
-					{title}
-				</h3>
+				<h3 lang={titleLang}>{title}</h3>
 			</a>
 			<DateStamp published={published} modified={modified} />
-			{description && (
-				<p class={href.startsWith("/lyrics/") ? "lang-ja" : undefined}>
-					{description}
-				</p>
-			)}
+			{description && <p lang={descriptionLang}>{description}</p>}
 		</li>
 	),
 );

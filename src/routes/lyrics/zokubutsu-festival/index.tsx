@@ -2,7 +2,9 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "俗物フェスティバル",
+	titleLang: "ja",
 	author: "みせる",
+	authorLang: "ja",
 	pubDatetime: "2024-01-21T14:32:53.506Z",
 	slug: "zokubutsu-festival",
 	comment: true,

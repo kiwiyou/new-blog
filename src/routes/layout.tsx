@@ -7,7 +7,9 @@ import upSvg from "lucide-static/icons/arrow-up.svg?raw";
 
 type ArticleFrontmatter = {
 	title?: string;
+	titleLang?: string;
 	author?: string;
+	authorLang?: string;
 	pubDatetime?: string;
 	modDatetime?: string;
 	tags?: string[];
@@ -55,7 +57,6 @@ export default component$(() => {
 	const meta = (head.frontmatter || {}) as ArticleFrontmatter;
 	const author =
 		meta.author || head.meta?.find((item) => item.name === "author")?.content;
-	const title = isLyric && author ? `${author} - ${head.title}` : head.title;
 
 	return (
 		<>
@@ -68,8 +69,13 @@ export default component$(() => {
 						</a>
 					</div>
 					<main id="main-content" class="article-main">
-						<h1 class={isLyric ? "article-title lang-ja" : "article-title"}>
-							{title}
+						<h1 class="article-title">
+							{isLyric && author && (
+								<>
+									<span lang={meta.authorLang}>{author}</span> -{" "}
+								</>
+							)}
+							<span lang={meta.titleLang}>{head.title}</span>
 						</h1>
 						{meta.pubDatetime && (
 							<DateStamp

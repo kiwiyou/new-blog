@@ -1,10 +1,12 @@
 export type Entry = {
 	slug: string;
 	title: string;
+	titleLang?: string;
 	pubDatetime: string;
 	modDatetime?: string;
 	description?: string;
 	author?: string;
+	authorLang?: string;
 	featured?: boolean;
 	draft?: boolean;
 	tags?: string[];

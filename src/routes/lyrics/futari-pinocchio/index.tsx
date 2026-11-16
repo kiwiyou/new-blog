@@ -2,6 +2,7 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "ふたりピノキオ",
+	titleLang: "ja",
 	author: "harmoe",
 	pubDatetime: "2024-01-21T11:02:07.720Z",
 	slug: "futari-pinocchio",

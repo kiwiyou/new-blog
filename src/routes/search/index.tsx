@@ -6,10 +6,15 @@ import { PageHeader, PostCard } from "../../components/Site";
 const items = [
 	...posts
 		.filter((post) => !post.draft)
-		.map((post) => ({ ...post, href: `/posts/${post.slug}/` })),
+		.map((post) => ({
+			...post,
+			descriptionLang: undefined,
+			href: `/posts/${post.slug}/`,
+		})),
 	...lyrics.map((song) => ({
 		...song,
 		description: song.author,
+		descriptionLang: song.authorLang,
 		href: `/lyrics/${song.slug}/`,
 	})),
 ];
@@ -57,7 +62,9 @@ export default component$(() => {
 						key={item.href}
 						href={item.href}
 						title={item.title}
+						titleLang={item.titleLang}
 						description={item.description}
+						descriptionLang={item.descriptionLang}
 						published={item.pubDatetime}
 						modified={item.modDatetime}
 					/>

@@ -2,8 +2,10 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "けだもの (ft. 裏命)",
+	titleLang: "ja",
 	draft: false,
 	author: "霄",
+	authorLang: "ja",
 	pubDatetime: "2024-10-21T13:26:48.153Z",
 	slug: "lobha-dosa-moha",
 	comment: true,
