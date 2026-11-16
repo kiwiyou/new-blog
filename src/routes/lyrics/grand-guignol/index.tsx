@@ -131,7 +131,7 @@ export default component$(() => (
 				？
 			</div>
 			<div class="lang-ko-tl">
-				쿠다케 칫타 레푸리칸토 후미시메타라 아스니와 지유우?
+				쿠다케 칫타 레푸리칸토 후미시메타라 아스니와 지유ー?
 			</div>
 			<div class="lang-ko">
 				부서져 흩어진 레플리컨트 밟아 으깨면 내일에는 자유?
@@ -282,7 +282,7 @@ export default component$(() => (
 				</ruby>
 				う グランギニョル
 			</div>
-			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구란기뇰</div>
+			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구랑기뇰</div>
 			<div class="lang-ko">세계는 열매를 뺏고 뺏기는 그랑기뇰</div>
 		</div>
 		<div>
@@ -353,7 +353,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">
-				앗케나쿠 칫테쿠 우고메쿠 하루 사라시타 겐지츠
+				악케나쿠 칫테쿠 우고메쿠 하루 사라시타 겐지츠
 			</div>
 			<div class="lang-ko">실없이 흩어지네 준동하는 봄 폭로된 현실</div>
 		</div>
@@ -414,7 +414,7 @@ export default component$(() => (
 				？
 			</div>
 			<div class="lang-ko-tl">
-				쿠다케 칫타 레푸리칸토 후미시메타라 아스니와 지유우?
+				쿠다케 칫타 레푸리칸토 후미시메타라 아스니와 지유ー?
 			</div>
 			<div class="lang-ko">
 				부서져 흩어진 레플리컨트 밟아 으깨면 내일에는 자유?
@@ -554,7 +554,7 @@ export default component$(() => (
 				</ruby>
 				なグランギニョル
 			</div>
-			<div class="lang-ko-tl">세카이와 다마시아우 콧케이나 구란기뇰</div>
+			<div class="lang-ko-tl">세카이와 다마시아우 콕케이나 구랑기뇰</div>
 			<div class="lang-ko">세계는 속고 속이는 우스운 그랑기뇰</div>
 		</div>
 		<div>
@@ -711,7 +711,7 @@ export default component$(() => (
 				</ruby>
 				う グランギニョル
 			</div>
-			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구란기뇰</div>
+			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구랑기뇰</div>
 			<div class="lang-ko">세계는 열매를 뺏고 뺏기는 그랑기뇰</div>
 		</div>
 		<div>

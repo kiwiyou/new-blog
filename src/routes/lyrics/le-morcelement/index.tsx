@@ -74,7 +74,7 @@ export default component$(() => (
 				</ruby>
 				つでしょう
 			</div>
-			<div class="lang-ko-tl">아카구로쿠 소메츠츠 오이우츠데쇼오</div>
+			<div class="lang-ko-tl">아카구로쿠 소메츠츠 오이우츠데쇼ー</div>
 			<div class="lang-ko">검붉게 물들이며 들쫓겠죠</div>
 		</div>
 		<div>
@@ -128,7 +128,7 @@ export default component$(() => (
 				</ruby>
 				すのでしょう
 			</div>
-			<div class="lang-ko-tl">카라마리 카라마와스노데쇼오</div>
+			<div class="lang-ko-tl">카라마리 카라마와스노데쇼ー</div>
 			<div class="lang-ko">뒤엉켜 헛돌겠죠</div>
 		</div>
 		<div>
@@ -238,7 +238,7 @@ export default component$(() => (
 				</ruby>
 				て
 			</div>
-			<div class="lang-ko-tl">치지쿤다 신조오 / 후쿠란다 아이조오데 모테</div>
+			<div class="lang-ko-tl">치지쿤다 신조ー / 후쿠란다 아이조ー데 모테</div>
 			<div class="lang-ko">오그라든 심장 / 부푼 애증을 갖고</div>
 		</div>
 		<div>
@@ -267,7 +267,7 @@ export default component$(() => (
 				</ruby>
 				れたのでしょう
 			</div>
-			<div class="lang-ko-tl">아마사레타 지가와 코토기레타노데쇼오</div>
+			<div class="lang-ko-tl">아마사레타 지가와 코토기레타노데쇼ー</div>
 			<div class="lang-ko">남겨진 자아는 임종한 거겠죠</div>
 		</div>
 		<div>
@@ -291,7 +291,7 @@ export default component$(() => (
 				</ruby>
 				きたのでしょう？
 			</div>
-			<div class="lang-ko-tl">나니오 카이니 이키타노데쇼오?</div>
+			<div class="lang-ko-tl">나니오 카이니 이키타노데쇼ー?</div>
 			<div class="lang-ko">무엇을 답으로 살아온 걸까요?</div>
 		</div>
 		<div>
@@ -320,7 +320,7 @@ export default component$(() => (
 				</ruby>
 				でしょう？
 			</div>
-			<div class="lang-ko-tl">와타시오 미타시타 모노 난데쇼오?</div>
+			<div class="lang-ko-tl">와타시오 미타시타 모노 난데쇼ー?</div>
 			<div class="lang-ko">저를 채워준 것은 무엇일까요?</div>
 		</div>
 		<div>
@@ -344,7 +344,7 @@ export default component$(() => (
 				</ruby>
 				きたのでしょう？
 			</div>
-			<div class="lang-ko-tl">다레오 아이시 이키타노데쇼오?</div>
+			<div class="lang-ko-tl">다레오 아이시 이키타노데쇼ー?</div>
 			<div class="lang-ko">누구를 사랑하며 살아온 걸까요?</div>
 		</div>
 		<div>
@@ -374,22 +374,22 @@ export default component$(() => (
 				</ruby>
 				なのだけれどね
 			</div>
-			<div class="lang-ko-tl">마아 젠부 우소니 마미레타 아나타난다케레도네</div>
+			<div class="lang-ko-tl">마ー 젬부 우소니 마미레타 아나타난다케레도네</div>
 			<div class="lang-ko">뭐 전부 거짓으로 점철된 당신이었을 뿐이지만요</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
@@ -406,17 +406,17 @@ export default component$(() => (
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
@@ -474,7 +474,7 @@ export default component$(() => (
 				</ruby>
 				です
 			</div>
-			<div class="lang-ko-tl">와카레 오시미와 에이고오데스</div>
+			<div class="lang-ko-tl">와카레 오시미와 에이고ー데스</div>
 			<div class="lang-ko">이별의 아쉬움은 영원입니다</div>
 		</div>
 		<div>
@@ -509,7 +509,7 @@ export default component$(() => (
 				</ruby>
 				し
 			</div>
-			<div class="lang-ko-tl">잇코 스베오 스베랴 마아 히도이가 시카시</div>
+			<div class="lang-ko-tl">익코 스베오 스베랴 마ー 히도이가 시카시</div>
 			<div class="lang-ko">한 수가 수틀리면 뭐 힘들지만</div>
 		</div>
 		<div>
@@ -557,7 +557,7 @@ export default component$(() => (
 				くて
 			</div>
 			<div class="lang-ko-tl">
-				미지카쿠 키리아게타쿠테 혼토오오 타다 시리타쿠테
+				미지카쿠 키리아게타쿠테 혼토ー오 타다 시리타쿠테
 			</div>
 			<div class="lang-ko">짧게 끝맺고 싶어서 진실을 단지 알고 싶어서</div>
 		</div>
@@ -576,7 +576,7 @@ export default component$(() => (
 				</ruby>
 				なのです
 			</div>
-			<div class="lang-ko-tl">켓칸사레타 켓카론난데스</div>
+			<div class="lang-ko-tl">켁칸사레타 켁카론난데스</div>
 			<div class="lang-ko">불완전한 결과론입니다</div>
 		</div>
 		<div>
@@ -613,7 +613,7 @@ export default component$(() => (
 				も
 			</div>
 			<div class="lang-ko-tl">
-				시햐쿠시뵤오오 치유스루 죠오자이와 이마모 무카시모
+				시햐쿠시뵤ー오 치유스루 죠ー자이와 이마모 무카시모
 			</div>
 			<div class="lang-ko">사백사병을 치유하는 알약은 예나 지금이나</div>
 		</div>
@@ -680,7 +680,7 @@ export default component$(() => (
 				</ruby>
 				れ・・
 			</div>
-			<div class="lang-ko-tl">고조오롯푸니 와탓테쿠레 큐우사이시테쿠레</div>
+			<div class="lang-ko-tl">고조ー롭푸니 와탓테쿠레 큐ー사이시테쿠레</div>
 			<div class="lang-ko">오장육부에 전해주거라 구제해 주거라…</div>
 		</div>
 		<div>
@@ -698,7 +698,7 @@ export default component$(() => (
 				</ruby>
 				りましょう
 			</div>
-			<div class="lang-ko-tl">요오료오와 찬토 마모리마쇼오</div>
+			<div class="lang-ko-tl">요ー료ー와 찬토 마모리마쇼ー</div>
 			<div class="lang-ko">용량은 제대로 지킵시다</div>
 		</div>
 		<div>
@@ -722,7 +722,7 @@ export default component$(() => (
 				</ruby>
 				きたのでしょう？
 			</div>
-			<div class="lang-ko-tl">나니오 카이니 이키타노데쇼오?</div>
+			<div class="lang-ko-tl">나니오 카이니 이키타노데쇼ー?</div>
 			<div class="lang-ko">무엇을 답으로 살아온 걸까요?</div>
 		</div>
 		<div>
@@ -752,7 +752,7 @@ export default component$(() => (
 				</ruby>
 				でしょう？
 			</div>
-			<div class="lang-ko-tl">쇼오지키니 이키테키타 하즈데쇼오?</div>
+			<div class="lang-ko-tl">쇼ー지키니 이키테키타 하즈데쇼ー?</div>
 			<div class="lang-ko">분명 솔직하게 살아왔겠죠?</div>
 		</div>
 		<div>
@@ -796,22 +796,22 @@ export default component$(() => (
 				</ruby>
 				じゃなくなっていく
 			</div>
-			<div class="lang-ko-tl">호라 혼토오노 와타시가 혼토오쟈나쿠낫테쿠</div>
+			<div class="lang-ko-tl">호라 혼토ー노 와타시가 혼토ー쟈나쿠낫테쿠</div>
 			<div class="lang-ko">이봐, 진실된 내가 거짓되고 있잖아</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
@@ -828,17 +828,17 @@ export default component$(() => (
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
@@ -854,17 +854,17 @@ export default component$(() => (
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
@@ -887,22 +887,22 @@ export default component$(() => (
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">てん〲ばら〲</div>
-			<div class="lang-ko-tl">텐덴바라바라</div>
+			<div class="lang-ko-tl">텐뎀바라바라</div>
 			<div class="lang-ko">갈기갈기 찢어져서</div>
 		</div>
 		<div>
 			<div class="lang-ja">さようなら</div>
-			<div class="lang-ko-tl">사요오나라</div>
+			<div class="lang-ko-tl">사요ー나라</div>
 			<div class="lang-ko">영원히 안녕</div>
 		</div>
 		<div>

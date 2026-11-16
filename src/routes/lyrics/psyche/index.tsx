@@ -35,7 +35,7 @@ export default component$(() => (
 				</ruby>
 				ハシクテ、
 			</div>
-			<div class="lang-ko-tl">도오모 겐죠오가 이토와시쿠테</div>
+			<div class="lang-ko-tl">도ー모 겐죠ー가 이토와시쿠테</div>
 			<div class="lang-ko">상황이 매우 꺼림칙해서,</div>
 		</div>
 		<div>
@@ -65,7 +65,7 @@ export default component$(() => (
 				</ruby>
 				キ、
 			</div>
-			<div class="lang-ko-tl">아노 고토쿠 메에니 오모무키</div>
+			<div class="lang-ko-tl">아노 고토쿠 메ー니 오모무키</div>
 			<div class="lang-ko">벙어리처럼 저승을 향하여,</div>
 		</div>
 		<div>
@@ -119,7 +119,7 @@ export default component$(() => (
 				</ruby>
 				ハス。
 			</div>
-			<div class="lang-ko-tl">와즈카나루 단가 도오오 후루와스</div>
+			<div class="lang-ko-tl">와즈카나루 당가 도ー오 후루와스</div>
 			<div class="lang-ko">약소한 온기가 몸을 떨리게 하네.</div>
 		</div>
 		<div>
@@ -173,7 +173,7 @@ export default component$(() => (
 				</ruby>
 				モ、こ々ろサヘモ、
 			</div>
-			<div class="lang-ko-tl">이치노 류도오타이모 코코로사에모</div>
+			<div class="lang-ko-tl">이치노 류도ー타이모 코코로사에모</div>
 			<div class="lang-ko">하나의 유동체도, 마음조차도,</div>
 		</div>
 		<div>
@@ -288,7 +288,7 @@ export default component$(() => (
 				</ruby>
 				マセヌカ？
 			</div>
-			<div class="lang-ko-tl">보쿠니 오시에테 쿠랴 시마센카</div>
+			<div class="lang-ko-tl">보쿠니 오시에테 쿠랴 시마셍카</div>
 			<div class="lang-ko">"나에게 알려줌이 어떠한가?</div>
 		</div>
 		<div>
@@ -340,7 +340,7 @@ export default component$(() => (
 				</ruby>
 				レ、
 			</div>
-			<div class="lang-ko-tl">히토나사케토오 토오니 우스레</div>
+			<div class="lang-ko-tl">히토나사케토오 토ー니 우스레</div>
 			<div class="lang-ko">인정 따위 진즉 쇠해서,</div>
 		</div>
 		<div>
@@ -393,7 +393,7 @@ export default component$(() => (
 				</ruby>
 				ヘ、
 			</div>
-			<div class="lang-ko-tl">시노 유우키가 세에노 무키에</div>
+			<div class="lang-ko-tl">시노 유ー키가 세ー노 무키에</div>
 			<div class="lang-ko">죽음의 유기가 삶의 무기로,</div>
 		</div>
 		<div>
@@ -518,7 +518,7 @@ export default component$(() => (
 				</ruby>
 				マセヌカ？
 			</div>
-			<div class="lang-ko-tl">보쿠니 오시에테 쿠랴 시마센카</div>
+			<div class="lang-ko-tl">보쿠니 오시에테 쿠랴 시마셍카</div>
 			<div class="lang-ko">"나에게 알려줌이 어떠한가?</div>
 		</div>
 		<div>

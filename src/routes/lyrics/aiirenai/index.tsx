@@ -40,7 +40,7 @@ export default component$(() => (
 				</ruby>
 				に
 			</div>
-			<div class="lang-ko-tl">토오리 스기테유쿠 히토노 네온니</div>
+			<div class="lang-ko-tl">토ー리 스기테유쿠 히토노 네온니</div>
 			<div class="lang-ko">
 				지나가는 사람들의{" "}
 				<ruby>
@@ -66,7 +66,7 @@ export default component$(() => (
 				</ruby>
 				じた
 			</div>
-			<div class="lang-ko-tl">걋푸오 칸지타</div>
+			<div class="lang-ko-tl">걉푸오 칸지타</div>
 			<div class="lang-ko">
 				<ruby>
 					위화감<rp>(</rp>
@@ -331,7 +331,7 @@ export default component$(() => (
 				</ruby>
 				るように
 			</div>
-			<div class="lang-ko-tl">와카리아에누 코코로노 우치 사구루요오니</div>
+			<div class="lang-ko-tl">와카리아에누 코코로노 우치 사구루요ー니</div>
 			<div class="lang-ko">서로 이해할 수 없는 마음 속을 더듬듯이</div>
 		</div>
 		<div>
@@ -392,7 +392,7 @@ export default component$(() => (
 				</ruby>
 				だ
 			</div>
-			<div class="lang-ko-tl">가라쿠타노 요오나 아이다</div>
+			<div class="lang-ko-tl">가라쿠타노 요ー나 아이다</div>
 			<div class="lang-ko">잡동사니 같은 사랑이야</div>
 		</div>
 		<div>
@@ -416,7 +416,7 @@ export default component$(() => (
 				</ruby>
 				のまま
 			</div>
-			<div class="lang-ko-tl">토오자카루 세와 아노 히노 마마</div>
+			<div class="lang-ko-tl">토ー자카루 세와 아노 히노 마마</div>
 			<div class="lang-ko">멀어져가는 등은 그날 그대로</div>
 		</div>
 		<div>
@@ -507,7 +507,7 @@ export default component$(() => (
 				</ruby>
 				がしたんだ
 			</div>
-			<div class="lang-ko-tl">소노 린카쿠니 후레타 키가시탄다</div>
+			<div class="lang-ko-tl">소노 링카쿠니 후레타 키가시탄다</div>
 			<div class="lang-ko">그 윤곽에 닿은 느낌이 들었어</div>
 		</div>
 		<div>
@@ -543,7 +543,7 @@ export default component$(() => (
 				</ruby>
 				に
 			</div>
-			<div class="lang-ko-tl">카케치가에테 마가 사시타 쥰죠오니</div>
+			<div class="lang-ko-tl">카케치가에테 마가 사시타 쥰죠ー니</div>
 			<div class="lang-ko">잘못 걸고 마가 들이닥친 순정을</div>
 		</div>
 		<div>
@@ -651,7 +651,7 @@ export default component$(() => (
 				</ruby>
 				い
 			</div>
-			<div class="lang-ko-tl">히츠요오아쿠데 이이</div>
+			<div class="lang-ko-tl">히츠요ー아쿠데 이ー</div>
 			<div class="lang-ko">필요악이어도 좋아</div>
 		</div>
 		<div>
@@ -752,7 +752,7 @@ export default component$(() => (
 				</ruby>
 				がりだ
 			</div>
-			<div class="lang-ko-tl">카랏포노 츠요가리다</div>
+			<div class="lang-ko-tl">카랍포노 츠요가리다</div>
 			<div class="lang-ko">텅 빈 허세일 뿐</div>
 		</div>
 		<div>
@@ -822,7 +822,7 @@ export default component$(() => (
 				</ruby>
 				めて
 			</div>
-			<div class="lang-ko-tl">누리츠부스요오니 다키시메테</div>
+			<div class="lang-ko-tl">누리츠부스요ー니 다키시메테</div>
 			<div class="lang-ko">덮어 칠할 정도로 끌어안아 줘</div>
 		</div>
 		<div>
@@ -940,7 +940,7 @@ export default component$(() => (
 				</ruby>
 				るように
 			</div>
-			<div class="lang-ko-tl">와카리아에누 코코로노 우치 사구루요오니</div>
+			<div class="lang-ko-tl">와카리아에누 코코로노 우치 사구루요ー니</div>
 			<div class="lang-ko">서로 이해할 수 없는 마음 속을 더듬듯이</div>
 		</div>
 		<div>
@@ -1001,7 +1001,7 @@ export default component$(() => (
 				</ruby>
 				だ
 			</div>
-			<div class="lang-ko-tl">가라쿠타노 요오나 아이다</div>
+			<div class="lang-ko-tl">가라쿠타노 요ー나 아이다</div>
 			<div class="lang-ko">잡동사니 같은 사랑이야</div>
 		</div>
 		<div>
@@ -1025,7 +1025,7 @@ export default component$(() => (
 				</ruby>
 				のまま
 			</div>
-			<div class="lang-ko-tl">토오자카루 세와 아노 히노 마마</div>
+			<div class="lang-ko-tl">토ー자카루 세와 아노 히노 마마</div>
 			<div class="lang-ko">멀어져가는 등은 그날 그대로</div>
 		</div>
 		<div>

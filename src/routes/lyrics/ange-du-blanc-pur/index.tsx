@@ -45,7 +45,7 @@ export default component$(() => (
 				</ruby>
 				く
 			</div>
-			<div class="lang-ko-tl">하지마리 츠게루 카네 토오쿠</div>
+			<div class="lang-ko-tl">하지마리 츠게루 카네 토ー쿠</div>
 			<div class="lang-ko">시작을 고하는 종 멀리서</div>
 		</div>
 		<div>
@@ -80,7 +80,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">칸비나루 유메 세츠나니 마타타쿠 시라베</div>
+			<div class="lang-ko-tl">캄비나루 유메 세츠나니 마타타쿠 시라베</div>
 			<div class="lang-ko">
 				감미로운 꿈 찰나에 반짝이는{" "}
 				<ruby>
@@ -189,7 +189,7 @@ export default component$(() => (
 				</ruby>
 				げ
 			</div>
-			<div class="lang-ko-tl">츠미후카키 마요우 코히츠지 쥬우지오 카카게</div>
+			<div class="lang-ko-tl">츠미후카키 마요우 코히츠지 쥬ー지오 카카게</div>
 			<div class="lang-ko">죄 깊은 길 잃은 어린 양 십자가를 세우고</div>
 		</div>
 		<div>
@@ -248,7 +248,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">아라타나 세카이 쇼코오노 로은도</div>
+			<div class="lang-ko-tl">아라타나 세카이 쇼코ー노 로은도</div>
 			<div class="lang-ko">
 				새로운 세상 서광의{" "}
 				<ruby>
@@ -309,7 +309,7 @@ export default component$(() => (
 				</ruby>
 				がされようとも
 			</div>
-			<div class="lang-ko-tl">타도루베키 미라이니 코노미 코가사레요오토모</div>
+			<div class="lang-ko-tl">타도루베키 미라이니 코노미 코가사레요ー토모</div>
 			<div class="lang-ko">도달할 미래에 이 몸 하나 불사르더라도</div>
 		</div>
 		<div>
@@ -344,7 +344,7 @@ export default component$(() => (
 				</ruby>
 				え
 			</div>
-			<div class="lang-ko-tl">쥰파쿠노 하네 마토이 히카리오 타즈사에</div>
+			<div class="lang-ko-tl">쥼파쿠노 하네 마토이 히카리오 타즈사에</div>
 			<div class="lang-ko">순백의 날개를 걸고 빚을 두르고</div>
 		</div>
 		<div>
@@ -409,7 +409,7 @@ export default component$(() => (
 				</ruby>
 				く
 			</div>
-			<div class="lang-ko-tl">사시시메스 에덴와 이마모나오 토오쿠</div>
+			<div class="lang-ko-tl">사시시메스 에덴와 이마모나오 토ー쿠</div>
 			<div class="lang-ko">
 				가리키는{" "}
 				<ruby>
@@ -490,7 +490,7 @@ export default component$(() => (
 				</ruby>
 				たれようとも
 			</div>
-			<div class="lang-ko-tl">카타루베키 미라이니 소노미 우가타레요오토모</div>
+			<div class="lang-ko-tl">카타루베키 미라이니 소노미 우가타레요ー토모</div>
 			<div class="lang-ko">회자될 미래에 그 몸 뚫리더라도</div>
 		</div>
 		<div>
@@ -572,7 +572,7 @@ export default component$(() => (
 				</ruby>
 				げて
 			</div>
-			<div class="lang-ko-tl">미치비키노 카네 쥬우지오 카카게테</div>
+			<div class="lang-ko-tl">미치비키노 카네 쥬ー지오 카카게테</div>
 			<div class="lang-ko">이끄는 종 십자가를 세우고</div>
 		</div>
 		<div>
@@ -695,7 +695,7 @@ export default component$(() => (
 				</ruby>
 				え
 			</div>
-			<div class="lang-ko-tl">쥰파쿠노 하네 마토이 히카리오 타즈사에</div>
+			<div class="lang-ko-tl">쥼파쿠노 하네 마토이 히카리오 타즈사에</div>
 			<div class="lang-ko">순백의 날개를 걸고 빛을 두르고</div>
 		</div>
 		<div>
@@ -747,7 +747,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">히비이테 토와노 푸사루무</div>
+			<div class="lang-ko-tl">히비ー테 토와노 푸사루무</div>
 			<div class="lang-ko">
 				울려라 영원의{" "}
 				<ruby>
