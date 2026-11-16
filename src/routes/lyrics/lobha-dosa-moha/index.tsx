@@ -148,7 +148,7 @@ export default component$(() => (
 				</ruby>
 				を。
 			</div>
-			<div class="lang-ko-tl">시노 고노 이와즈니 소노 타이쇼ー</div>
+			<div class="lang-ko-tl">시노 고노 이와즈니 소노 타이쇼오</div>
 			<div class="lang-ko">이러니저러니 떠들지 말고 그에 대한 대처를.</div>
 		</div>
 		<div>

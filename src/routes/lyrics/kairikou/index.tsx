@@ -448,7 +448,7 @@ export default component$(() => (
 				</ruby>
 				に
 			</div>
-			<div class="lang-ko-tl">이토ー시ー 구ー조ー오 미루 카타와라니</div>
+			<div class="lang-ko-tl">이토오시이 구ー조ー오 미루 카타와라니</div>
 			<div class="lang-ko">가엾은 우상을 보는 곁에서</div>
 		</div>
 		<div>
@@ -472,7 +472,7 @@ export default component$(() => (
 				</ruby>
 				れてもいい。
 			</div>
-			<div class="lang-ko-tl">이야나라 니게 카쿠레테모 이ー</div>
+			<div class="lang-ko-tl">이야나라 니게 카쿠레테모 이이</div>
 			<div class="lang-ko">싫다면 도망가 숨어도 된다.</div>
 		</div>
 		<div>
@@ -855,7 +855,7 @@ export default component$(() => (
 				</ruby>
 				れてもいい。
 			</div>
-			<div class="lang-ko-tl">이야나라 니게 카쿠레테모 이ー</div>
+			<div class="lang-ko-tl">이야나라 니게 카쿠레테모 이이</div>
 			<div class="lang-ko">싫다면 도망가 숨어도 된다.</div>
 		</div>
 		<div>
@@ -1167,7 +1167,7 @@ export default component$(() => (
 				</ruby>
 				く。
 			</div>
-			<div class="lang-ko-tl">쇼ー소ー 히카리노 나카 토ー쿠</div>
+			<div class="lang-ko-tl">쇼ー소ー 히카리노 나카 토오쿠</div>
 			<div class="lang-ko">초조 빛의 속 멀리.</div>
 		</div>
 	</>

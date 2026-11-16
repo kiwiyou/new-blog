@@ -45,7 +45,7 @@ export default component$(() => (
 				</ruby>
 				く
 			</div>
-			<div class="lang-ko-tl">하지마리 츠게루 카네 토ー쿠</div>
+			<div class="lang-ko-tl">하지마리 츠게루 카네 토오쿠</div>
 			<div class="lang-ko">시작을 고하는 종 멀리서</div>
 		</div>
 		<div>
@@ -409,7 +409,7 @@ export default component$(() => (
 				</ruby>
 				く
 			</div>
-			<div class="lang-ko-tl">사시시메스 에덴와 이마모나오 토ー쿠</div>
+			<div class="lang-ko-tl">사시시메스 에덴와 이마모나오 토오쿠</div>
 			<div class="lang-ko">
 				가리키는{" "}
 				<ruby>
@@ -747,7 +747,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">히비ー테 토와노 푸사루무</div>
+			<div class="lang-ko-tl">히비이테 토와노 푸사루무</div>
 			<div class="lang-ko">
 				울려라 영원의{" "}
 				<ruby>

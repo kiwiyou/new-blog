@@ -216,7 +216,7 @@ export default component$(() => (
 				</ruby>
 				えたのは
 			</div>
-			<div class="lang-ko-tl">토ー이 무카시노 요ー니 오모에타노와</div>
+			<div class="lang-ko-tl">토오이 무카시노 요ー니 오모에타노와</div>
 			<div class="lang-ko">먼 옛날처럼 생각할 수 있었던 건</div>
 		</div>
 
@@ -308,7 +308,7 @@ export default component$(() => (
 				</ruby>
 				こるわけがない
 			</div>
-			<div class="lang-ko-tl">템펜치ー 난테 오코루 와케가 나이</div>
+			<div class="lang-ko-tl">템펜치이 난테 오코루 와케가 나이</div>
 			<div class="lang-ko">천재지변이 일어날 리가 없잖아</div>
 		</div>
 		<div>
@@ -346,7 +346,7 @@ export default component$(() => (
 				</ruby>
 				えたらいいな
 			</div>
-			<div class="lang-ko-tl">아ー 이츠카 아노 바쇼데 우타에타라 이ー나</div>
+			<div class="lang-ko-tl">아ー 이츠카 아노 바쇼데 우타에타라 이이나</div>
 			<div class="lang-ko">아아 언젠가 그곳에서 노래할 수 있으면 좋겠네</div>
 		</div>
 		<div>
@@ -485,7 +485,7 @@ export default component$(() => (
 				</ruby>
 				こるわけがない
 			</div>
-			<div class="lang-ko-tl">템펜치ー 난테 오코루 와케가 나이</div>
+			<div class="lang-ko-tl">템펜치이 난테 오코루 와케가 나이</div>
 			<div class="lang-ko">천재지변이 일어날 리가 없잖아</div>
 		</div>
 		<div>
@@ -528,7 +528,7 @@ export default component$(() => (
 				</ruby>
 				れたらいいな
 			</div>
-			<div class="lang-ko-tl">아ー 이츠카 아노 바쇼니 카에레타라 이ー나</div>
+			<div class="lang-ko-tl">아ー 이츠카 아노 바쇼니 카에레타라 이이나</div>
 			<div class="lang-ko">아아 언젠가 그곳으로 돌아갈 수 있으면 좋겠네</div>
 		</div>
 		<div>
@@ -639,7 +639,7 @@ export default component$(() => (
 				</ruby>
 				しい
 			</div>
-			<div class="lang-ko-tl">타스케타이 오모이니와 츠요사가 호시ー</div>
+			<div class="lang-ko-tl">타스케타이 오모이니와 츠요사가 호시이</div>
 			<div class="lang-ko">돕고 싶은 생각에 강인함을 원해</div>
 		</div>
 		<div>
@@ -676,7 +676,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">템펜치ー와 이마</div>
+			<div class="lang-ko-tl">템펜치이와 이마</div>
 			<div class="lang-ko">천재지변은 지금</div>
 		</div>
 		<div>

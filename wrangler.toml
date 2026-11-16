@@ -10,3 +10,5 @@ directory = "./dist"
 
 [observability]
 enabled = true
+
+[previews]

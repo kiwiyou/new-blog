@@ -51,7 +51,7 @@ export default component$(() => (
 				</ruby>
 				かれて
 			</div>
-			<div class="lang-ko-tl">마소ー니 히카레테</div>
+			<div class="lang-ko-tl">마소오니 히카레테</div>
 			<div class="lang-ko">붉은 빛에 이끌려서</div>
 		</div>
 		<div>
@@ -407,7 +407,7 @@ export default component$(() => (
 				</ruby>
 				になるなら
 			</div>
-			<div class="lang-ko-tl">이토시ー 호시노 츠치니나루나라</div>
+			<div class="lang-ko-tl">이토시이 호시노 츠치니나루나라</div>
 			<div class="lang-ko">어여쁜 별님의 토지가 된다면</div>
 		</div>
 		<div>
@@ -437,7 +437,7 @@ export default component$(() => (
 				</ruby>
 				びながら
 			</div>
-			<div class="lang-ko-tl">토ー이 츠이오 마치와비나가라</div>
+			<div class="lang-ko-tl">토오이 츠이오 마치와비나가라</div>
 			<div class="lang-ko">머나먼 최후를 지키며 기다리며</div>
 		</div>
 		<div>
@@ -1072,7 +1072,7 @@ export default component$(() => (
 				</ruby>
 				れるのなら
 			</div>
-			<div class="lang-ko-tl">이토시ー 호시데 네무레루노나라</div>
+			<div class="lang-ko-tl">이토시이 호시데 네무레루노나라</div>
 			<div class="lang-ko">어여쁜 별님께 기대 잘 수 있다면</div>
 		</div>
 		<div>
@@ -1269,7 +1269,7 @@ export default component$(() => (
 				</ruby>
 				になるなら
 			</div>
-			<div class="lang-ko-tl">이토시ー 호시노 츠치니나루나라</div>
+			<div class="lang-ko-tl">이토시이 호시노 츠치니나루나라</div>
 			<div class="lang-ko">어여쁜 별님의 토지가 된다면</div>
 		</div>
 		<div>
@@ -1299,7 +1299,7 @@ export default component$(() => (
 				</ruby>
 				びながら
 			</div>
-			<div class="lang-ko-tl">토ー이 츠이오 마치와비나가라</div>
+			<div class="lang-ko-tl">토오이 츠이오 마치와비나가라</div>
 			<div class="lang-ko">머나먼 최후를 지키며 기다리며</div>
 		</div>
 		<div>

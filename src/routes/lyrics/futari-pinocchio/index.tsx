@@ -23,7 +23,7 @@ export default component$(() => (
 				</ruby>
 				になれるといいな
 			</div>
-			<div class="lang-ko-tl">이츠카 이ー 코니 나레루토 이ー나</div>
+			<div class="lang-ko-tl">이츠카 이이 코니 나레루토 이이나</div>
 			<div class="lang-ko">언젠가 착한 아이가 되었으면 좋겠네</div>
 		</div>
 		<div>
@@ -169,7 +169,7 @@ export default component$(() => (
 				</ruby>
 				かせるのはナゼなの？）
 			</div>
-			<div class="lang-ko-tl">(이ー키카세루노와 나제나노?)</div>
+			<div class="lang-ko-tl">(이이키카세루노와 나제나노?)</div>
 			<div class="lang-ko">(왜 자꾸 되뇌이는 걸까?)</div>
 		</div>
 		<div>
@@ -345,7 +345,7 @@ export default component$(() => (
 				</ruby>
 				ってほしい）
 			</div>
-			<div class="lang-ko-tl">(오모익키리 시캇테호시ー)</div>
+			<div class="lang-ko-tl">(오모익키리 시캇테호시이)</div>
 			<div class="lang-ko">(마음껏 혼내주길 바라)</div>
 		</div>
 		<div>
@@ -430,7 +430,7 @@ export default component$(() => (
 				</ruby>
 				に　なれるはず　きっと
 			</div>
-			<div class="lang-ko-tl">이츠카 이ー 코니 나레루하즈 킷토</div>
+			<div class="lang-ko-tl">이츠카 이이 코니 나레루하즈 킷토</div>
 			<div class="lang-ko">언젠가 착한 아이가 될 거야 분명</div>
 		</div>
 		<div>
@@ -443,7 +443,7 @@ export default component$(() => (
 				</ruby>
 				に　きっと）
 			</div>
-			<div class="lang-ko-tl">(이츠카 이ー 코니 킷토)</div>
+			<div class="lang-ko-tl">(이츠카 이이 코니 킷토)</div>
 			<div class="lang-ko">(언젠가 착한 아이가 분명)</div>
 		</div>
 		<div>
@@ -481,7 +481,7 @@ export default component$(() => (
 				</ruby>
 				に　なれるはず　きっと
 			</div>
-			<div class="lang-ko-tl">이츠카 이ー 코니 나레루하즈 킷토</div>
+			<div class="lang-ko-tl">이츠카 이이 코니 나레루하즈 킷토</div>
 			<div class="lang-ko">언젠가 착한 아이가 될 거야 분명</div>
 		</div>
 		<div>
@@ -640,7 +640,7 @@ export default component$(() => (
 				</ruby>
 				になれるといいな
 			</div>
-			<div class="lang-ko-tl">이츠카 이ー 코니 나레루토 이ー나</div>
+			<div class="lang-ko-tl">이츠카 이이 코니 나레루토 이이나</div>
 			<div class="lang-ko">언젠가 착한 아이가 되었으면 좋겠네</div>
 		</div>
 		<div>

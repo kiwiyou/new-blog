@@ -651,7 +651,7 @@ export default component$(() => (
 				</ruby>
 				い
 			</div>
-			<div class="lang-ko-tl">히츠요ー아쿠데 이ー</div>
+			<div class="lang-ko-tl">히츠요ー아쿠데 이이</div>
 			<div class="lang-ko">필요악이어도 좋아</div>
 		</div>
 		<div>

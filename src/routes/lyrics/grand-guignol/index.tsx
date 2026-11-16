@@ -282,7 +282,7 @@ export default component$(() => (
 				</ruby>
 				う グランギニョル
 			</div>
-			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구랑기뇰</div>
+			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구랑기뇨루</div>
 			<div class="lang-ko">세계는 열매를 뺏고 뺏기는 그랑기뇰</div>
 		</div>
 		<div>
@@ -711,7 +711,7 @@ export default component$(() => (
 				</ruby>
 				う グランギニョル
 			</div>
-			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구랑기뇰</div>
+			<div class="lang-ko-tl">세카이와 카지츠오 우바이아우 구랑기뇨루</div>
 			<div class="lang-ko">세계는 열매를 뺏고 뺏기는 그랑기뇰</div>
 		</div>
 		<div>

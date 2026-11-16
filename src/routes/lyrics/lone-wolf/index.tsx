@@ -261,7 +261,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">호시즈키요ー 우츠시다스 와레타 가라스</div>
+			<div class="lang-ko-tl">호시즈키요오 우츠시다스 와레타 가라스</div>
 			<div class="lang-ko">별이 빚나는 밤을 비추는 깨진 유릿조각</div>
 		</div>
 		<div>
@@ -405,7 +405,7 @@ export default component$(() => (
 				</ruby>
 				だ
 			</div>
-			<div class="lang-ko-tl">입피키 오ー카미다</div>
+			<div class="lang-ko-tl">입피키 오오카미다</div>
 			<div class="lang-ko">고독한 늑대다</div>
 		</div>
 
@@ -483,7 +483,7 @@ export default component$(() => (
 				</ruby>
 				は
 			</div>
-			<div class="lang-ko-tl">나츠카시ー 아노 케시키와</div>
+			<div class="lang-ko-tl">나츠카시이 아노 케시키와</div>
 			<div class="lang-ko">아련한 그 광경은</div>
 		</div>
 		<div>
@@ -692,7 +692,7 @@ export default component$(() => (
 				</ruby>
 				いだろう？
 			</div>
-			<div class="lang-ko-tl">오도케테모 이ー다로ー?</div>
+			<div class="lang-ko-tl">오도케테모 이이다로ー?</div>
 			<div class="lang-ko">너스레 정도는 괜찮잖아?</div>
 		</div>
 
@@ -903,7 +903,7 @@ export default component$(() => (
 				</ruby>
 				だ！
 			</div>
-			<div class="lang-ko-tl">입피키 오ー카미다!</div>
+			<div class="lang-ko-tl">입피키 오오카미다!</div>
 			<div class="lang-ko">고독한 늑대다!</div>
 		</div>
 

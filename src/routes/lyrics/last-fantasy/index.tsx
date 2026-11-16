@@ -461,7 +461,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko-tl">쿠ー도ー오 미타스 비ー토ー 죠ー조ー</div>
+			<div class="lang-ko-tl">쿠ー도ー오 미타스 비ー토오 죠ー조ー</div>
 			<div class="lang-ko">동굴을 채우는 비트를 양조</div>
 		</div>
 		<div>
@@ -651,7 +651,7 @@ export default component$(() => (
 				</ruby>
 				いてよジャンキー
 			</div>
-			<div class="lang-ko-tl">와타시노 하나시 못토 키ー테요 쟝키ー</div>
+			<div class="lang-ko-tl">와타시노 하나시 못토 키이테요 쟝키ー</div>
 			<div class="lang-ko">내 이야길 좀 더 들어줘 정키</div>
 		</div>
 		<div>
