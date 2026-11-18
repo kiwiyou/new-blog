@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "乖離光",
+	titleKo: "괴리광",
+	titleEn: "Kairikou",
 	author: "Feryquitous feat. 藍月なくる",
 	pubDatetime: "2024-01-25T04:32:24.251Z",
 	slug: "kairikou",

@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "笑えない",
+	titleKo: "웃을 수 없어",
+	titleEn: "Waraenai",
 	author: "PSYQUI feat. mikanzil",
 	pubDatetime: "2025-05-01T06:20:00.000Z",
 	slug: "waraenai",

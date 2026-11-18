@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "業曝し (ft. flower)",
+	titleKo: "업원(고우사라시)",
+	titleEn: "Gou Sarashi",
 	author: "霄",
 	pubDatetime: "2025-03-14T17:31:23.701Z",
 	slug: "goh",

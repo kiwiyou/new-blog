@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "すだれなごり (ft. 濾過)",
+	titleKo: "발 너머로 비치는 그리움(스다레나고리)",
+	titleEn: "Sudarenagori",
 	author: "霄",
 	pubDatetime: "2025-03-08T18:26:15.707Z",
 	slug: "sudarenagori",

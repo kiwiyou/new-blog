@@ -2,9 +2,11 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "ラストファンシー",
+	titleKo: "라스트 팬시",
+	titleEn: "Last Fancy",
 	author: "缶缶 & Such",
 	pubDatetime: "2025-03-22T09:54:23.986Z",
-	slug: "last-fantasy",
+	slug: "last-fancy",
 	comment: true,
 	youtube: "https://youtu.be/7-nkPV3YjIY?si=0xLTl4me1FhAc2xh",
 	lang: ["ja", "yomigana", "ko", "ko-transliteration"],

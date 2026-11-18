@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "いさな (ft. 水音ラル)",
+	titleKo: "고래",
+	titleEn: "Isana",
 	author: "霄",
 	pubDatetime: "2025-03-09T04:51:04.889Z",
 	slug: "isana",

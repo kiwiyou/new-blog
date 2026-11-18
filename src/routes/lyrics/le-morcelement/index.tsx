@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "てんでんばらばら (ft. 足立レイ)",
+	titleKo: "갈기갈기 찢어져서",
+	titleEn: "Tendenbarabara",
 	author: "霄",
 	pubDatetime: "2024-01-17T04:06:34.488Z",
 	slug: "le-morcelement",

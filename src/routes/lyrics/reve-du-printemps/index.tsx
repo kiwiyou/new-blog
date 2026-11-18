@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "朧月 (ft. 狼音アロ)",
+	titleKo: "으스름달",
+	titleEn: "Oborozuki",
 	author: "霄",
 	pubDatetime: "2025-03-10T09:02:10.631Z",
 	slug: "reve-du-printemps",

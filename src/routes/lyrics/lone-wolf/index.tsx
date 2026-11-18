@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "一疋狼 (ft. 可不)",
+	titleKo: "외톨이 늑대",
+	titleEn: "Ippiki Ookami",
 	author: "霄",
 	pubDatetime: "2024-10-20T14:29:38.516Z",
 	slug: "lone-wolf",

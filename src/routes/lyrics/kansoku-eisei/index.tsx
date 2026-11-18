@@ -2,6 +2,8 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "觀測衞曐",
+	titleKo: "관측위성",
+	titleEn: "Kansoku Eisei",
 	author: "ななひら feat. かめりあ",
 	pubDatetime: "2024-01-22T00:36:10.258Z",
 	slug: "kansoku-eisei",
