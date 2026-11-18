@@ -333,6 +333,15 @@ h3 {
 	gap: 1rem;
 	margin-block: 2rem;
 }
+.pagination-placeholder {
+	visibility: hidden;
+}
+.pagination a[aria-current="page"] {
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 0.35em;
+	pointer-events: none;
+}
 .tags,
 .tag-list {
 	display: flex;
