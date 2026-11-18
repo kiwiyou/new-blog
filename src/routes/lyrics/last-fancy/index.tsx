@@ -287,7 +287,7 @@ export default component$(() => (
 				えてハッピー
 			</div>
 			<div class="lang-ko-tl">고슈ー쇼ー나 와타시사에 하에테 합피</div>
-			<div class="lang-ko">애도하는 나조차 찬란해서 해피</div>
+			<div class="lang-ko">불쌍한 나조차 찬란해서 해피</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -444,7 +444,7 @@ export default component$(() => (
 				なパーリーピーポー
 			</div>
 			<div class="lang-ko-tl">고키겐나 파ー리ー피ー포ー</div>
-			<div class="lang-ko">안녕한 파티 피플</div>
+			<div class="lang-ko">흥에 겨운 파티 피플</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -466,7 +466,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">쿠ー도ー오 미타스 비ー토오 죠ー조ー</div>
-			<div class="lang-ko">동굴을 채우는 비트를 양조</div>
+			<div class="lang-ko">텅 빈 속을 채우는 비트를 양조</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -752,7 +752,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">고슈ー쇼ー나 와타시</div>
-			<div class="lang-ko">애도하는 나</div>
+			<div class="lang-ko">불쌍한 나</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -770,7 +770,7 @@ export default component$(() => (
 				パンピー
 			</div>
 			<div class="lang-ko-tl">하테나이 쿄조ー 팜피ー</div>
-			<div class="lang-ko">무한한 허상 펌피</div>
+			<div class="lang-ko">끝없는 허상 노미</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1082,7 +1082,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">고슈ー쇼ー나 와타시</div>
-			<div class="lang-ko">애도하는 나</div>
+			<div class="lang-ko">불쌍한 나</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1100,7 +1100,7 @@ export default component$(() => (
 				パンピー
 			</div>
 			<div class="lang-ko-tl">하테나이 쿄조ー 팜피ー</div>
-			<div class="lang-ko">무한한 허상 펌피</div>
+			<div class="lang-ko">끝없는 허상 노미</div>
 		</div>
 		<div>
 			<div class="lang-ja">

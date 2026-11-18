@@ -208,7 +208,7 @@ export default component$(() => (
 				</ruby>
 				うよ
 			</div>
-			<div class="lang-ko">분개한다면 나는 말한다</div>
+			<div class="lang-ko">한탄한다면 나는 말한다</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -387,7 +387,7 @@ export default component$(() => (
 				</ruby>
 				しとく
 			</div>
-			<div class="lang-ko">그것도 교섭도 저속함도 무로 대답해두지</div>
+			<div class="lang-ko">애초에 교섭도 저속함도 없다고 대답해두지</div>
 		</div>
 		<div>
 			<div class="lang-ja">

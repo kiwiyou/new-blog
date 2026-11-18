@@ -289,7 +289,7 @@ export default component$(() => (
 				ちるとしても
 			</div>
 			<div class="lang-ko-tl">아ー 코와레 오치루토시테모</div>
-			<div class="lang-ko">아아 무너져 떨어져나가지만</div>
+			<div class="lang-ko">아아 부서져 떨어진다 해도</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -361,7 +361,7 @@ export default component$(() => (
 				ける
 			</div>
 			<div class="lang-ko-tl">코에오 이키오 카케라오 아츠메츠즈케루</div>
-			<div class="lang-ko">목청을 호흡을 조각들을 모아서 이어나가</div>
+			<div class="lang-ko">목청을 호흡을 조각들을 계속 모아 나가</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -450,7 +450,7 @@ export default component$(() => (
 				びながら
 			</div>
 			<div class="lang-ko-tl">토오이 츠이오 마치와비나가라</div>
-			<div class="lang-ko">머나먼 최후를 지키며 기다리며</div>
+			<div class="lang-ko">머나먼 최후를 애타게 기다리며</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -762,7 +762,7 @@ export default component$(() => (
 				ざる
 			</div>
 			<div class="lang-ko-tl">토케테 후카레 키미노 이노치에토 마자루</div>
-			<div class="lang-ko">녹아서 붙어서 너의 목숨과 함께 뒤섞여</div>
+			<div class="lang-ko">녹아서 흩날려 너의 목숨과 함께 뒤섞여</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1151,7 +1151,7 @@ export default component$(() => (
 				ちるとしても
 			</div>
 			<div class="lang-ko-tl">아ー 코와레 오치루토시테모</div>
-			<div class="lang-ko">아아 무너져 떨어져나가지만</div>
+			<div class="lang-ko">아아 부서져 떨어진다 해도</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1223,7 +1223,7 @@ export default component$(() => (
 				ける
 			</div>
 			<div class="lang-ko-tl">코에오 이키오 카케라오 아츠메츠즈케루</div>
-			<div class="lang-ko">목청을 호흡을 조각들을 모아서 이어나가</div>
+			<div class="lang-ko">목청을 호흡을 조각들을 계속 모아 나가</div>
 		</div>
 		<div>
 			<div class="lang-ja">

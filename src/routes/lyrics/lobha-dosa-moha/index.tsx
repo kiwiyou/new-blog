@@ -183,7 +183,7 @@ export default component$(() => (
 				。
 			</div>
 			<div class="lang-ko-tl">린토 스고세바코소 미에유쿠 모노</div>
-			<div class="lang-ko">늠름히 보내는 것이야말로 보여야 할 모습.</div>
+			<div class="lang-ko">늠름히 지내기에 비로소 보이는 것.</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -207,7 +207,7 @@ export default component$(() => (
 				めば、
 			</div>
 			<div class="lang-ko-tl">도ー카시테 우쿠루 요ー 츠토메바</div>
-			<div class="lang-ko">어떻게든 귀감이 되도록 힘쓴다면,</div>
+			<div class="lang-ko">어떻게든 받아들여지도록 힘쓴다면,</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -231,7 +231,7 @@ export default component$(() => (
 				つてゐたよ。
 			</div>
 			<div class="lang-ko-tl">온노지다토 오못테타요</div>
-			<div class="lang-ko">흡족하다 생각한다.</div>
+			<div class="lang-ko">흡족하다 생각했었어.</div>
 		</div>
 
 		<div>
@@ -487,7 +487,7 @@ export default component$(() => (
 				めた。
 			</div>
 			<div class="lang-ko-tl">시토도니 나이타 카마와즈 츠토메타</div>
-			<div class="lang-ko">구슬피 울었어. 개의치 말고 몰두했어.</div>
+			<div class="lang-ko">구슬피 울었어. 개의치 않고 몰두했어.</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -749,7 +749,7 @@ export default component$(() => (
 				いけど。
 			</div>
 			<div class="lang-ko-tl">⋯춋토 이타이케도</div>
-			<div class="lang-ko">⋯잠깐, 괴로운데.</div>
+			<div class="lang-ko">⋯조금, 괴롭지만.</div>
 		</div>
 
 		<div>
@@ -1116,7 +1116,7 @@ export default component$(() => (
 				はまう・・
 			</div>
 			<div class="lang-ko-tl">모토요리 테오쿠레 나무삼보ー 오레와 모ー</div>
-			<div class="lang-ko">이전보다 늦었어. 나무삼보, 나는 이제.</div>
+			<div class="lang-ko">원래부터 늦었어. 나무삼보, 나는 이제.</div>
 		</div>
 
 		<div>
@@ -1260,7 +1260,7 @@ export default component$(() => (
 				セム：
 			</div>
 			<div class="lang-ko-tl">사ー라바 카리노 요오 코시센</div>
-			<div class="lang-ko">"작별이다 거짓된 세계를 탐치 않겠으니:</div>
+			<div class="lang-ko">"작별이다 덧없는 세상을 노려보리라:</div>
 		</div>
 		<div>
 			<div class="lang-ja">

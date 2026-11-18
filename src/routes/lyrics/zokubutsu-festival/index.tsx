@@ -153,7 +153,7 @@ export default component$(() => (
 				</ruby>
 				が
 			</div>
-			<div class="lang-ko">거꾸로 질려버린 행동 양식이</div>
+			<div class="lang-ko">삐딱하게 굴다 질색당한 방식이</div>
 		</div>
 		<div>
 			<div class="lang-ja">どうしても</div>
@@ -241,7 +241,7 @@ export default component$(() => (
 				</ruby>
 				キライ！！
 			</div>
-			<div class="lang-ko">이해할 수 없는 놈 완전 싫어!!</div>
+			<div class="lang-ko">역지사지도 모르는 놈 완전 싫어!!</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -258,7 +258,7 @@ export default component$(() => (
 				</ruby>
 				くのがスキ！
 			</div>
-			<div class="lang-ko">방패로 부딪히는 게 좋아!</div>
+			<div class="lang-ko">대드는 게 좋아!</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -275,7 +275,7 @@ export default component$(() => (
 				</ruby>
 				くのもスキ！
 			</div>
-			<div class="lang-ko">활을 당기는 것도 좋아!</div>
+			<div class="lang-ko">반기 드는 것도 좋아!</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -298,7 +298,7 @@ export default component$(() => (
 				</ruby>
 				！
 			</div>
-			<div class="lang-ko">삿갓 쓰는 건 정말 무리!</div>
+			<div class="lang-ko">권력 드는 건 정말 무리!</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -321,7 +321,7 @@ export default component$(() => (
 					<rp>)</rp>
 				</ruby>
 			</div>
-			<div class="lang-ko">질척질척한 전개 진작에 보이는 한계</div>
+			<div class="lang-ko">뻔하디뻔한 전개 진작에 보이는 한계</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -465,7 +465,7 @@ export default component$(() => (
 				</ruby>
 				じられないよ」
 			</div>
-			<div class="lang-ko">"누구도⋯⋯ 믿을 수 없어"</div>
+			<div class="lang-ko">"아무것도⋯⋯ 믿을 수 없어"</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -483,7 +483,7 @@ export default component$(() => (
 				</ruby>
 				したい……」
 			</div>
-			<div class="lang-ko">"전부 들춰내고 싶어⋯⋯."</div>
+			<div class="lang-ko">"전부 드러내 보이고 싶어⋯⋯."</div>
 		</div>
 		<div>
 			<div class="lang-ja">「もうどうだっていいっ！！」</div>
@@ -674,7 +674,7 @@ export default component$(() => (
 				</ruby>
 				スカスカw(笑)
 			</div>
-			<div class="lang-ko">고주망태로 내용물 주륵주륵ㅎ(웃음)</div>
+			<div class="lang-ko">괴짜 놀음에 알맹이는 텅텅ㅋ(웃음)</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -715,7 +715,7 @@ export default component$(() => (
 				</ruby>
 				んで
 			</div>
-			<div class="lang-ko">자 제멋대로 자신감을 태연한 태도로</div>
+			<div class="lang-ko">자 제멋대로인 의욕을 태연함으로 감싸서</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -727,7 +727,7 @@ export default component$(() => (
 				</ruby>
 				！
 			</div>
-			<div class="lang-ko">아무데나 나서면→안락사!</div>
+			<div class="lang-ko">아무데나 나서면→여한 없음!</div>
 		</div>
 		<div>
 			<div class="lang-ja">

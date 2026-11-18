@@ -147,7 +147,7 @@ export default component$(() => (
 				みながら
 			</div>
 			<div class="lang-ko-tl">무이무사쿠오 카에리미나가라</div>
-			<div class="lang-ko">대책 없는 행동을 돌아보면서</div>
+			<div class="lang-ko">무위무책했던 날들을 돌아보면서</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -271,7 +271,7 @@ export default component$(() => (
 				きている
 			</div>
 			<div class="lang-ko-tl">우라즈케테 이마다니 이키테루</div>
-			<div class="lang-ko">다짐하며 아직도 살아가네</div>
+			<div class="lang-ko">증명하며 아직도 살아가네</div>
 		</div>
 
 		<div>
@@ -539,7 +539,7 @@ export default component$(() => (
 				らしている
 			</div>
 			<div class="lang-ko-tl">우라즈케테 쿄ー오 테라시테루</div>
-			<div class="lang-ko">다짐하며 오늘을 비추고 있어</div>
+			<div class="lang-ko">증명하며 오늘을 비추고 있어</div>
 		</div>
 
 		<div>
@@ -652,7 +652,7 @@ export default component$(() => (
 				きたいのだ：
 			</div>
 			<div class="lang-ko-tl">우라즈케테 모ー 스코시 이키타인다</div>
-			<div class="lang-ko">다짐하며 조금 더 살아있을래:</div>
+			<div class="lang-ko">증명하며 조금 더 살고 싶은 거야:</div>
 		</div>
 
 		<div>

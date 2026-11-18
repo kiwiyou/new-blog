@@ -321,7 +321,7 @@ export default component$(() => (
 				い
 			</div>
 			<div class="lang-ko-tl">쿠라마세바 이미가 나이</div>
-			<div class="lang-ko">침울해서는 의미가 없어</div>
+			<div class="lang-ko">숨어버려서는 의미가 없어</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -333,7 +333,7 @@ export default component$(() => (
 				しよ
 			</div>
 			<div class="lang-ko-tl">고ー사라시요</div>
-			<div class="lang-ko">나의 업이다</div>
+			<div class="lang-ko">업이 드러났다</div>
 		</div>
 
 		<div>
@@ -418,7 +418,7 @@ export default component$(() => (
 				だけど
 			</div>
 			<div class="lang-ko-tl">샤라쿠세ー 야츠 모노구세ー 야츠다케도</div>
-			<div class="lang-ko">겉멋 든 치, 수상쩍은 치라지만</div>
+			<div class="lang-ko">겉멋 든 치, 게으른 치라지만</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -773,7 +773,7 @@ export default component$(() => (
 				せよ
 			</div>
 			<div class="lang-ko-tl">고ー오 사라세요</div>
-			<div class="lang-ko">내 업을 탓해라</div>
+			<div class="lang-ko">업을 드러내라</div>
 		</div>
 
 		<div>
@@ -935,7 +935,7 @@ export default component$(() => (
 				の
 			</div>
 			<div class="lang-ko-tl">이노리가 카케테 야세루 츠키노</div>
-			<div class="lang-ko">기도가 부덕해 여윈 달의</div>
+			<div class="lang-ko">기도가 이지러져 여위는 달의</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1055,7 +1055,7 @@ export default component$(() => (
 				けてゐる
 			</div>
 			<div class="lang-ko-tl">코도쿠다케가 소코누케테이루</div>
-			<div class="lang-ko">고독만이 하늘을 뚫고</div>
+			<div class="lang-ko">고독만이 깊어 바닥이 보이지 않아</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1255,7 +1255,7 @@ export default component$(() => (
 				せよ！
 			</div>
 			<div class="lang-ko-tl">고ー오 사라세요!</div>
-			<div class="lang-ko">내 업을 탓해라!</div>
+			<div class="lang-ko">업을 드러내라!</div>
 		</div>
 	</>
 ));

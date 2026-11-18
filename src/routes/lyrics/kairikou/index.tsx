@@ -460,7 +460,7 @@ export default component$(() => (
 				に
 			</div>
 			<div class="lang-ko-tl">이토오시이 구ー조ー오 미루 카타와라니</div>
-			<div class="lang-ko">가엾은 우상을 보는 곁에서</div>
+			<div class="lang-ko">사랑스러운 우상을 보는 곁에서</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -611,7 +611,7 @@ export default component$(() => (
 				でまた
 			</div>
 			<div class="lang-ko-tl">요쿠아츠사레타 캉쿄ー카노 나카데 마타</div>
-			<div class="lang-ko">억업된 환경의 아래서 다시</div>
+			<div class="lang-ko">억압된 환경의 아래서 다시</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -658,7 +658,7 @@ export default component$(() => (
 				る
 			</div>
 			<div class="lang-ko-tl">가이쇼ー 소ー텐헹칸 우와베니 미루</div>
-			<div class="lang-ko">외상 조전변환 위쪽을 본다</div>
+			<div class="lang-ko">외상 조전변환 겉면에 본다</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -843,7 +843,7 @@ export default component$(() => (
 				に
 			</div>
 			<div class="lang-ko-tl">이토오시이 구ー조ー오 미루 카타와라니</div>
-			<div class="lang-ko">가엾은 우상을 보는 곁에서</div>
+			<div class="lang-ko">사랑스러운 우상을 보는 곁에서</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -994,7 +994,7 @@ export default component$(() => (
 				でまた
 			</div>
 			<div class="lang-ko-tl">요쿠아츠사레타 캉쿄ー카노 나카데 마타</div>
-			<div class="lang-ko">억업된 환경의 아래서 다시</div>
+			<div class="lang-ko">억압된 환경의 아래서 다시</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -1149,7 +1149,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">사키다타레나이 미라이</div>
-			<div class="lang-ko">먼저 설 수 없는 미래</div>
+			<div class="lang-ko">먼저 떠나보내지 않을 미래</div>
 		</div>
 		<div>
 			<div class="lang-ja">

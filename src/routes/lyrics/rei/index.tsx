@@ -218,7 +218,7 @@ export default component$(() => (
 				えたのは
 			</div>
 			<div class="lang-ko-tl">토오이 무카시노 요ー니 오모에타노와</div>
-			<div class="lang-ko">먼 옛날처럼 생각할 수 있었던 건</div>
+			<div class="lang-ko">먼 옛날처럼 느껴졌던 건</div>
 		</div>
 
 		<div>
@@ -291,7 +291,7 @@ export default component$(() => (
 				えんだ
 			</div>
 			<div class="lang-ko-tl">히카리오 와케아타엔다</div>
-			<div class="lang-ko">빛을 나누어 주었던 거야</div>
+			<div class="lang-ko">빛을 나누어 주는 거야</div>
 		</div>
 
 		<div>

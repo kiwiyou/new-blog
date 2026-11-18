@@ -215,7 +215,7 @@ export default component$(() => (
 				</ruby>
 				ついても
 			</div>
-			<div class="lang-ko">몆 번 속으며 상처받아도</div>
+			<div class="lang-ko">몇 번 속으며 상처받아도</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -410,7 +410,7 @@ export default component$(() => (
 				</ruby>
 				しい
 			</div>
-			<div class="lang-ko">빚과 망설임과 미소와 눈물이 눈부셔</div>
+			<div class="lang-ko">빛과 망설임과 미소와 눈물이 눈부셔</div>
 		</div>
 		<div>
 			<div class="lang-ja">

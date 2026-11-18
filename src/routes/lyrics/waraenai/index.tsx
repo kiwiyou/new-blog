@@ -217,7 +217,7 @@ export default component$(() => (
 				めて
 			</div>
 			<div class="lang-ko-tl">나이나이 아라타메테</div>
-			<div class="lang-ko">안에 안에 다시 한번</div>
+			<div class="lang-ko">남몰래 다시 한번</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -336,7 +336,7 @@ export default component$(() => (
 				かってない
 			</div>
 			<div class="lang-ko-tl">난모 오보에테나이 와캇테나이</div>
-			<div class="lang-ko">뭣도 기억 안 나 생각 안 나</div>
+			<div class="lang-ko">뭣도 기억 안 나 알지도 못해</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -412,7 +412,7 @@ export default component$(() => (
 				ってんじゃない
 			</div>
 			<div class="lang-ko-tl">사이다이겐 히욧텐쟈나이</div>
-			<div class="lang-ko">최대한 간만 보는 게 아니야</div>
+			<div class="lang-ko">어떻게든 몸 사리려 하지 말라고</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -448,7 +448,7 @@ export default component$(() => (
 				なっちゃうんだ！？
 			</div>
 			<div class="lang-ko-tl">이얀낫챠우와 도ー낫챠운다</div>
-			<div class="lang-ko">이상해질 것 같아 어떻게 되는 거야!?</div>
+			<div class="lang-ko">진절머리 나 어떻게 되는 거야!?</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -550,7 +550,7 @@ export default component$(() => (
 				かってない
 			</div>
 			<div class="lang-ko-tl">난모 오보에테나이 와캇테나이</div>
-			<div class="lang-ko">아무것도 기억 안 나 생각 안 나</div>
+			<div class="lang-ko">아무것도 기억 안 나 알지도 못해</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -598,7 +598,7 @@ export default component$(() => (
 				きたいよ
 			</div>
 			<div class="lang-ko-tl">난나라 혼토ー와 나키타이요</div>
-			<div class="lang-ko">아니면 사실은 울고 싶어</div>
+			<div class="lang-ko">어쩌면 사실은 울고 싶어</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -841,7 +841,7 @@ export default component$(() => (
 				かってない
 			</div>
 			<div class="lang-ko-tl">난모 오보에테나이 와캇테나이</div>
-			<div class="lang-ko">아무것도 기억 안 나 생각 안 나</div>
+			<div class="lang-ko">아무것도 기억 안 나 알지도 못해</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -990,7 +990,7 @@ export default component$(() => (
 				かってない
 			</div>
 			<div class="lang-ko-tl">난모 오보에테나이 와캇테나이</div>
-			<div class="lang-ko">아무것도 기억 안 나 생각 안 나</div>
+			<div class="lang-ko">아무것도 기억 안 나 알지도 못해</div>
 		</div>
 		<div>
 			<div class="lang-ja">

@@ -347,7 +347,7 @@ export default component$(() => (
 				え
 			</div>
 			<div class="lang-ko-tl">쥼파쿠노 하네 마토이 히카리오 타즈사에</div>
-			<div class="lang-ko">순백의 날개를 걸고 빚을 두르고</div>
+			<div class="lang-ko">순백의 날개를 걸고 빛을 두르고</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -419,7 +419,7 @@ export default component$(() => (
 					<rt class="show">에덴</rt>
 					<rp>)</rp>은{" "}
 				</ruby>
-				지금은 역시 멀어서
+				지금도 여전히 멀어서
 			</div>
 		</div>
 		<div>

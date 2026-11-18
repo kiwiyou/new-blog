@@ -210,7 +210,7 @@ export default component$(() => (
 				めてね
 			</div>
 			<div class="lang-ko-tl">잇쇼ー노 오리니 토지코메테네</div>
-			<div class="lang-ko">같은 우리에 가두도록</div>
+			<div class="lang-ko">같은 우리에 가둬 줘</div>
 		</div>
 		<div>
 			<div class="lang-ja">はじめてなの　こんなこと</div>
@@ -330,7 +330,7 @@ export default component$(() => (
 				めてる
 			</div>
 			<div class="lang-ko-tl">키미카라노 바츠오 모토메테루</div>
-			<div class="lang-ko">네게서 벌점을 벌고 있어</div>
+			<div class="lang-ko">네게서 벌점을 바라고 있어</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -354,7 +354,7 @@ export default component$(() => (
 		<div>
 			<div class="lang-ja">だけどキライにはならないで</div>
 			<div class="lang-ko-tl">다케도 키라이니와 나라나이데</div>
-			<div class="lang-ko">하지만 눈을 돌리지는 말아 줘</div>
+			<div class="lang-ko">하지만 싫어하지는 말아 줘</div>
 		</div>
 		<div>
 			<div class="lang-ja">（あまい　あまい　あまいなあ）</div>
@@ -396,7 +396,7 @@ export default component$(() => (
 				ってる)
 			</div>
 			<div class="lang-ko-tl">(코ー츠고ー? 지코츄ー? 싯테루)</div>
-			<div class="lang-ko">(구질해? 이기적? 알고 있어)</div>
+			<div class="lang-ko">(멋대로? 이기적? 알고 있어)</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -409,7 +409,7 @@ export default component$(() => (
 				★
 			</div>
 			<div class="lang-ko-tl">키미모 타이가이</div>
-			<div class="lang-ko">너도 대개★</div>
+			<div class="lang-ko">너도 그래★</div>
 		</div>
 		<div>
 			<div class="lang-ja">

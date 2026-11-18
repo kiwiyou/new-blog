@@ -71,7 +71,7 @@ export default component$(() => (
 				いた
 			</div>
 			<div class="lang-ko-tl">케이키오 카라사레 나게이타</div>
-			<div class="lang-ko">올곧은 해바라기를 말라죽여 한탄했다</div>
+			<div class="lang-ko">해를 좇던 해바라기가 말라버려 한탄했다</div>
 		</div>
 		<div>
 			<div class="lang-ja">

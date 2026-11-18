@@ -210,7 +210,7 @@ export default component$(() => (
 			<div class="lang-ko-tl">
 				카와이타 마나자시데 카기츠케루 카이부츠 아바쿠 쇼우타이
 			</div>
-			<div class="lang-ko">말라죽은 눈빛으로 킁킁대는 괴물 들추는 정체</div>
+			<div class="lang-ko">메마른 눈빛으로 킁킁대는 괴물 들추는 정체</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -358,7 +358,7 @@ export default component$(() => (
 			<div class="lang-ko-tl">
 				악케나쿠 칫테쿠 우고메쿠 하루 사라시타 겐지츠
 			</div>
-			<div class="lang-ko">실없이 흩어지네 준동하는 봄 폭로된 현실</div>
+			<div class="lang-ko">허무하게 흩어지네 준동하는 봄 폭로된 현실</div>
 		</div>
 		<div>
 			<div class="lang-ja">

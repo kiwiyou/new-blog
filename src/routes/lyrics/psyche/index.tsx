@@ -160,7 +160,7 @@ export default component$(() => (
 				モ、
 			</div>
 			<div class="lang-ko-tl">마치보케 유에 모쿠세이카노 카모</div>
-			<div class="lang-ko">멈칫 아득해진 탓에, 목서꽃의 향도,</div>
+			<div class="lang-ko">하염없이 기다린 탓에, 목서꽃의 향도,</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -262,7 +262,7 @@ export default component$(() => (
 				シ。
 			</div>
 			<div class="lang-ko-tl">요노 후카시기와 모토요리 니가시</div>
-			<div class="lang-ko">속세의 불가사의는 옛보다 씁쓸함이라.</div>
+			<div class="lang-ko">속세의 불가사의는 본디 씁쓸함이라.</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -317,7 +317,7 @@ export default component$(() => (
 				ヲ。」
 			</div>
 			<div class="lang-ko-tl">아이오 카타도루 미츠오</div>
-			<div class="lang-ko">사랑을 빙자한 꿀을."</div>
+			<div class="lang-ko">사랑을 상징하는 꿀을."</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -368,7 +368,7 @@ export default component$(() => (
 				ムジル。
 			</div>
 			<div class="lang-ko-tl">무키테키 세카이니 오몬지루</div>
-			<div class="lang-ko">무기한 세상을 중히 여기네.</div>
+			<div class="lang-ko">무기적인 세상을 중히 여기네.</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -492,7 +492,7 @@ export default component$(() => (
 				シ。
 			</div>
 			<div class="lang-ko-tl">요노 후카시기와 모토요리 니가시</div>
-			<div class="lang-ko">속세의 불가사의는 옛보다 씁쓸함이라.</div>
+			<div class="lang-ko">속세의 불가사의는 본디 씁쓸함이라.</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -547,7 +547,7 @@ export default component$(() => (
 				ヲ。」
 			</div>
 			<div class="lang-ko-tl">아이노 쿠치스이카타오</div>
-			<div class="lang-ko">사랑을 빨아먹는 방법을."</div>
+			<div class="lang-ko">사랑의 입맞춤을 하는 방법을."</div>
 		</div>
 		<div>
 			<div class="lang-ja">

@@ -104,7 +104,7 @@ export default component$(() => (
 				だから
 			</div>
 			<div class="lang-ko-tl">이나이모 잇쇼노 보쿠다카라</div>
-			<div class="lang-ko">기댈 곳 없는 것도 똑같은 나니까</div>
+			<div class="lang-ko">없어도 그만일 뿐인 나니까</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -266,7 +266,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">호시즈키요오 우츠시다스 와레타 가라스</div>
-			<div class="lang-ko">별이 빚나는 밤을 비추는 깨진 유릿조각</div>
+			<div class="lang-ko">별이 빛나는 밤을 비추는 깨진 유릿조각</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -290,7 +290,7 @@ export default component$(() => (
 				う
 			</div>
 			<div class="lang-ko-tl">이츠쿠시마레루 오마에토 치가우</div>
-			<div class="lang-ko">가여이 여기는 너와 다르게</div>
+			<div class="lang-ko">사랑받는 너와는 다르게</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -302,7 +302,7 @@ export default component$(() => (
 				えてんだよ
 			</div>
 			<div class="lang-ko-tl">모다에텐다요</div>
-			<div class="lang-ko">근심하고 있다고</div>
+			<div class="lang-ko">발버둥치고 있다고</div>
 		</div>
 
 		<div>
@@ -375,7 +375,7 @@ export default component$(() => (
 				だから
 			</div>
 			<div class="lang-ko-tl">이나이모 잇쇼노 보쿠다카라</div>
-			<div class="lang-ko">기댈 곳 없는 것도 똑같은 나니까</div>
+			<div class="lang-ko">없어도 그만일 뿐인 나니까</div>
 		</div>
 		<div>
 			<div class="lang-ja">

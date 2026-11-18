@@ -73,7 +73,7 @@ export default component$(() => (
 				</ruby>
 			</div>
 			<div class="lang-ko-tl">오리마자레루 카쿠토쿠토 소ー시츠</div>
-			<div class="lang-ko">얽혀있는 조우와 상실</div>
+			<div class="lang-ko">얽혀있는 획득과 상실</div>
 		</div>
 
 		<div>
@@ -132,7 +132,7 @@ export default component$(() => (
 				さ
 			</div>
 			<div class="lang-ko-tl">이쿠츠니 나레도 토오카노 키쿠사</div>
-			<div class="lang-ko">얼마가 되든 열흘 만에 시들 국화일 뿐</div>
+			<div class="lang-ko">몇 살이 되든 철 지난 국화일 뿐</div>
 		</div>
 
 		<div>
@@ -194,7 +194,7 @@ export default component$(() => (
 				つまじい
 			</div>
 			<div class="lang-ko-tl">마치난시 하나츠마지이</div>
-			<div class="lang-ko">기다리리라 놓치지 않으리라</div>
+			<div class="lang-ko">기다려 주시지요 놓지 않으리라</div>
 		</div>
 		<div>
 			<div class="lang-ja">
@@ -330,7 +330,7 @@ export default component$(() => (
 				ありんせん
 			</div>
 			<div class="lang-ko-tl">이쿠넨 타테도 코토와리 아린센</div>
-			<div class="lang-ko">몆 년이 지나도 깨달음 없으리</div>
+			<div class="lang-ko">몇 년이 지나도 깨달음 없으리</div>
 		</div>
 
 		<div>
