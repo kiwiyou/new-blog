@@ -21,7 +21,16 @@ export default component$(() => {
 	const author =
 		(head.frontmatter as { author?: string })?.author ||
 		head.meta.find((item) => item.name === "author")?.content;
-	const title = head.title || "키위밭";
+	const lyric = parts[0] === "lyrics" && article;
+	const frontmatter = head.frontmatter as {
+		titleKo?: string;
+		titleEn?: string;
+	};
+	const bare = (head.title || "").replace(/\s*\(.*\)\s*$/, "");
+	const title =
+		lyric && frontmatter?.titleKo && frontmatter?.titleEn
+			? `${bare} 歌詞 / ${frontmatter.titleKo} 가사 / ${frontmatter.titleEn} lyrics`
+			: head.title || "키위밭";
 	const image = article ? `/og/${parts[0]}/${parts[1]}/image.png` : "/og.png";
 	return (
 		<>
@@ -39,7 +48,7 @@ export default component$(() => {
 							property: "og:title",
 							content:
 								parts[0] === "lyrics" && author
-									? `${author} - ${title}`
+									? `${author} - ${head.title}`
 									: title,
 						},
 						{

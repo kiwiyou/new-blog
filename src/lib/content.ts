@@ -1,6 +1,8 @@
 export type Entry = {
 	slug: string;
 	title: string;
+	titleKo?: string;
+	titleEn?: string;
 	pubDatetime: string;
 	modDatetime?: string;
 	description?: string;
