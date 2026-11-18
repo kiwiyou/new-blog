@@ -2,6 +2,8 @@ export type Entry = {
 	slug: string;
 	title: string;
 	titleLang?: string;
+	keywords?: string[];
+	artists?: string[];
 	pubDatetime: string;
 	modDatetime?: string;
 	description?: string;

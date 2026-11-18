@@ -6,6 +6,7 @@ import {
 	useLocation,
 	useQwikRouter,
 } from "@qwik.dev/router";
+import { type LyricSeoSource, lyricSeo } from "./lib/seo";
 import "./global.css";
 import "katex/dist/katex.min.css";
 
@@ -22,6 +23,10 @@ export default component$(() => {
 		(head.frontmatter as { author?: string })?.author ||
 		head.meta.find((item) => item.name === "author")?.content;
 	const title = head.title || "키위밭";
+	const lyric =
+		parts[0] === "lyrics" && article
+			? lyricSeo(head.frontmatter as LyricSeoSource, url.href)
+			: undefined;
 	const image = article ? `/og/${parts[0]}/${parts[1]}/image.png` : "/og.png";
 	return (
 		<>
@@ -30,6 +35,15 @@ export default component$(() => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 				<script dangerouslySetInnerHTML="document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark'" />
+				{lyric && (
+					<script
+						type="application/ld+json"
+						dangerouslySetInnerHTML={JSON.stringify(lyric.jsonLd).replace(
+							/</g,
+							"\\u003c",
+						)}
+					/>
+				)}
 				<DocumentHeadTags
 					title={title}
 					meta={[
@@ -39,7 +53,7 @@ export default component$(() => {
 							property: "og:title",
 							content:
 								parts[0] === "lyrics" && author
-									? `${author} - ${title}`
+									? `${author} - ${head.title}`
 									: title,
 						},
 						{
