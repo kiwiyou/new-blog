@@ -49,10 +49,14 @@ export default component$(
 				</ul>
 				{count > 1 && (
 					<nav class="pagination" aria-label="페이지 탐색">
-						{page > 1 && (
+						{page > 1 ? (
 							<a href={href(page - 1)} rel="prev">
 								<Icon svg={previousSvg} /> 이전
 							</a>
+						) : (
+							<span class="pagination-placeholder" aria-hidden="true">
+								<Icon svg={previousSvg} /> 이전
+							</span>
 						)}
 						{Array.from({ length: count }, (_, index) => index + 1).map(
 							(number) => (
@@ -66,10 +70,14 @@ export default component$(
 								</a>
 							),
 						)}
-						{page < count && (
+						{page < count ? (
 							<a href={href(page + 1)} rel="next">
 								다음 <Icon svg={nextSvg} />
 							</a>
+						) : (
+							<span class="pagination-placeholder" aria-hidden="true">
+								다음 <Icon svg={nextSvg} />
+							</span>
 						)}
 					</nav>
 				)}
