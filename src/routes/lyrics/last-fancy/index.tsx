@@ -3,10 +3,12 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "ラストファンシー",
 	titleLang: "ja",
+	keywords: ["라스트 팬시", "Last Fancy", "Rasuto Fanshii"],
+	artists: ["缶缶", "KANKAN", "칸칸", "Such", "yowanecity"],
 	author: "缶缶 & Such",
 	authorLang: "ja",
 	pubDatetime: "2025-03-22T09:54:23.986Z",
-	slug: "last-fantasy",
+	slug: "last-fancy",
 	comment: true,
 	youtube: "https://youtu.be/7-nkPV3YjIY?si=0xLTl4me1FhAc2xh",
 	lang: ["ja", "yomigana", "ko", "ko-transliteration"],

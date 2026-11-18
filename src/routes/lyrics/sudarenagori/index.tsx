@@ -3,6 +3,13 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "すだれなごり (ft. 濾過)",
 	titleLang: "ja",
+	keywords: [
+		"발 너머로 비치는 그리움",
+		"스다레나고리",
+		"fin del verano; comienzo del otoño",
+		"Sudarenagori",
+	],
+	artists: ["霄", "Mizore", "미조레", "濾過", "Roka", "露華"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2025-03-08T18:26:15.707Z",

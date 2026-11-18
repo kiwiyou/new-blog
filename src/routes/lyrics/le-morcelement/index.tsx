@@ -3,6 +3,16 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "てんでんばらばら (ft. 足立レイ)",
 	titleLang: "ja",
+	keywords: ["갈기갈기 찢어져서", "Le Morcèlement", "Tendenbarabara"],
+	artists: [
+		"霄",
+		"Mizore",
+		"미조레",
+		"足立レイ",
+		"Adachi Rei",
+		"Rei Adachi",
+		"아다치 레이",
+	],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2024-01-17T04:06:34.488Z",

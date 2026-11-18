@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "ふたりピノキオ",
 	titleLang: "ja",
+	keywords: ["두 명의 피노키오", "Futari Pinocchio"],
+	artists: ["harmoe", "ハルモエ", "하루모에"],
 	author: "harmoe",
 	pubDatetime: "2024-01-21T11:02:07.720Z",
 	slug: "futari-pinocchio",

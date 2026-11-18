@@ -3,6 +3,15 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "乖離光",
 	titleLang: "ja",
+	keywords: ["괴리광", "kairikou", "Kairikou"],
+	artists: [
+		"Feryquitous",
+		"soleil de minuit",
+		"藍月なくる",
+		"Aitsuki Nakuru",
+		"Nakuru Aitsuki",
+		"아이츠키 나쿠루",
+	],
 	author: "Feryquitous feat. 藍月なくる",
 	authorLang: "ja",
 	pubDatetime: "2024-01-25T04:32:24.251Z",

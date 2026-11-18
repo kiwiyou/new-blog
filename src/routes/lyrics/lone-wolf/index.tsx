@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "一疋狼 (ft. 可不)",
 	titleLang: "ja",
+	keywords: ["외톨이 늑대", "Lone Wolf", "Ippiki Ookami"],
+	artists: ["霄", "Mizore", "미조레", "可不", "KAFU", "카후"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2024-10-20T14:29:38.516Z",

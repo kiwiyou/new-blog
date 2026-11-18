@@ -3,7 +3,9 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "けだもの (ft. 裏命)",
 	titleLang: "ja",
+	keywords: ["짐승", "Lobha, Dosa, Moha", "Kedamono"],
 	draft: false,
+	artists: ["霄", "Mizore", "미조레", "裏命", "RIME", "리메"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2024-10-21T13:26:48.153Z",

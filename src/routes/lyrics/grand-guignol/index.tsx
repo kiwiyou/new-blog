@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "グランギニョル (feat. つぐ)",
 	titleLang: "ja",
+	keywords: ["그랑기뇰", "Grand Guignol", "Guranginyoru"],
+	artists: ["RuLu", "つぐ", "tug", "츠구"],
 	author: "RuLu",
 	pubDatetime: "2025-03-22T09:41:13.006Z",
 	slug: "grand-guignol",

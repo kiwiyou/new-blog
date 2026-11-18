@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "朧月 (ft. 狼音アロ)",
 	titleLang: "ja",
+	keywords: ["으스름달", "Rêve Du Printemps", "Oborozuki"],
+	artists: ["霄", "Mizore", "미조레", "狼音アロ", "Rouon Aro", "로우온 아로"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2025-03-10T09:02:10.631Z",

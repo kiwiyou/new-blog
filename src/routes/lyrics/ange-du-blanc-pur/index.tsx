@@ -2,6 +2,7 @@ import { component$ } from "@qwik.dev/core";
 
 export const metadata = {
 	title: "Ange du Blanc Pur",
+	artists: ["ななひら", "Nanahira", "나나히라"],
 	author: "ななひら",
 	authorLang: "ja",
 	pubDatetime: "2024-01-22T00:36:10.258Z",

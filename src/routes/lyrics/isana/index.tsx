@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "いさな (ft. 水音ラル)",
 	titleLang: "ja",
+	keywords: ["고래", "Isana"],
+	artists: ["霄", "Mizore", "미조레", "水音ラル", "Mine Laru"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2025-03-09T04:51:04.889Z",

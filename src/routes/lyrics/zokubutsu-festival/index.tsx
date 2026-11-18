@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "俗物フェスティバル",
 	titleLang: "ja",
+	keywords: ["속물 페스티벌", "Zokubutsu Festival"],
+	artists: ["みせる", "Micelle"],
 	author: "みせる",
 	authorLang: "ja",
 	pubDatetime: "2024-01-21T14:32:53.506Z",

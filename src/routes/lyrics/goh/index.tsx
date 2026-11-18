@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "業曝し (ft. flower)",
 	titleLang: "ja",
+	keywords: ["업원", "고우사라시", "Goh-Sarashi"],
+	artists: ["霄", "Mizore", "미조레", "V flower", "플라워"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2025-03-14T17:31:23.701Z",

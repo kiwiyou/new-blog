@@ -3,6 +3,16 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "觀測衞曐",
 	titleLang: "ja",
+	keywords: ["관측위성", "Kansoku Eisei"],
+	artists: [
+		"ななひら",
+		"Nanahira",
+		"나나히라",
+		"かめりあ",
+		"Camellia",
+		"카메리아",
+		"카멜리아",
+	],
 	author: "ななひら feat. かめりあ",
 	authorLang: "ja",
 	pubDatetime: "2024-01-22T00:36:10.258Z",

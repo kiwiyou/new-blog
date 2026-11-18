@@ -3,6 +3,8 @@ import { component$ } from "@qwik.dev/core";
 export const metadata = {
 	title: "てふ〱 (ft. ヤイ)",
 	titleLang: "ja",
+	keywords: ["나비", "Ψυχή", "Psyche", "Chouchou", "てふてふ", "てふ〳〵"],
+	artists: ["霄", "Mizore", "미조레", "紺青ヤイ", "Konjou Yai"],
 	author: "霄",
 	authorLang: "ja",
 	pubDatetime: "2024-01-18T12:35:01.807Z",
